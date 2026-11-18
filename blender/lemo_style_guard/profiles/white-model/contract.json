@@ -1,0 +1,254 @@
+{
+  "schema_id": "lemo-blender-style/v1",
+  "style_id": "white-model",
+  "title_zh": "白模投影",
+  "title_original": "Projection-Mapped Model",
+  "scope": {
+    "original_engine": "Three.js真实地理建筑网格、PBR白模、专用投影着色器与屏幕标注。",
+    "blender_route": "真实建筑模型保持白色漫反射材质，以投影光与独立标注传达数据；使用实体台座、暗室与中性环境。",
+    "adaptation_limit": "本包只保存原风格约束与白色参考材质，不附城市模型、数据、投影装置、太阳计算或场景。虚构地点模型属于派生风格，不能冒称原规范中的真实地点白模。"
+  },
+  "rules": [
+    {
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "模型来自真实地点的可追溯轮廓和高度，按明确比例制作；不能用代表性建筑或生成图片代替该地点。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "The model is real geometry of a real place",
+      "blender_translation": "从项目有权使用的数据生成模型，并将比例与来源保存在项目中；该规则不是下载任意三维城市资产即可满足。",
+      "review": "manual",
+      "id": "white-model-01"
+    },
+    {
+      "category": "material",
+      "level": "required",
+      "rule_zh": "模型保持白色；数据颜色来自投射的光，不能画进模型表面材质。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "The model is white; data is light.",
+      "blender_translation": "基础材质与数据投影通道分别管理。生成的白色参考材质本身不带数据色或假投影贴图。",
+      "review": "manual",
+      "id": "white-model-02"
+    },
+    {
+      "category": "material",
+      "level": "recommended",
+      "rule_zh": "白模采用近似#F3F3F1的哑光白，原文参考粗糙度约0.9，保持清晰棱边。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "matte white (≈ #F3F3F1, roughness ≈ 0.9), crisp edges",
+      "blender_translation": "可从该近似白色与粗糙度建立Blender材质起点；跨引擎显示响应仍需实看，数值是近似参考而非精确锁死。",
+      "review": "manual",
+      "id": "white-model-03"
+    },
+    {
+      "category": "material",
+      "level": "required",
+      "rule_zh": "薄底板位于深色缎面台座上；水面作为较暗缎面嵌片，桥梁保持低矮白色实体。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "water a darker satin inlay in the base plate",
+      "blender_translation": "按模型尺度制作台座、底板与水面嵌片的物理关系；材质差别服务模型展示，不加入写实波纹海景。",
+      "review": "manual",
+      "id": "white-model-04"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "投影应随表面朝向衰减，受投射范围限制，并可少量溢出台板；背向光的面不能同样发亮。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "brightens surfaces that face the projector, fades on walls turned away",
+      "blender_translation": "投影需考虑方向和遮罩，而不是统一Emission颜色；检查朝向、边界和台座溢光。具体节点或灯具实现由项目制作。",
+      "review": "manual",
+      "id": "white-model-05"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "白模的室内照明由柔和主光与中性影棚环境构成；避免暖环境把白模染成米黄。",
+      "source_section": "9. Pitfalls of the medium",
+      "source_quote": "Warm HDRIs turn the white model beige",
+      "blender_translation": "设置并审查中性环境色与主光，在关闭数据投影时确认模型仍读为白色。",
+      "review": "manual",
+      "id": "white-model-06"
+    },
+    {
+      "category": "composition",
+      "level": "required",
+      "rule_zh": "模型、台座与周围暗室共同构成可感知的实体展示空间。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "A physical room",
+      "blender_translation": "镜头需让物体与台座关系成立；不要把模型直接悬浮在无空间依据的发光界面上。",
+      "review": "manual",
+      "id": "white-model-07"
+    },
+    {
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "每个数据层只用一个色相家族，颜色承担明确数据意义。",
+      "source_section": "3. Colour logic",
+      "source_quote": "One hue family per layer",
+      "blender_translation": "在项目中为每层记录色彩与数值／分类含义；数据层色板由数据需求选择，不统一套用演示色板。",
+      "review": "manual",
+      "id": "white-model-08"
+    },
+    {
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "一个颜色再次出现时必须保留相同含义，不能在不同层中随意改义。",
+      "source_section": "3. Colour logic",
+      "source_quote": "A colour may return",
+      "blender_translation": "建立颜色语义表并在所有镜头人工核对；仅颜色相同而含义变更应退回修改。",
+      "review": "manual",
+      "id": "white-model-09"
+    },
+    {
+      "category": "palette",
+      "level": "forbidden",
+      "rule_zh": "开室内灯时不得给白模涂色，同屏不可出现超过两套数据层色板。",
+      "source_section": "3. Colour logic",
+      "source_quote": "never use more than two layer palettes on screen at once.",
+      "blender_translation": "对最终画面逐层核对；任何材质色、投影色与合成叠层都要计入实际视觉结果。",
+      "review": "manual",
+      "id": "white-model-10"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "若展示太阳与阴影，太阳应是真实方向光，方向对应地点及真实日期时间；投影只能追踪阴影，不能伪造它。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "The sun is a real directional light",
+      "blender_translation": "需要项目自行计算并核对太阳方向与几何阴影；没有太阳内容时不强制添加这一层。",
+      "review": "manual",
+      "id": "white-model-11"
+    },
+    {
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "若采用太阳与阴影层，使用暖太阳与投影深蓝阴影；该层出现时收起数据层颜色。",
+      "source_section": "3. Colour logic",
+      "source_quote": "data colours are put away when the sun arrives.",
+      "blender_translation": "该规则仅在项目选用太阳层时触发；用明确的层级切换维护颜色语义。",
+      "review": "manual",
+      "id": "white-model-12"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "景深来自物理摄影机，近景更明显；泛光只针对投影高光。原引擎GTAO只用于近景；Blender中应检查并避免掠射远景的暗楔或条带，不将这一项扩大为对所有远景AO的统一禁令。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "GTAO only on close shots: on wide grazing views it bands.",
+      "blender_translation": "使用景深与合成时逐镜核对，特别检查掠射远景的暗楔条带；Blender实现不等同原引擎GTAO。",
+      "review": "manual",
+      "id": "white-model-13"
+    },
+    {
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "读数固定在左三分区，每层包含一项读数、一项标签、一条来源和图例。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "Readout in the left third",
+      "blender_translation": "用独立排版层建立信息层级；不要把多组大数字均匀散布到整个画面。",
+      "review": "manual",
+      "id": "white-model-14"
+    },
+    {
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "标注锚点附着在建筑或地面，建筑标记应锚定较高部分，不因摄影机运动漂移。",
+      "source_section": "9. Pitfalls of the medium",
+      "source_quote": "anchor pins on the tallest part of a building, not on its footprint centroid.",
+      "blender_translation": "用世界坐标锚点投影到摄影机画面，逐镜检查锚点遮挡和标签位置；本包不创建标注系统。",
+      "review": "manual",
+      "id": "white-model-15"
+    },
+    {
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "地点、比例与来源标签低调置于左上；字幕居中靠下，使用柔和暗渐变承托而非实心字幕框。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "centred at the bottom on a soft dark gradient, no box",
+      "blender_translation": "在实际字体和输出尺寸下检查排版与模型遮挡；风格卡不附字体或字幕内容。",
+      "review": "manual",
+      "id": "white-model-16"
+    },
+    {
+      "category": "shape",
+      "level": "forbidden",
+      "rule_zh": "不用线框、激光扫描细线或点云替代投光落在实体白模上的效果。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "no wireframes; light lands on matter",
+      "blender_translation": "保留可受光的实体表面。投影前沿应柔和或逐建筑切换，避免显示成扫描仪器。",
+      "review": "manual",
+      "id": "white-model-17"
+    },
+    {
+      "category": "consistency",
+      "level": "required",
+      "rule_zh": "模型、台座和标注锚点保持不动；数据层改变的是光与信息状态。",
+      "source_section": "5. Motion quality",
+      "source_quote": "What never moves: the model, the plinth, the pins' anchors on the model.",
+      "blender_translation": "后续项目制作时检查对象变换与修改器，防止为表现数据而把楼体拉伸、漂移或替换形状。",
+      "review": "manual",
+      "id": "white-model-18"
+    },
+    {
+      "category": "consistency",
+      "level": "required",
+      "rule_zh": "屏幕上的数值与桌面所展示的同一批建筑对应，不能混入无对应模型的数据。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "Every number on screen is computed from the same buildings",
+      "blender_translation": "项目自行保存数据与计算依据；此项依赖数据检查，不能由材质载入或风格面板自动判为通过。",
+      "review": "manual",
+      "id": "white-model-19"
+    },
+    {
+      "id": "white-model-20",
+      "category": "consistency",
+      "level": "optional",
+      "rule_zh": "地点、比例、采用的数据层及其顺序和颜色可由项目选择，基础白模与投光关系保持。",
+      "source_section": "11. Variation space",
+      "source_quote": "place and scale, which layers in what order, their colours",
+      "blender_translation": "按可获得的数据选择项目层级与色彩含义；不为了复刻演示图层而补造年份或建筑。",
+      "review": "manual"
+    }
+  ],
+  "palette": {
+    "status": "source_example",
+    "editable": true,
+    "colors": [
+      {
+        "name": "model_white",
+        "hex": "#F3F3F1",
+        "role": "原文近似哑光白模型参考"
+      }
+    ],
+    "notes": "原文给出的是约等于#F3F3F1的模型白，并未规定所有数据层的HEX。它是近似材质参考，不是唯一允许的精确白值；数据色依据其语义另行选择。"
+  },
+  "material_recipe": {
+    "family": "matte_white",
+    "color_management_suggestion": "AgX",
+    "explanation": "建立哑光白的材质起点，粗糙度约0.9可追溯原文。AgX是Blender适配建议，须检查投影颜色与白模保持；该材质不实现数据投影，也不把颜色烘焙进模型。",
+    "origin": "blender_adapter_suggestion"
+  },
+  "not_automated": [
+    "地点、建筑轮廓高度与比例是否真实且可追溯。",
+    "投光是否随表面方向衰减、限制在投射区域并正确溢光。",
+    "每层数据色与语义、太阳层以及屏幕数字的一致性。",
+    "标签锚点、信息层级、输出字号与物理景深是否合适。"
+  ],
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+    "path": "styles/white-model/STYLE.md",
+    "sha256": "d285018ffffd5eac5c015550d3f5ffe32bc6b6222c9e37d9a1adfe8a03d929fb"
+  },
+  "attribution": {
+    "original_author": "Lemo-Opuscar by Lemomo (LemoLab)",
+    "original_copyright": "Copyright (c) 2026 Lemomo (LemoLab)",
+    "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/white-model/STYLE.md",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "upstream_terms_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/LICENSE",
+    "modifications": "中文翻译与美术约束整理；Blender 实施建议为本库新增，原始 STYLE.md 字节未改。",
+    "additional_film_permission": "保留上游允许制作自有／客户影片（包括商业影片）及相应工程交付的额外许可；本库改编部分按根 LICENSE 提供同等许可。",
+    "endorsement": "Independent adaptation; no upstream endorsement implied."
+  }
+}

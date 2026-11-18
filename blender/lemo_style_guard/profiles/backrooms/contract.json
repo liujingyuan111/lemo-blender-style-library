@@ -1,0 +1,255 @@
+{
+  "schema_id": "lemo-blender-style/v1",
+  "style_id": "backrooms",
+  "title_zh": "后室录像带",
+  "title_original": "Liminal Found Footage",
+  "scope": {
+    "original_engine": "Three.js室内几何、自定义面板光照与雾，以及VHS摄像机后期。",
+    "blender_route": "以三维室内材质、重复构成、平坦顶灯与摄像机媒介规则为约束；需要自行制作场景与合成。",
+    "adaptation_limit": "这是上游 Liminal Found Footage 风格，适配范围仅限该风格；原作者自定义无遮挡光照不能由普通 PBR 灯光设置自动等价获得。"
+  },
+  "rules": [
+    {
+      "category": "camera",
+      "level": "required",
+      "rule_zh": "画面归属于同一台第一人称手持摄像机；媒介为1990年代VHS，原画幅为4:3。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "One first-person camcorder recording",
+      "blender_translation": "从摄影机视角和镜头媒介出发制作；不要以第三人称展示摄影机无法到达的视角。此包只记录约束，不生成手持动画。",
+      "review": "manual",
+      "id": "backrooms-01"
+    },
+    {
+      "category": "composition",
+      "level": "required",
+      "rule_zh": "4:3画面置于1920×1080画布中，两侧留柱状黑边。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "4:3 pillarboxed in 1920×1080.",
+      "blender_translation": "在输出或合成中明确有效画面区域；不要把4:3源画面横向拉伸为16:9。",
+      "review": "manual",
+      "id": "backrooms-02"
+    },
+    {
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "空间是熟悉却不对劲的重复室内，以空旷、无人和日常机构性构造建立识别。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "An empty, familiar-but-wrong interior",
+      "blender_translation": "自行建立对应地点的室内构造与尺度；检查重复是否构成真实可走空间，而非随意拼贴物件。",
+      "review": "manual",
+      "id": "backrooms-03"
+    },
+    {
+      "category": "shape",
+      "level": "recommended",
+      "rule_zh": "隔墙与柱子围绕正交网格组织，留缺口和短墙，吊顶与嵌入式灯板有规律地重复。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "axis-aligned partitions on a grid with random gaps and stubs",
+      "blender_translation": "使用模块化结构维持轴向和重复节奏；具体房间布局由项目决定，不复制演示路线。",
+      "review": "manual",
+      "id": "backrooms-04"
+    },
+    {
+      "category": "material",
+      "level": "required",
+      "rule_zh": "保留克制的污损：少量水痕、变色带、剥落接缝和黄化或缺失顶板；干净感仍是风格的一部分。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "Restrained decay",
+      "blender_translation": "为污损限定区域和密度，避免把全空间做成废墟；不为每一表面自动叠加相同脏污。",
+      "review": "manual",
+      "id": "backrooms-05"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "密集顶灯构成平坦光照，不用清晰投影塑造戏剧性；接缝可由环境遮蔽加深。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "Lighting = thousands of lights, no shadows",
+      "blender_translation": "这是原引擎的视觉目标。Blender可通过受控填光或专用材质近似，但需手动验证；不声称添加普通面积灯即可复现原算法。",
+      "review": "manual",
+      "id": "backrooms-06"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "光板之间只有少量冷暖偏色、坏灯与闪烁差异，整体仍保持同一空间照明体系。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "Per-light variation (a few % warm/cool/green)",
+      "blender_translation": "布光与材质变化维持小幅度；本规则不要求本包创建闪烁或曝光动画。",
+      "review": "manual",
+      "id": "backrooms-07"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "远端走廊逐渐消失到黑暗，不能在尽头出现突兀的明亮背景平面。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "corridors dissolve into darkness, never a bright wall.",
+      "blender_translation": "检查体积雾、世界背景与远处灯光的联合作用；以画面中的远端亮度关系为准。",
+      "review": "manual",
+      "id": "backrooms-08"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "雾的亮度跟随局部照明；坏灯区域的雾也应暗，暗区轮廓不能被统一雾抬成灰色。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "Fog follows local light",
+      "blender_translation": "单一均匀体积雾可能不满足规则，需要局部控制或合成遮罩；是否成功由最终画面判断。",
+      "review": "manual",
+      "id": "backrooms-09"
+    },
+    {
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "地点材料由一个病态主色统领，同色系深色线脚与斑驳地面配合；顶棚和灯板接近偏暖白。",
+      "source_section": "3. Colour logic",
+      "source_quote": "One dominant sickly hue",
+      "blender_translation": "先按地点锁定一个材质色族，再设计变化；原文的三套色板是替代选项，不应同时堆满一帧。",
+      "review": "manual",
+      "id": "backrooms-10"
+    },
+    {
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "只允许一个高饱和信号色；泛光仅由这一信号产生。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Exactly one saturated colour",
+      "blender_translation": "为信号物体单独控制发光与合成阈值；人工检查其他材质、OSD或后期是否引入第二个高饱和视觉中心。",
+      "review": "manual",
+      "id": "backrooms-11"
+    },
+    {
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "白平衡允许漂移，成片不能呈现过于洁净的现代调色。",
+      "source_section": "3. Colour logic",
+      "source_quote": "colour is never graded clean.",
+      "blender_translation": "将媒介偏色与材质主色区分管理，避免把所有画面处理成中性、高通透的建筑可视化。",
+      "review": "manual",
+      "id": "backrooms-12"
+    },
+    {
+      "category": "material",
+      "level": "forbidden",
+      "rule_zh": "摄像机媒介使用VHS磁带和镜头缺陷，禁止CRT扫描线与RGB荫罩。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "No scanlines, no RGB mask.",
+      "blender_translation": "后期节点须按录像带成像设计；不要直接套用CRT电视屏幕材质。",
+      "review": "manual",
+      "id": "backrooms-13"
+    },
+    {
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "OSD使用带黑色轮廓的位图字，独立于镜头桶形畸变和暗角。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "barrel + vignette on the image but **not** the OSD",
+      "blender_translation": "将OSD置于镜头畸变之后的独立覆盖层；它属于摄像机显示，不贴在三维墙面上。",
+      "review": "manual",
+      "id": "backrooms-14"
+    },
+    {
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "场景告示呈办公室激光打印件的纸张与排版逻辑，固定在空间中并保持可读。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "office laser-print on yellowed paper, condensed sans headers",
+      "blender_translation": "自行排版相应告示，用实际大小和拍摄机位审查文字；本包不提供演示告示内容。",
+      "review": "manual",
+      "id": "backrooms-15"
+    },
+    {
+      "category": "camera",
+      "level": "required",
+      "rule_zh": "拍摄竖直纸面近景时降低机位、使镜头接近平行纸面，避免俯拍把字剪切成假斜体。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "lower the camera so the lens is parallel to the page",
+      "blender_translation": "优先调整摄影机位置与朝向，检查透视变形及遮挡，不用后期拉正替代所有机位问题。",
+      "review": "manual",
+      "id": "backrooms-16"
+    },
+    {
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "闭路字幕位于4:3有效画面内、OSD上方，使用每行黑底白字的等宽排版，并保持不受磁带噪声污染。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "Untouched by tape noise",
+      "blender_translation": "将字幕独立于VHS处理链；检查字块边缘、居中位置和与OSD的间距。",
+      "review": "manual",
+      "id": "backrooms-17"
+    },
+    {
+      "category": "composition",
+      "level": "forbidden",
+      "rule_zh": "不使用怪物特写、血腥图像或废墟式全面损坏来代替空旷与重复。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "no monster close-ups, no gore",
+      "blender_translation": "以空间、构图和媒介异常承载风格；没有为此规则补入角色、怪物或剧情内容。",
+      "review": "manual",
+      "id": "backrooms-18"
+    },
+    {
+      "id": "backrooms-19",
+      "category": "consistency",
+      "level": "optional",
+      "rule_zh": "地点及其材料、路线和信号色可由项目决定，保留同一摄像机媒介与空旷重复的空间逻辑。",
+      "source_section": "11. Variation space",
+      "source_quote": "the location and its materials",
+      "blender_translation": "更换学校、机构或其他室内类型时，重新选择对应的材质色族；不要把某个黄色房间或演示路线误当唯一内容。",
+      "review": "manual"
+    }
+  ],
+  "palette": {
+    "status": "source_example",
+    "editable": true,
+    "colors": [
+      {
+        "name": "wallpaper",
+        "hex": "#d5bd66",
+        "role": "原文墙纸示例"
+      },
+      {
+        "name": "trim",
+        "hex": "#4d3d26",
+        "role": "同色族深色线脚示例"
+      },
+      {
+        "name": "carpet",
+        "hex": "#8c763c",
+        "role": "同色族地毯示例"
+      }
+    ],
+    "notes": "这是原文三个材质色板示例中的墙纸方案。池区或学校走廊可使用原文另外的文字／HEX方案；信号色由项目选择，本包不伪造其唯一HEX。"
+  },
+  "material_recipe": {
+    "family": "environment_reference",
+    "color_management_suggestion": "none",
+    "explanation": "仅提供选择的材质配色参考；墙纸、地毯、污损、局部雾和VHS链仍需制作。原文没有规定Blender色彩管理或统一PBR粗糙度，因此不自动套入。",
+    "origin": "blender_adapter_suggestion"
+  },
+  "not_automated": [
+    "室内是否熟悉、克制、空旷，重复是否成立。",
+    "顶灯的平坦照明与暗区局部雾是否接近原风格。",
+    "是否仅有一个高饱和信号且只该信号泛光。",
+    "VHS／镜头／OSD／字幕的分层是否正确。",
+    "具体告示排版、纸张尺度与最终文字可读性。"
+  ],
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+    "path": "styles/backrooms/STYLE.md",
+    "sha256": "2a3697a1ce37d0fbae3281220ae6154eeb9789233f1fae472d55ac169ba26fb4"
+  },
+  "attribution": {
+    "original_author": "Lemo-Opuscar by Lemomo (LemoLab)",
+    "original_copyright": "Copyright (c) 2026 Lemomo (LemoLab)",
+    "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/backrooms/STYLE.md",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "upstream_terms_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/LICENSE",
+    "modifications": "中文翻译与美术约束整理；Blender 实施建议为本库新增，原始 STYLE.md 字节未改。",
+    "additional_film_permission": "保留上游允许制作自有／客户影片（包括商业影片）及相应工程交付的额外许可；本库改编部分按根 LICENSE 提供同等许可。",
+    "endorsement": "Independent adaptation; no upstream endorsement implied."
+  }
+}

@@ -1,0 +1,105 @@
+lemo-blender-style-library
+License scope and notices
+
+This repository contains material under different licenses. It is not licensed
+as a whole under MIT. Paths below are relative to this repository's root.
+Where a file combines executable code with documentation or rule content, the
+licenses apply to those components separately; packaging does not relicense them.
+
+1. PRESERVED UPSTREAM SOURCE
+
+   source/lemo-opuscar/**
+
+   These files retain the upstream terms and copyright notices recorded in:
+     source/lemo-opuscar/LICENSE
+     source/lemo-opuscar/REUSE.toml
+     source/lemo-opuscar/LICENSES/
+
+   Source: Lemo-Opuscar by Lemomo (LemoLab)
+   https://github.com/lemomo-ai/lemo-opuscar
+   Pinned commit: 00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4
+   Copyright (c) 2026 Lemomo (LemoLab)
+
+   In this preserved subset:
+   - styles/*/STYLE.md: CC BY-NC 4.0, with the upstream additional permission
+     for film production stated in the original LICENSE.
+   - styles/*/style.json: MIT under the upstream LICENSE and REUSE.toml.
+   - Original license texts and notices are preserved without alteration.
+
+   Additional authors must be credited for these contributed styles:
+   - Memphis Diorama by EianLu, in Lemo-Opuscar by Lemomo (LemoLab).
+     Copyright (c) 2026 EianLu; Copyright (c) 2026 Lemomo (LemoLab).
+   - Crayon World 3D by 2nd1st, in Lemo-Opuscar by Lemomo (LemoLab).
+     Copyright (c) 2026 2nd1st; Copyright (c) 2026 Lemomo (LemoLab).
+
+2. DOCUMENTATION, EXTRACTED RULES AND ADAPTATIONS
+
+   Outside the preserved source subtree, this category includes:
+   - All Markdown documentation, including root *.md, docs/**, spec/**,
+     art_rules/*.md and blender/lemo_style_guard/profiles/*/RULES.md.
+   - blender/lemo_style_guard/profiles/*/contract.json, including quotations,
+     Chinese translations, rule organization and Blender implementation advice.
+   - llms.txt and other prose instructions or AI context documents.
+   - Documentation and rule text embedded in START_HERE.html, catalog or
+     validation records, generated reports, exports and distributed packages.
+
+   Original material and adaptations retain CC BY-NC 4.0:
+     Creative Commons Attribution-NonCommercial 4.0 International
+     Full text: LICENSES/CC-BY-NC-4.0.txt
+     https://creativecommons.org/licenses/by-nc/4.0/
+
+   New documentation and the contributors' own additions to adaptations:
+     Copyright (c) 2026 lemo-blender-style-library contributors
+     Licensed under CC BY-NC 4.0, with the additional film-production permission
+     in LICENSES/ADDITIONAL-FILM-PERMISSION.txt for rights those contributors own.
+
+   The upstream additional film-production permission remains available for
+   upstream content on the terms in source/lemo-opuscar/LICENSE. This project
+   does not grant or expand rights owned by Lemomo, other upstream authors or
+   third parties. Translations and implementation advice are this project's
+   adaptations, not upstream-authored Blender implementations or endorsements.
+
+   Public, noncommercial sharing of the documents and adaptations is permitted
+   by CC BY-NC 4.0, subject to its terms, including attribution, license notices
+   and indication of changes. The additional film-production permission is a
+   separate grant; its limited scope does not withdraw that public-sharing right.
+   A JSON, HTML or code-container extension does not turn rule text into MIT code.
+
+3. NEW TOOL CODE AND TECHNICAL CONFIGURATION
+
+   Copyright (c) 2026 lemo-blender-style-library contributors
+   MIT License, full text: LICENSES/MIT.txt
+
+   This applies to this project's original executable code in:
+     tools/**/*.py
+     tests/**/*.py
+     tests/**/*.cjs
+     blender/lemo_style_guard/**/*.py
+   It also applies to original JavaScript, CSS and HTML reader implementation
+   and templates, and technical build/CI configuration outside the source
+   subtree. Embedded documentation and rules remain in category 2.
+
+   Original machine-generated indexes, paths, hashes and factual validation
+   records, including source/ORIGIN.json, are available under MIT to the extent
+   the contributors hold copyright in them. Quoted or adapted documentation
+   within such records remains in category 2; upstream metadata keeps its terms.
+   No new exclusive rights are claimed in facts, identifiers, paths or hashes.
+
+   The MIT phrase "associated documentation files" applies only to material
+   under this code category, not to the documentation in categories 1 and 2.
+
+4. PACKAGES, NOTICES AND RIGHTS NOT GRANTED
+
+   ZIP archives and generated readers retain the applicable licenses of their
+   contents. Copies of license texts in LICENSES/ retain their own terms; a
+   license text being present does not mean all upstream assets are included.
+
+   This distribution contains the selected text reference files, derived rules
+   and tools. It does not include upstream films, narration, music, fonts,
+   posters, footage, models, textures or demo code. Links and names in source
+   documents do not grant rights to linked assets, characters or trademarks.
+
+   No upstream endorsement or official-maintainer status is implied.
+   See NOTICE.md and docs/SOURCE_NOTICE.md for attribution, changes and provenance.
+   All applicable warranty disclaimers and liability limitations in the original
+   licenses remain in effect.

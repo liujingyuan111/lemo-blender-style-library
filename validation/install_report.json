@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "blender_version": "4.3.2",
+  "installed_from_zip": true,
+  "isolated_user_scripts": true,
+  "profiles": 8,
+  "operators_executed": [
+    "lemo.load_style",
+    "lemo.audit_style"
+  ],
+  "panel_icon_identifiers_valid": true,
+  "scene_object_count_unchanged": true,
+  "scope": "Actual ZIP installation, enabling and operator calls; no claim of interactive screenshot review."
+}

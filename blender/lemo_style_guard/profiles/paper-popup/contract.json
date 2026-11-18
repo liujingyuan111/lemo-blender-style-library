@@ -1,0 +1,239 @@
+{
+  "schema_id": "lemo-blender-style/v1",
+  "style_id": "paper-popup",
+  "title_zh": "纸片立体书",
+  "title_original": "Paper Pop-up Book",
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+    "path": "styles/paper-popup/STYLE.md",
+    "sha256": "8e5c0ca430fd96b75c4d9c2af92a87c84d4d1af8cda64280a189c51279e1ee9b"
+  },
+  "scope": {
+    "original_engine": "Three.js r170 与 Canvas2D：平面纸画、书本几何、真实环境光和定制微距后处理；原文未使用 Blender。",
+    "blender_route": "用真实尺度的书／桌面与平面纸角色、纸布景对照；保留卡纸轮廓、实拍光照和微距景深。",
+    "adaptation_limit": "只有书本和真实环境以体积建模，纸中角色及布景仍是平片。原文three.js的Neutral色调映射和定制景深不能仅靠切换一个Blender色彩选项完整复刻。"
+  },
+  "rules": [
+    {
+      "id": "paper-popup-01",
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "纸世界的角色和布景保持平面卡片；看似立体的纸物由多张平卡组合，不建成圆润三维卡通。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "Anything \"3D\" is several flat cards",
+      "blender_translation": "用正反纸面和分层平卡表达体积关系；切换软件不会取消平片约束。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-02",
+      "category": "composition",
+      "level": "required",
+      "rule_zh": "画面同时保留真实人类尺度环境与小尺度图形纸世界的差异：纸是平面饱和图形，光和镜头负责真实感。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "Keep the paper graphic; let light and lens make it real.",
+      "blender_translation": "把真实桌面／房间和纸资产分组设计。不要通过给纸人物加写实体积去追求真实感。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-03",
+      "category": "palette",
+      "level": "forbidden",
+      "rule_zh": "描线只用深棕墨，禁止纯黑墨线。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "one dark-brown ink (never black)",
+      "blender_translation": "选择一套深棕描线角色并贯穿纸图；原文没有给HEX，不能把适配者任选的棕色称为原文固定值。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-04",
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "外描线粗、细节线更细，线段转角圆润。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "thick outline + thinner detail line, round joins",
+      "blender_translation": "纸面图形需在最终输出尺度下检查线宽层级；不设缺乏原文依据的固定世界单位线宽。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-05",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "纸角色有宽暖白边、略向下错开的灰纸板边和共同的纸纹。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "a grey cardboard edge offset slightly down",
+      "blender_translation": "把纸面图形、暖白边、灰卡边的轮廓关系分开处理，保持同一张纸的厚度读法。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-06",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "纸片背面是素纸，使用与正面相同的轮廓遮罩；投影必须也是剪纸轮廓。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "plain paper on the back (same alpha)",
+      "blender_translation": "使用真实切形网格或一致的Alpha遮罩；检查阴影通道，不能留下矩形平面影。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-07",
+      "category": "shape",
+      "level": "forbidden",
+      "rule_zh": "纸面造型不使用完美几何边，应有低频起伏的手绘形状。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "wobbly shapes (low-harmonic noise), never perfect geometry",
+      "blender_translation": "轮廓微起伏固定在资产中；不要把每帧随机抖动或大幅噪声误作手绘感。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-08",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "纸面阴影用单块硬边月牙形色块，不把纸面插画改成连续写实渐变。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "one hard **crescent**",
+      "blender_translation": "将插画自身的色块阴影与真实环境投下的阴影区分；前者保持硬边图形，后者服从灯光。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-09",
+      "category": "consistency",
+      "level": "required",
+      "rule_zh": "使用米制真实比例。原文给出的尺寸标尺是页宽0.3–0.5米、演员高3–5厘米，用于真实微距的光照与景深关系。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "page 0.3–0.5 m wide, actors 3–5 cm",
+      "blender_translation": "按真实尺度建模和设置摄影机；这些是原文的标尺，不自动把所有已有物体缩放进范围。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-10",
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "书本本体可以体积建模：布面封皮、页块边线和卷曲书页属于真实书的结构。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "**The book** is modelled",
+      "blender_translation": "把书本本体与纸世界平片的规则区分，避免把“全部平面”错误扩展到书和真实道具。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-11",
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "真实环境采用自然、略暖的光和材质，软接触影及浅景深帮助纸片落在真实桌面。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "warm practical light, soft contact shadows",
+      "blender_translation": "灯光与桌面材质需要让纸片有接触关系；参考色材质不会自动建立这套光照。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-12",
+      "category": "palette",
+      "level": "forbidden",
+      "rule_zh": "纸面采用饱和儿童绘本色，但禁止霓虹色；真实世界保持自然和轻微暖色。",
+      "source_section": "3. Colour logic",
+      "source_quote": "never neon",
+      "blender_translation": "分别验收纸面饱和度和环境色，不把高饱和自发光当作鲜艳纸色。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-13",
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "每个跨页有一个主色相家族；少数强调色跨页复现，维持整本书的一致性。",
+      "source_section": "3. Colour logic",
+      "source_quote": "One dominant hue family per spread",
+      "blender_translation": "建立每页的色相家族和共用强调色表；允许翻页换主色，不允许各元素彼此无关。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-14",
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "未完成或故事之外的书页退成奶油纸上的石墨色；夜色来自纸面图画的改变，真实灯仍保留暖色。",
+      "source_section": "3. Colour logic",
+      "source_quote": "the real lamp keeps its warmth.",
+      "blender_translation": "如果内容出现这些状态，调整纸面图画而非把整个真实房间统一调成蓝夜色。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-15",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "上游要求Neutral色调映射，避免ACES改变纸面颜色。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "Neutral tone mapping",
+      "blender_translation": "Blender中先以Standard作色彩核对起点，不宣称等同three.js Neutral；必须连同实际照明检查纸色，必要时使用项目自己的校色流程。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-16",
+      "category": "camera",
+      "level": "required",
+      "rule_zh": "演员保持清晰，房间物件作为柔软的前景或背景；镜头保留微距与浅景深。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "Actors in focus, room objects as soft foreground or background",
+      "blender_translation": "把焦点明确落在当前纸面主体；用真实景深和最终分辨率检查，避免用整屏模糊滤镜代替。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-17",
+      "category": "camera",
+      "level": "recommended",
+      "rule_zh": "避开过近的前景立起纸片，避免一团失焦遮满画面。",
+      "source_section": "9. Pitfalls of the medium",
+      "source_quote": "Near-lens foreground pop-ups fill the frame with blur",
+      "blender_translation": "根据当前镜头移动前景片或调整光圈；不将所有浅景深都当作风格合格。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-18",
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "字体系分工：字幕、气泡和标牌偏圆润无衬线；封面、横幅和动作字用厚重展示字体；具体字体名是示例。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "Rounded OFL faces",
+      "blender_translation": "选择许可适用的字体并按角色分配，保持纸书友好的字形；不把原文例举字体自动打包。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-popup-19",
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "标题以纸物件出现；对话气泡也是纸世界中的白卡、墨线和指向说话者的尾部。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "Titles are paper objects",
+      "blender_translation": "标题／气泡与纸世界共用材质和空间关系；不把任意悬浮UI当作纸物件。",
+      "review": "manual"
+    }
+  ],
+  "palette": {
+    "status": "source_example",
+    "editable": true,
+    "colors": [],
+    "notes": "原文给出绿色草地／蓝天、粉紫市集／薄荷强调、赭色沙漠／绿松石绿洲等色相家族示例，但没有HEX色表。需要项目自己选定具体色值；深棕墨、暖白边、素纸背面及每页主色家族才是约束。"
+  },
+  "material_recipe": {
+    "family": "matte_paper",
+    "color_management_suggestion": "Standard",
+    "explanation": "参考材质保留纸色而不自动提供美术绘画。实际纸片仍需外描线、暖白边、灰卡边、纸纹和剪形阴影。Standard是Blender校色的起点建议，不等同上游Neutral算法；真实场景光照需另外建立。",
+    "origin": "blender_adapter_suggestion"
+  },
+  "not_automated": [
+    "纸世界是否仍为平面图形，而不是被做成圆润三维卡通。",
+    "正反面轮廓、卡纸边和投影是否一致。",
+    "跨页主色相、深棕线和重复强调色是否稳定。",
+    "真实环境和纸世界的尺度与材质差异是否成立。",
+    "Neutral与Blender实际色彩管理之间的颜色差异。"
+  ],
+  "attribution": {
+    "original_author": "Lemo-Opuscar by Lemomo (LemoLab)",
+    "original_copyright": "Copyright (c) 2026 Lemomo (LemoLab)",
+    "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/paper-popup/STYLE.md",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "upstream_terms_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/LICENSE",
+    "modifications": "中文翻译与美术约束整理；Blender 实施建议为本库新增，原始 STYLE.md 字节未改。",
+    "additional_film_permission": "保留上游允许制作自有／客户影片（包括商业影片）及相应工程交付的额外许可；本库改编部分按根 LICENSE 提供同等许可。",
+    "endorsement": "Independent adaptation; no upstream endorsement implied."
+  }
+}

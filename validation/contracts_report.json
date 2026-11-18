@@ -1,0 +1,66 @@
+{
+  "schema_id": "lemo-contract-validation/v1",
+  "status": "passed",
+  "contracts": 8,
+  "rule_count": 150,
+  "profiles": [
+    {
+      "style_id": "backrooms",
+      "rules": 19,
+      "quotes_verified": 19,
+      "palette_provenance": "source_example",
+      "source_sha256": "2a3697a1ce37d0fbae3281220ae6154eeb9789233f1fae472d55ac169ba26fb4"
+    },
+    {
+      "style_id": "lowpoly-island",
+      "rules": 19,
+      "quotes_verified": 19,
+      "palette_provenance": "source_example",
+      "source_sha256": "1ae7bcd6aa3d521f563d8905f8109842fd7252ff8b70c1bd18265105a8a450f9"
+    },
+    {
+      "style_id": "paper-lantern",
+      "rules": 19,
+      "quotes_verified": 19,
+      "palette_provenance": "source_example",
+      "source_sha256": "e8be26d64f33229859e284a33d77969f9a4468b7bf1b478ca8fa924c7dd9f27d"
+    },
+    {
+      "style_id": "paper-popup",
+      "rules": 19,
+      "quotes_verified": 19,
+      "palette_provenance": "source_example",
+      "source_sha256": "8e5c0ca430fd96b75c4d9c2af92a87c84d4d1af8cda64280a189c51279e1ee9b"
+    },
+    {
+      "style_id": "shadow-puppet",
+      "rules": 19,
+      "quotes_verified": 19,
+      "palette_provenance": "source_example",
+      "source_sha256": "8be075a8262d5a3deea9b05684d8a9abdc1e54c0d90649bf14609ecb4106c3af"
+    },
+    {
+      "style_id": "silhouette-rhythm",
+      "rules": 17,
+      "quotes_verified": 17,
+      "palette_provenance": "source_example",
+      "source_sha256": "66f1a0f7d44ad1067960046514336bb4d19fce9799a16ec1591696343987a291"
+    },
+    {
+      "style_id": "spy-titles",
+      "rules": 18,
+      "quotes_verified": 18,
+      "palette_provenance": "source_example",
+      "source_sha256": "ea6e9e9073af43ef0bb860e368f60b16ec32a91668386115a142907d92cb1f75"
+    },
+    {
+      "style_id": "white-model",
+      "rules": 20,
+      "quotes_verified": 20,
+      "palette_provenance": "source_example",
+      "source_sha256": "d285018ffffd5eac5c015550d3f5ffe32bc6b6222c9e37d9a1adfe8a03d929fb"
+    }
+  ],
+  "errors": [],
+  "scope": "Checks source identity, exact quote anchors and palette provenance. Semantic review remains documented by the extractors."
+}

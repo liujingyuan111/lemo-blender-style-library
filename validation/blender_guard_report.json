@@ -1,0 +1,68 @@
+{
+  "schema_id": "lemo-blender-guard-validation/v1",
+  "status": "passed",
+  "blender_version": "4.3.2",
+  "profiles": [
+    {
+      "style_id": "backrooms",
+      "load_without_scene_mutation": "passed",
+      "manual_checks_start_unreviewed": true,
+      "rules": 19
+    },
+    {
+      "style_id": "lowpoly-island",
+      "load_without_scene_mutation": "passed",
+      "manual_checks_start_unreviewed": true,
+      "rules": 19
+    },
+    {
+      "style_id": "paper-lantern",
+      "load_without_scene_mutation": "passed",
+      "manual_checks_start_unreviewed": true,
+      "rules": 19
+    },
+    {
+      "style_id": "paper-popup",
+      "load_without_scene_mutation": "passed",
+      "manual_checks_start_unreviewed": true,
+      "rules": 19
+    },
+    {
+      "style_id": "shadow-puppet",
+      "load_without_scene_mutation": "passed",
+      "manual_checks_start_unreviewed": true,
+      "rules": 19
+    },
+    {
+      "style_id": "silhouette-rhythm",
+      "load_without_scene_mutation": "passed",
+      "manual_checks_start_unreviewed": true,
+      "rules": 17
+    },
+    {
+      "style_id": "spy-titles",
+      "load_without_scene_mutation": "passed",
+      "manual_checks_start_unreviewed": true,
+      "rules": 18
+    },
+    {
+      "style_id": "white-model",
+      "load_without_scene_mutation": "passed",
+      "manual_checks_start_unreviewed": true,
+      "rules": 20
+    }
+  ],
+  "checks": [
+    "all eight contracts load without geometry, material, camera or render mutations",
+    "all art checks initially require manual review",
+    "same-version reload preserves human review",
+    "reference swatches do not assign themselves to objects",
+    "unchanged swatches are reused",
+    "changed swatch is detected and never overwritten",
+    "unknown style paths are refused before mutation",
+    "separate scenes keep independent rule cards and human reviews",
+    "save/reopen preserves rules and review state"
+  ],
+  "visual_style_reproduction_claimed": false,
+  "generated_scene_assets_delivered": false
+}

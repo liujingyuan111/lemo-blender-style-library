@@ -1,0 +1,1512 @@
+{
+  "repository": "https://github.com/lemomo-ai/lemo-opuscar",
+  "commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+  "preserved": "99 STYLE.md, 99 style.json, root LICENSE, REUSE.toml and LICENSES/*.txt only",
+  "unchanged_original_bytes": true,
+  "source_files": [
+    {
+      "path": "source/lemo-opuscar/LICENSE",
+      "upstream_path": "LICENSE",
+      "sha256": "aee72797af4389583c0f531f7fc89c87c87cb939bdba43d888926dd8aaea8d26",
+      "git_blob": "95ade2f9cdde45c7933a706d514bc60f64f140a8",
+      "bytes": 6692
+    },
+    {
+      "path": "source/lemo-opuscar/REUSE.toml",
+      "upstream_path": "REUSE.toml",
+      "sha256": "bec581527f3021773990b5733de8a5519d10e529b31fef3ba175e950bbcd349c",
+      "git_blob": "446dd2de779250f3d3b59f049959de4b1f27a3cd",
+      "bytes": 22560
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/CC-BY-2.0.txt",
+      "upstream_path": "LICENSES/CC-BY-2.0.txt",
+      "sha256": "f892996eb4b6f2e54241432ed67b743772224e191ba3a0ae595eb4feca3df4c5",
+      "git_blob": "86f93505c549d0301dea54fec4902ac6e4a1e6f0",
+      "bytes": 12572
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/CC-BY-3.0.txt",
+      "upstream_path": "LICENSES/CC-BY-3.0.txt",
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "git_blob": "1a16e05564d2aaa880bbe9e506a0a0226d8742cc",
+      "bytes": 19467
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/CC-BY-4.0.txt",
+      "upstream_path": "LICENSES/CC-BY-4.0.txt",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "git_blob": "da6ab6cc8f333d7e89a99812866df8f24374d47c",
+      "bytes": 18657
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/CC-BY-NC-4.0.txt",
+      "upstream_path": "LICENSES/CC-BY-NC-4.0.txt",
+      "sha256": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0",
+      "git_blob": "fe463e0f7888bbf8b82e42d55f5743508ddafb7e",
+      "bytes": 19347
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/CC0-1.0.txt",
+      "upstream_path": "LICENSES/CC0-1.0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "git_blob": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+      "bytes": 7048
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/ISC.txt",
+      "upstream_path": "LICENSES/ISC.txt",
+      "sha256": "521c6f0ed8e64736684f89843d16a4df6b4b7449acbcfc6ca6630a3037ca8c53",
+      "git_blob": "e80998f07690783bacce4ae55ff59c471d50cd75",
+      "bytes": 737
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/LicenseRef-Clawd.txt",
+      "upstream_path": "LICENSES/LicenseRef-Clawd.txt",
+      "sha256": "a95554ee6f523a6fb8383f887053d18f183c8173a9f9d9cf817ea0581a8e2df6",
+      "git_blob": "8d5b37546adc0790767bebfd8d91c8d56ac7b8d1",
+      "bytes": 921
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/LicenseRef-IBTrACS.txt",
+      "upstream_path": "LICENSES/LicenseRef-IBTrACS.txt",
+      "sha256": "80212190b608c154699929dddaa212b39eb97acd676a6be439c1f2aa694f1686",
+      "git_blob": "992dd1890ab1987a7572bbe055b761146a7eb95a",
+      "bytes": 1216
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/LicenseRef-PublicDomain.txt",
+      "upstream_path": "LICENSES/LicenseRef-PublicDomain.txt",
+      "sha256": "32127d163a93ee84d8dac75a7ecd5b4b9cd3ee5ee12bd16e2933e54e49c880be",
+      "git_blob": "913e3d577124d0aeeaf410a6f058aabe51cbc701",
+      "bytes": 1083
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/LicenseRef-ThirdPartyMarks.txt",
+      "upstream_path": "LICENSES/LicenseRef-ThirdPartyMarks.txt",
+      "sha256": "a02048e5dfcda291b408332135aacf568fe95b63eb859d318eed1e24298043c9",
+      "git_blob": "9043c4694406b1b7fffb91d0821103a7617ba05d",
+      "bytes": 958
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/MIT.txt",
+      "upstream_path": "LICENSES/MIT.txt",
+      "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5",
+      "git_blob": "d817195dad53ec992418c28ffca5fbd1cd86502a",
+      "bytes": 1078
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/ODbL-1.0.txt",
+      "upstream_path": "LICENSES/ODbL-1.0.txt",
+      "sha256": "77d2692c3d64efdd4db18dce2407699baf62930e2b50d6e5ed90b48acf16b7c1",
+      "git_blob": "8ca51c358d59596c271ee7c928e5feb0d4d9b817",
+      "bytes": 25289
+    },
+    {
+      "path": "source/lemo-opuscar/LICENSES/OFL-1.1.txt",
+      "upstream_path": "LICENSES/OFL-1.1.txt",
+      "sha256": "8eea8287e5876b539670cadb82e99f9a7afddec6f6730811be1daf25d2e9bcfd",
+      "git_blob": "6fe84ee21ebe5d2b54dc63b53b4d5c404c083409",
+      "bytes": 4016
+    },
+    {
+      "path": "source/lemo-opuscar/styles/caption-news/STYLE.md",
+      "upstream_path": "styles/caption-news/STYLE.md",
+      "sha256": "e884f887245ac40e070c1ac91664ff84c4a004cf03fbbc04c00cda34432071a2",
+      "git_blob": "de2928a0561c71e7196566595d2652ef7e76a161",
+      "bytes": 17252
+    },
+    {
+      "path": "source/lemo-opuscar/styles/caption-news/style.json",
+      "upstream_path": "styles/caption-news/style.json",
+      "sha256": "fbf8e259effb0d702ec6e1c1510cc10bcbeb0b93df7e0a25fb61785065b821a0",
+      "git_blob": "e5320bbccc35df141a009bcb801e784aa13c25f9",
+      "bytes": 542
+    },
+    {
+      "path": "source/lemo-opuscar/styles/newsreel/STYLE.md",
+      "upstream_path": "styles/newsreel/STYLE.md",
+      "sha256": "ec7cf8cef4efdc557c70f7743c5eb431d20e219e43a0a3dc2cbea1cfeea41e8d",
+      "git_blob": "018f310f3b916d601b2f87004184f407bbbfa629",
+      "bytes": 17809
+    },
+    {
+      "path": "source/lemo-opuscar/styles/newsreel/style.json",
+      "upstream_path": "styles/newsreel/style.json",
+      "sha256": "64765d133262b7ab3df44789d11604e57432caebef4ac7b93dbfdec65fb78b59",
+      "git_blob": "a915f5e8f717f71274b4f2bae208f56c76068ad6",
+      "bytes": 557
+    },
+    {
+      "path": "source/lemo-opuscar/styles/countdown/STYLE.md",
+      "upstream_path": "styles/countdown/STYLE.md",
+      "sha256": "867cca6e0c9bb0d6fb914cc4e9a2e295623ecd345fda9bd00bc362ff233f220f",
+      "git_blob": "3c9d4386120211931895ebdd61eabc1d0fbc805b",
+      "bytes": 17032
+    },
+    {
+      "path": "source/lemo-opuscar/styles/countdown/style.json",
+      "upstream_path": "styles/countdown/style.json",
+      "sha256": "9f16a503587038b1b8333b21d10ec2904c6d78a515a059247eb0b0cc4e95d5de",
+      "git_blob": "9bec30705f5337e35003d3f614389985fad71f2b",
+      "bytes": 576
+    },
+    {
+      "path": "source/lemo-opuscar/styles/city-symphony/STYLE.md",
+      "upstream_path": "styles/city-symphony/STYLE.md",
+      "sha256": "e197b2e5327571c63f905280e46be6863555e5a2ded93bb4431ee0e03a1b848a",
+      "git_blob": "0907cfb2164056f5bacc5748191350bfd92ace75",
+      "bytes": 18480
+    },
+    {
+      "path": "source/lemo-opuscar/styles/city-symphony/style.json",
+      "upstream_path": "styles/city-symphony/style.json",
+      "sha256": "2b18850a064161a71b9c6ccdb55e1ce94226d55c5c3e2ec6e5c30aadc09e7d62",
+      "git_blob": "2ad433ad2bbab0698d317dff0c94aa4eb29af304",
+      "bytes": 596
+    },
+    {
+      "path": "source/lemo-opuscar/styles/visual-investigation/STYLE.md",
+      "upstream_path": "styles/visual-investigation/STYLE.md",
+      "sha256": "8f4bab46692ba0a24e0c416b96ef3045aa107dc63e171e5164a43d7bb0324337",
+      "git_blob": "29dc5fca9f966faa0549c6d9d278c87032daa1df",
+      "bytes": 18977
+    },
+    {
+      "path": "source/lemo-opuscar/styles/visual-investigation/style.json",
+      "upstream_path": "styles/visual-investigation/style.json",
+      "sha256": "cbe381561481823673c91f5cde3dc3849b4dac4a196bb32f659cb899f94dcecd",
+      "git_blob": "f4978f56817ae76b7a086198d2075dcb2d32ec86",
+      "bytes": 613
+    },
+    {
+      "path": "source/lemo-opuscar/styles/kino-montage/STYLE.md",
+      "upstream_path": "styles/kino-montage/STYLE.md",
+      "sha256": "8c63deefda22d4677d286ddfffb243ce6385dfa7ab56fbc493705fe13908f204",
+      "git_blob": "4baf1f5e32b78feba4da5c22100d56c478d22510",
+      "bytes": 20124
+    },
+    {
+      "path": "source/lemo-opuscar/styles/kino-montage/style.json",
+      "upstream_path": "styles/kino-montage/style.json",
+      "sha256": "31fbde505e475156be537b90fdcd293115b02c6bbf23dbfd685aa94e2c7286f4",
+      "git_blob": "55ec9b599147f51300fbf11b8badcbe37c2d1b88",
+      "bytes": 567
+    },
+    {
+      "path": "source/lemo-opuscar/styles/telestrator/STYLE.md",
+      "upstream_path": "styles/telestrator/STYLE.md",
+      "sha256": "7289027728dc5e1b6d095b7c7bc7806790bb579934c81682265c0c1b4897a3d0",
+      "git_blob": "e68778a66484135cd991eb6522deb07bad3c8994",
+      "bytes": 16954
+    },
+    {
+      "path": "source/lemo-opuscar/styles/telestrator/style.json",
+      "upstream_path": "styles/telestrator/style.json",
+      "sha256": "acbb4c62cbabcbb743e8ec17750e0108aeee47b8da9615b32a5c9fde66318901",
+      "git_blob": "3b03c68470637fa57d023903cb8aa67f8e4384e6",
+      "bytes": 542
+    },
+    {
+      "path": "source/lemo-opuscar/styles/news-package/STYLE.md",
+      "upstream_path": "styles/news-package/STYLE.md",
+      "sha256": "d763b356442dd0d7373fe409fa9108ec6a3c2901ec5534522af6b08b0915b72f",
+      "git_blob": "8e6d145d109284ce9582c34a4d621669a153ab29",
+      "bytes": 20678
+    },
+    {
+      "path": "source/lemo-opuscar/styles/news-package/style.json",
+      "upstream_path": "styles/news-package/style.json",
+      "sha256": "83a7b2f9472afa9441bca1aafce28f69a4623d883de3fe3051afad7bdd88f1af",
+      "git_blob": "bfda8d2fd6fe0fb7db53cd1c4fed0a9a6a9f5964",
+      "bytes": 577
+    },
+    {
+      "path": "source/lemo-opuscar/styles/crayon-book/STYLE.md",
+      "upstream_path": "styles/crayon-book/STYLE.md",
+      "sha256": "ba558478fe519fa6777fe28fa7d1980117297c7beb6fe2e366ef6f00688aa175",
+      "git_blob": "d17e37cdedc5b62a03537066631987cc558e931b",
+      "bytes": 11339
+    },
+    {
+      "path": "source/lemo-opuscar/styles/crayon-book/style.json",
+      "upstream_path": "styles/crayon-book/style.json",
+      "sha256": "1c3c8c23752a2da808e6b61a849718eeb7cf2411950a4833fa26ecf0e7cf882b",
+      "git_blob": "465022ea14a8fe54c45d3abd09fb5104d9ac1454",
+      "bytes": 518
+    },
+    {
+      "path": "source/lemo-opuscar/styles/watercolor/STYLE.md",
+      "upstream_path": "styles/watercolor/STYLE.md",
+      "sha256": "662d57568408a7c82ef8f64980ca85798b8bb239df3dc3a6715283d7f4555ef0",
+      "git_blob": "26068ee10232bde36f40f2b49c1b9ea96ee010fb",
+      "bytes": 11099
+    },
+    {
+      "path": "source/lemo-opuscar/styles/watercolor/style.json",
+      "upstream_path": "styles/watercolor/style.json",
+      "sha256": "bbca48bbfddf3e43cdbaf84f059a3e97d9dc1a457c02703e021cf457b3159e63",
+      "git_blob": "b9ee89900183b5231f47dcfbe51bfb57fff69c86",
+      "bytes": 532
+    },
+    {
+      "path": "source/lemo-opuscar/styles/impasto/STYLE.md",
+      "upstream_path": "styles/impasto/STYLE.md",
+      "sha256": "38a0dcb2808c2ff03ef721c1319b9145438b4074ed37ab7a09dcf20b7268e062",
+      "git_blob": "87eb6d8ed9936c26ccd9740f88145be8a0c98d45",
+      "bytes": 12013
+    },
+    {
+      "path": "source/lemo-opuscar/styles/impasto/style.json",
+      "upstream_path": "styles/impasto/style.json",
+      "sha256": "b74d52e05b9f3185b94de7e9ee8e9c12820767ff30a615d7dab4ecde3270ff05",
+      "git_blob": "60dd1b7a83963fba021d6d66b922da6bd941a5d9",
+      "bytes": 536
+    },
+    {
+      "path": "source/lemo-opuscar/styles/urban-sketch/STYLE.md",
+      "upstream_path": "styles/urban-sketch/STYLE.md",
+      "sha256": "2baf1a19f31b06e55d66d62e4c3449c7a2686c689190976f3e3d0cbdce2faa9a",
+      "git_blob": "033bc2e22493e5a93dcd3434c062452010f6fb42",
+      "bytes": 11766
+    },
+    {
+      "path": "source/lemo-opuscar/styles/urban-sketch/style.json",
+      "upstream_path": "styles/urban-sketch/style.json",
+      "sha256": "e10711fd673d0d95371138439a999dcae91c8a1bf8d155f2958c514dc877a6ca",
+      "git_blob": "80dc2c0fd98cd78513cc1a3aeb31d230fcee8c5b",
+      "bytes": 547
+    },
+    {
+      "path": "source/lemo-opuscar/styles/colored-pencil/STYLE.md",
+      "upstream_path": "styles/colored-pencil/STYLE.md",
+      "sha256": "71d1970d26da38a4d6b0cbf4ce1f8ddd6462bece4f62107d7a2aa5ddb678c31d",
+      "git_blob": "ed3b621a5658ef287280bbf4408f4ce4c8834294",
+      "bytes": 10770
+    },
+    {
+      "path": "source/lemo-opuscar/styles/colored-pencil/style.json",
+      "upstream_path": "styles/colored-pencil/style.json",
+      "sha256": "7b8d94491f59041bc98eff8457b0cfb8509008e6f72fc5ffa6ccc8c9d47885f4",
+      "git_blob": "82125ec36ab77bb9cc38f7cdbf3881f238ade9d3",
+      "bytes": 763
+    },
+    {
+      "path": "source/lemo-opuscar/styles/one-line/STYLE.md",
+      "upstream_path": "styles/one-line/STYLE.md",
+      "sha256": "69d26cb06f48ab6b03c12a76c2390d0945cdaddc38bc109b7d5e292b9af1399b",
+      "git_blob": "e5731a7f84b07772860db04c3359aefde9642d67",
+      "bytes": 11372
+    },
+    {
+      "path": "source/lemo-opuscar/styles/one-line/style.json",
+      "upstream_path": "styles/one-line/style.json",
+      "sha256": "1e5d6b9e1afd182b799304db5b96e160455298f5172d757c3f525777923676ad",
+      "git_blob": "495d99e7a3991736d7e92d7654cf2fcd1c06973c",
+      "bytes": 493
+    },
+    {
+      "path": "source/lemo-opuscar/styles/whiteboard/STYLE.md",
+      "upstream_path": "styles/whiteboard/STYLE.md",
+      "sha256": "19f66326257bcafb8aca18af3e209d1fee31d9e23902ce1708bbb606cbf4b718",
+      "git_blob": "faf164bab6fb2e9f967a9f2a8b6e56d8dd928d79",
+      "bytes": 11676
+    },
+    {
+      "path": "source/lemo-opuscar/styles/whiteboard/style.json",
+      "upstream_path": "styles/whiteboard/style.json",
+      "sha256": "63d63af2f3a88af1f1ada8e0545539617cf4e142ace15f94358709d7efda2c4f",
+      "git_blob": "43d27e13fcc1ebeda602de539bdfb627ff590ab4",
+      "bytes": 557
+    },
+    {
+      "path": "source/lemo-opuscar/styles/chalkboard/STYLE.md",
+      "upstream_path": "styles/chalkboard/STYLE.md",
+      "sha256": "7f89f1a4694805e6bc767050007a6b44f2b7ab2474b0e3244032d3a0269b3e1c",
+      "git_blob": "8a51235be905fe905a91ee751ee7c97dfb09e90d",
+      "bytes": 18516
+    },
+    {
+      "path": "source/lemo-opuscar/styles/chalkboard/style.json",
+      "upstream_path": "styles/chalkboard/style.json",
+      "sha256": "cfc89929f0fcba320b12619aff4fb8bdb71a814841f95b90f06b8b41140fe84f",
+      "git_blob": "4cd14bc0129d916ef41cfd394385b49f8b6bfbe0",
+      "bytes": 528
+    },
+    {
+      "path": "source/lemo-opuscar/styles/sketchnote/STYLE.md",
+      "upstream_path": "styles/sketchnote/STYLE.md",
+      "sha256": "c1d8538cf0c8f2124fe3aa8597924f3f1fc4b63a5a90c2e436fdea633f400906",
+      "git_blob": "df0a910f95575e36eec67a3fa6a1da162c757ea2",
+      "bytes": 14047
+    },
+    {
+      "path": "source/lemo-opuscar/styles/sketchnote/style.json",
+      "upstream_path": "styles/sketchnote/style.json",
+      "sha256": "e93f6aa552ec15dd1034ff8c2f96f11e9cbc71d97dd43fc2780a8151d2eec9a2",
+      "git_blob": "b260666e7764e1944785e2e8eba6c8a13641cc45",
+      "bytes": 616
+    },
+    {
+      "path": "source/lemo-opuscar/styles/stick-explainer/STYLE.md",
+      "upstream_path": "styles/stick-explainer/STYLE.md",
+      "sha256": "da45e2773336892fb75b77e5cdd805d0376a532e509418df0c33780b7e477490",
+      "git_blob": "d6a7155122c6c197b538f03926431491bb0e5057",
+      "bytes": 13514
+    },
+    {
+      "path": "source/lemo-opuscar/styles/stick-explainer/style.json",
+      "upstream_path": "styles/stick-explainer/style.json",
+      "sha256": "db48ecd19a825c6398214b63098d7ab29611e6c24a93efb865f7a82f04cb3972",
+      "git_blob": "edb766a382808eeb4a06cc5d440ee804dc1d34a8",
+      "bytes": 650
+    },
+    {
+      "path": "source/lemo-opuscar/styles/ipad-sketch/STYLE.md",
+      "upstream_path": "styles/ipad-sketch/STYLE.md",
+      "sha256": "4a0e371e38f3660227e48886f3479ae060a310186a9ae2a35b8263da028c5d0f",
+      "git_blob": "9b06e28e208b547a996eac8a095ec1e7eb2056c1",
+      "bytes": 13302
+    },
+    {
+      "path": "source/lemo-opuscar/styles/ipad-sketch/style.json",
+      "upstream_path": "styles/ipad-sketch/style.json",
+      "sha256": "9bf5b9c446afdc64b55181a1f217e1fd32beadeea33429edeebd5cfffac44177",
+      "git_blob": "592e9d0b82d88ff1986b1e1600c71d60530f2239",
+      "bytes": 721
+    },
+    {
+      "path": "source/lemo-opuscar/styles/marker-paper/STYLE.md",
+      "upstream_path": "styles/marker-paper/STYLE.md",
+      "sha256": "26b384c99eeef6a9f119afeea237dc0916782f6b959f525d099c6891ebfe0458",
+      "git_blob": "60cfd6df01b6c1f92c1d361d1675848403446424",
+      "bytes": 13388
+    },
+    {
+      "path": "source/lemo-opuscar/styles/marker-paper/style.json",
+      "upstream_path": "styles/marker-paper/style.json",
+      "sha256": "f87d424b2f11b51eb24f1253d16190d0a557438fe666d7ea1821522ffc986c88",
+      "git_blob": "0cc4d404e876b485133afbd9315006afd13265c3",
+      "bytes": 627
+    },
+    {
+      "path": "source/lemo-opuscar/styles/ink-wash/STYLE.md",
+      "upstream_path": "styles/ink-wash/STYLE.md",
+      "sha256": "5d71598f0b9cf4034c6461956b0d8bd63bd33750b4045376044f0d956b01d645",
+      "git_blob": "b17e52b77c94ba4a8e99aa7193d7481e800460fd",
+      "bytes": 11277
+    },
+    {
+      "path": "source/lemo-opuscar/styles/ink-wash/style.json",
+      "upstream_path": "styles/ink-wash/style.json",
+      "sha256": "d2103d48c7ac0620f3b378a5d109662458295770807cfd9dcdcd9c385d680c44",
+      "git_blob": "ad20b7b690903369d91146779ffa8ca06dd9c217",
+      "bytes": 471
+    },
+    {
+      "path": "source/lemo-opuscar/styles/shadow-puppet/STYLE.md",
+      "upstream_path": "styles/shadow-puppet/STYLE.md",
+      "sha256": "8be075a8262d5a3deea9b05684d8a9abdc1e54c0d90649bf14609ecb4106c3af",
+      "git_blob": "75b626f05d270175d077b64c7cf3592368c03888",
+      "bytes": 12787
+    },
+    {
+      "path": "source/lemo-opuscar/styles/shadow-puppet/style.json",
+      "upstream_path": "styles/shadow-puppet/style.json",
+      "sha256": "89ff9e16858067e53c7bdca6e99dabeaaa34792deba93580a853f3881d9216e4",
+      "git_blob": "259f9f164b9de8130764b9b594ddea9b770a777b",
+      "bytes": 500
+    },
+    {
+      "path": "source/lemo-opuscar/styles/ukiyoe/STYLE.md",
+      "upstream_path": "styles/ukiyoe/STYLE.md",
+      "sha256": "218c48a204f9034d1c2fb7f11698b4834f1faee1ca68c9e336f3d6ab992ff2e4",
+      "git_blob": "d4af11e9ad82873774ecf867b7aa4463544d5852",
+      "bytes": 12441
+    },
+    {
+      "path": "source/lemo-opuscar/styles/ukiyoe/style.json",
+      "upstream_path": "styles/ukiyoe/style.json",
+      "sha256": "41b755cd671b390a6b82fc6c3e2988b5f7afe6c23a8b16aa07b0025eeba534d5",
+      "git_blob": "d21f56798468ad09511b06fe32549d13fcfc33a2",
+      "bytes": 589
+    },
+    {
+      "path": "source/lemo-opuscar/styles/papercut-red/STYLE.md",
+      "upstream_path": "styles/papercut-red/STYLE.md",
+      "sha256": "65e317d83335e0cb34696b643e31ad9e46fb0bb93fd748c2e21d74358aea61ec",
+      "git_blob": "7f870e33d104bf435331feff95d1a23bed890675",
+      "bytes": 12450
+    },
+    {
+      "path": "source/lemo-opuscar/styles/papercut-red/style.json",
+      "upstream_path": "styles/papercut-red/style.json",
+      "sha256": "8304b23c47c97d61435ee4dafd004dec02517a42fc2785168e293fdff5fe8492",
+      "git_blob": "c7ca5536707d57893a714f4891b619c2e9c2a329",
+      "bytes": 556
+    },
+    {
+      "path": "source/lemo-opuscar/styles/paper-lantern/STYLE.md",
+      "upstream_path": "styles/paper-lantern/STYLE.md",
+      "sha256": "e8be26d64f33229859e284a33d77969f9a4468b7bf1b478ca8fa924c7dd9f27d",
+      "git_blob": "b7c5d727c362041c962a43300a6c1ef0d6ac7abd",
+      "bytes": 14162
+    },
+    {
+      "path": "source/lemo-opuscar/styles/paper-lantern/style.json",
+      "upstream_path": "styles/paper-lantern/style.json",
+      "sha256": "c681c6258a295ecd1a680067cbbb25d66112e23e21547009339c03bd314ed45d",
+      "git_blob": "12c1be8e89f18fbe517cb298abb7e1d4646d84b4",
+      "bytes": 661
+    },
+    {
+      "path": "source/lemo-opuscar/styles/stained-glass/STYLE.md",
+      "upstream_path": "styles/stained-glass/STYLE.md",
+      "sha256": "0f6551bd109a4127404068aa1e75f18f16b58c80b486c23480b3d193e597b060",
+      "git_blob": "b0527b0b117e62bee1c9201665c6bb42569ee12e",
+      "bytes": 11945
+    },
+    {
+      "path": "source/lemo-opuscar/styles/stained-glass/style.json",
+      "upstream_path": "styles/stained-glass/style.json",
+      "sha256": "e8fa8ccba5b6918dcc81bfd835e6b154ffd0a9f8f9bd0953a0dcc7080a1d64b6",
+      "git_blob": "418c0c96d918ea0aaec75270df7c1b846921305a",
+      "bytes": 546
+    },
+    {
+      "path": "source/lemo-opuscar/styles/gilded-illumination/STYLE.md",
+      "upstream_path": "styles/gilded-illumination/STYLE.md",
+      "sha256": "515c5d01d9892fc629abf521aef4796862320fb072422bc72da27f5cf6b17252",
+      "git_blob": "3dda7a90f70c3dad338acdaa609d4ffd28b363fa",
+      "bytes": 18009
+    },
+    {
+      "path": "source/lemo-opuscar/styles/gilded-illumination/style.json",
+      "upstream_path": "styles/gilded-illumination/style.json",
+      "sha256": "5f9dc1f60ed692aeca486d42b29dc53abbe2c9a3feff2fd38db872ddeed2caa4",
+      "git_blob": "f8c2f5920f0fcd228968fd1753b5340067195009",
+      "bytes": 661
+    },
+    {
+      "path": "source/lemo-opuscar/styles/risograph/STYLE.md",
+      "upstream_path": "styles/risograph/STYLE.md",
+      "sha256": "c3d85c91a81b0afde091d964482749482adc66c12730afe124708f7b18b331a6",
+      "git_blob": "4b2f4e2c53ff87ae5cddd4e16f6ab4b8a765c4b3",
+      "bytes": 12030
+    },
+    {
+      "path": "source/lemo-opuscar/styles/risograph/style.json",
+      "upstream_path": "styles/risograph/style.json",
+      "sha256": "56940108d2acee6957896e305d0ae15cb85070bf13adeb2609fb74ac385ea545",
+      "git_blob": "ed9c6bbc1c684d050ee019ce031d368d78f41d51",
+      "bytes": 630
+    },
+    {
+      "path": "source/lemo-opuscar/styles/halftone-dossier/STYLE.md",
+      "upstream_path": "styles/halftone-dossier/STYLE.md",
+      "sha256": "6a3eb7919f286515674f7d544ee4124881491723615ba15ac13abc304f57f85d",
+      "git_blob": "84d1062d2b9cf74ff323aa9da6a330db7cb549ef",
+      "bytes": 12417
+    },
+    {
+      "path": "source/lemo-opuscar/styles/halftone-dossier/style.json",
+      "upstream_path": "styles/halftone-dossier/style.json",
+      "sha256": "2f370795970d7da2c03b01528aaecbeb52ecb577392cfb3c1d22795430957276",
+      "git_blob": "e77f229da7361fa7df85c7b9abfd503ef8b8985d",
+      "bytes": 555
+    },
+    {
+      "path": "source/lemo-opuscar/styles/woodcut/STYLE.md",
+      "upstream_path": "styles/woodcut/STYLE.md",
+      "sha256": "b96fda6eeac038137310cc0766d979c8d8a5f3ff6acd87bada5aa50d5136a6a0",
+      "git_blob": "ea4f2acb7b5bdf54ae79c39336f241bbb94c4052",
+      "bytes": 12194
+    },
+    {
+      "path": "source/lemo-opuscar/styles/woodcut/style.json",
+      "upstream_path": "styles/woodcut/style.json",
+      "sha256": "bb4012ce8b5c3b5ca7c0390fa2a1e3087e1375b62ddf410b080e72741d2c75dc",
+      "git_blob": "8cb8bd541ab773aac1f1f5b4ccb4a7b54d4df775",
+      "bytes": 505
+    },
+    {
+      "path": "source/lemo-opuscar/styles/engraving/STYLE.md",
+      "upstream_path": "styles/engraving/STYLE.md",
+      "sha256": "0c6816b8b47163d158ae0ea668feecf53dcbef9d1310e27b9e797d9b9e7aac0d",
+      "git_blob": "b9529171436dfb98516756181b83aaf1afe29f1b",
+      "bytes": 12338
+    },
+    {
+      "path": "source/lemo-opuscar/styles/engraving/style.json",
+      "upstream_path": "styles/engraving/style.json",
+      "sha256": "d6b267bf1c7cd95b16af48aed36e2a46b7f6908c39f001b4fe0dac548daaf49f",
+      "git_blob": "01d03ff573aa3f491faaf24b71b16fced8275a72",
+      "bytes": 624
+    },
+    {
+      "path": "source/lemo-opuscar/styles/silkscreen-poster/STYLE.md",
+      "upstream_path": "styles/silkscreen-poster/STYLE.md",
+      "sha256": "f1c86a9f0cbe735de9fb1421d33ab44465122158e6c45a4786c98852ea9952b1",
+      "git_blob": "5de0c331c4368fdb4e755a6ddf3bb2ed7b33f3b4",
+      "bytes": 13426
+    },
+    {
+      "path": "source/lemo-opuscar/styles/silkscreen-poster/style.json",
+      "upstream_path": "styles/silkscreen-poster/style.json",
+      "sha256": "57571bc4b2118a13332d086a4a50b77a6c3b14ffcaeac5e29dcceadc6086a41f",
+      "git_blob": "1fea00b46f1454426c70f61cbba631dc5320a066",
+      "bytes": 661
+    },
+    {
+      "path": "source/lemo-opuscar/styles/printed-long-take/STYLE.md",
+      "upstream_path": "styles/printed-long-take/STYLE.md",
+      "sha256": "ab296ec585615e3c0100ea22b879e88cd9790a493d0c995a24a25fe4ad25b97c",
+      "git_blob": "f46805a220ad8e044a1d8453dd0f3fa8abda5b98",
+      "bytes": 21028
+    },
+    {
+      "path": "source/lemo-opuscar/styles/printed-long-take/style.json",
+      "upstream_path": "styles/printed-long-take/style.json",
+      "sha256": "3c5b8e742969c6eb74e8ef14f7a8fcd63a90fb337045ab2d759341e25b12bbf5",
+      "git_blob": "448ed447a14b93e8d3866c06c9eaa4827a00eda7",
+      "bytes": 595
+    },
+    {
+      "path": "source/lemo-opuscar/styles/pop-art/STYLE.md",
+      "upstream_path": "styles/pop-art/STYLE.md",
+      "sha256": "b072389250134a9cd7968a6123c384dff5fae07f8fc30a2e4c59852afe5f1926",
+      "git_blob": "eb53c124e91a58b47b07d36fcde4086dbd84315d",
+      "bytes": 14520
+    },
+    {
+      "path": "source/lemo-opuscar/styles/pop-art/style.json",
+      "upstream_path": "styles/pop-art/style.json",
+      "sha256": "41ba3d85c5d6f3a4414b2e2815c622a1df284bb93243faeea7d9c55328d420e3",
+      "git_blob": "7f02063682af3980c04da26eb4e46b510d618baf",
+      "bytes": 711
+    },
+    {
+      "path": "source/lemo-opuscar/styles/vintage-collage/STYLE.md",
+      "upstream_path": "styles/vintage-collage/STYLE.md",
+      "sha256": "9ae3f52c26a6d5e21315a9a73b82694bd29ea04f47c1c60482583eb5bebe0a6f",
+      "git_blob": "6ad1ebc6d7e3f0cc29e88c83d0695341cc1277c5",
+      "bytes": 11931
+    },
+    {
+      "path": "source/lemo-opuscar/styles/vintage-collage/style.json",
+      "upstream_path": "styles/vintage-collage/style.json",
+      "sha256": "cdd1a36cebeab293e8dfe0aec5dd0b9a25da9977441f1e7d88868e8857798af4",
+      "git_blob": "af6a155d8140f5751b2fa518d956c71d960074c9",
+      "bytes": 667
+    },
+    {
+      "path": "source/lemo-opuscar/styles/swiss-motion/STYLE.md",
+      "upstream_path": "styles/swiss-motion/STYLE.md",
+      "sha256": "14ddeb6dc495e691a220497069a2ee4827d820f9ee7a3173de5846489ef41f57",
+      "git_blob": "93020f3881000381785f1cda8b551c7838b25a56",
+      "bytes": 10696
+    },
+    {
+      "path": "source/lemo-opuscar/styles/swiss-motion/style.json",
+      "upstream_path": "styles/swiss-motion/style.json",
+      "sha256": "05e99867600f38c0b443870c2e7e883893608da55ea3b8d9dfb6d65b7692b8f7",
+      "git_blob": "cbfa2e2f757b6a065ffe7c614b66eb20b25fea63",
+      "bytes": 562
+    },
+    {
+      "path": "source/lemo-opuscar/styles/spy-titles/STYLE.md",
+      "upstream_path": "styles/spy-titles/STYLE.md",
+      "sha256": "ea6e9e9073af43ef0bb860e368f60b16ec32a91668386115a142907d92cb1f75",
+      "git_blob": "3cef2fc775f5474da05598eeb6ffcf9194ec1fe6",
+      "bytes": 11411
+    },
+    {
+      "path": "source/lemo-opuscar/styles/spy-titles/style.json",
+      "upstream_path": "styles/spy-titles/style.json",
+      "sha256": "06fac661b3b892e61df25b4f25fec16012e25415a74d1ee9cae9617ae980227f",
+      "git_blob": "1bfbb0dd3a4f0ddb7b4572896040c7f85ffc0167",
+      "bytes": 564
+    },
+    {
+      "path": "source/lemo-opuscar/styles/art-deco/STYLE.md",
+      "upstream_path": "styles/art-deco/STYLE.md",
+      "sha256": "d73b30c0fa6d153487549d32d8c6c599733cf5e7576badec862a12da6d284761",
+      "git_blob": "3cd68b219282eab2d3fdb60e18f465787a54c388",
+      "bytes": 12196
+    },
+    {
+      "path": "source/lemo-opuscar/styles/art-deco/style.json",
+      "upstream_path": "styles/art-deco/style.json",
+      "sha256": "cebba14f36583aa1bd432324b5bc032daa84e5742ae43c162331d1e4dba92fa9",
+      "git_blob": "f3601a5e93972e8cbeb2d8e1d4198dbca2ea6e6c",
+      "bytes": 531
+    },
+    {
+      "path": "source/lemo-opuscar/styles/pictogram-motion/STYLE.md",
+      "upstream_path": "styles/pictogram-motion/STYLE.md",
+      "sha256": "52f0119e13e2d98ee9d2dbf5ea8b9dc84ffb309746fd93afc01eb07d1e2c2689",
+      "git_blob": "def2fcff4c5c085c6c0b3b6f99326cbf2058aca2",
+      "bytes": 13325
+    },
+    {
+      "path": "source/lemo-opuscar/styles/pictogram-motion/style.json",
+      "upstream_path": "styles/pictogram-motion/style.json",
+      "sha256": "be7b5665a9e28a981378671eb2988cf16fcbc4f0777c193e5d67b9db509e976f",
+      "git_blob": "c2e0097629612e0352bbc16f6035b3a4bf3597de",
+      "bytes": 847
+    },
+    {
+      "path": "source/lemo-opuscar/styles/bauhaus-shapes/STYLE.md",
+      "upstream_path": "styles/bauhaus-shapes/STYLE.md",
+      "sha256": "f501d8728bbcd8506cd77fc1109c6949432b36e89a6f3bf82b6ad2036d9e9a6e",
+      "git_blob": "06662bc4db9a72de98775d7b162f2c791afe0c3b",
+      "bytes": 10062
+    },
+    {
+      "path": "source/lemo-opuscar/styles/bauhaus-shapes/style.json",
+      "upstream_path": "styles/bauhaus-shapes/style.json",
+      "sha256": "ee11aa33fd9e2b8a0005f79bde8741a23b2b8fa44ee2a4fc6fd424c6c2d44da4",
+      "git_blob": "66dc06f48ec5579e672324acbda2142a99f1da4b",
+      "bytes": 638
+    },
+    {
+      "path": "source/lemo-opuscar/styles/flat-space-explainer/STYLE.md",
+      "upstream_path": "styles/flat-space-explainer/STYLE.md",
+      "sha256": "a56b7e17f818efd1fe9ab3edcbd2f6b7a5c1bce8dcedd896e817089ac12c2b58",
+      "git_blob": "81e2ad5e3cdaaa5798f57710c1d75dbdbb802a36",
+      "bytes": 12570
+    },
+    {
+      "path": "source/lemo-opuscar/styles/flat-space-explainer/style.json",
+      "upstream_path": "styles/flat-space-explainer/style.json",
+      "sha256": "1ee3e47c8f05dbde3facb51991d102fd351779688b0628f38b9fb6cc502d059c",
+      "git_blob": "1a6fbe169f64846f63b0059c679b0f8b1246ee2c",
+      "bytes": 609
+    },
+    {
+      "path": "source/lemo-opuscar/styles/text-flash-cuts/STYLE.md",
+      "upstream_path": "styles/text-flash-cuts/STYLE.md",
+      "sha256": "f69fa08818c5d41099abe29c8afdd0a9f3ef89746d379346dc9bf384adbd1299",
+      "git_blob": "6ba1fb0a16a20841c055516246470718c69b75c1",
+      "bytes": 15112
+    },
+    {
+      "path": "source/lemo-opuscar/styles/text-flash-cuts/style.json",
+      "upstream_path": "styles/text-flash-cuts/style.json",
+      "sha256": "3a9c847bf7fe6196afc8ee06f2c67f05afe7b4749e5949d4717294562055541f",
+      "git_blob": "417a41f96aba46cbbf2fb82eff94fad74169f61b",
+      "bytes": 680
+    },
+    {
+      "path": "source/lemo-opuscar/styles/silhouette-rhythm/STYLE.md",
+      "upstream_path": "styles/silhouette-rhythm/STYLE.md",
+      "sha256": "66f1a0f7d44ad1067960046514336bb4d19fce9799a16ec1591696343987a291",
+      "git_blob": "e4d637f39199721ee1ae0ad54ed2bb37880b2c02",
+      "bytes": 13174
+    },
+    {
+      "path": "source/lemo-opuscar/styles/silhouette-rhythm/style.json",
+      "upstream_path": "styles/silhouette-rhythm/style.json",
+      "sha256": "6f37a52fa272e8e0fbb378ce520da47d9bcaf5f1a99edafa48f199a430368f66",
+      "git_blob": "e86c724e5acb4f3df4eab46d5158e284ec570a8a",
+      "bytes": 645
+    },
+    {
+      "path": "source/lemo-opuscar/styles/blueprint/STYLE.md",
+      "upstream_path": "styles/blueprint/STYLE.md",
+      "sha256": "de01fc7fcb38b17b58eb017c9cdbcb36b9242b029435a33587614c93088e1717",
+      "git_blob": "08c33019ee14b8ecff9254c29b32a0a4c15ec1fe",
+      "bytes": 12323
+    },
+    {
+      "path": "source/lemo-opuscar/styles/blueprint/style.json",
+      "upstream_path": "styles/blueprint/style.json",
+      "sha256": "45b623d588615ffe6f6d629f1374d081815afbeb6622b40602fc73dd3a7c5129",
+      "git_blob": "f80100b15fda70b5f1719259eace3f5a49e40ca3",
+      "bytes": 619
+    },
+    {
+      "path": "source/lemo-opuscar/styles/iso-infographic/STYLE.md",
+      "upstream_path": "styles/iso-infographic/STYLE.md",
+      "sha256": "a3bf89913255043ff2c8616bff9be9f9536efe1eb7a3b98c755cb4189bd7dff1",
+      "git_blob": "3abfcfb60d912ef32b7de9fe4d047acc60eb8ce6",
+      "bytes": 11989
+    },
+    {
+      "path": "source/lemo-opuscar/styles/iso-infographic/style.json",
+      "upstream_path": "styles/iso-infographic/style.json",
+      "sha256": "d97a992c4294c2d277ae28686fb24069f8b6626b2e08caba8f7f6e3d86ef84d6",
+      "git_blob": "887d25f7e7f906a027cf7e4ceefc8a6d6edeb70d",
+      "bytes": 495
+    },
+    {
+      "path": "source/lemo-opuscar/styles/teardown/STYLE.md",
+      "upstream_path": "styles/teardown/STYLE.md",
+      "sha256": "90df05a02a3d33add58e0dd99bef19ca20ea16b10390b3c2350d8483106922ee",
+      "git_blob": "3d145b6bc44c388df2d62437bc14ffc5d16e0036",
+      "bytes": 13572
+    },
+    {
+      "path": "source/lemo-opuscar/styles/teardown/style.json",
+      "upstream_path": "styles/teardown/style.json",
+      "sha256": "d2b80fc4e800f10a77a2c4ffe41507c0e6980676bfa287bc6d55bcfd29db67f6",
+      "git_blob": "0eaad1a67e1dee25c384dcbce6bab6dbfeab2e33",
+      "bytes": 559
+    },
+    {
+      "path": "source/lemo-opuscar/styles/hardcore-info/STYLE.md",
+      "upstream_path": "styles/hardcore-info/STYLE.md",
+      "sha256": "ddcd47faa4ca8a450baa159d73767f62f66d1efe91008aa9f0e7b6c6db48f283",
+      "git_blob": "7e962334c4d3c36c07deb59dbea6722b6673d4ab",
+      "bytes": 14706
+    },
+    {
+      "path": "source/lemo-opuscar/styles/hardcore-info/style.json",
+      "upstream_path": "styles/hardcore-info/style.json",
+      "sha256": "0c5b2abd69b8a7e737476551e4d7e93fc2c27220812da05d9067b591e4b3c3fb",
+      "git_blob": "2d17c34b550279bf230d2b5365947c939c69076f",
+      "bytes": 667
+    },
+    {
+      "path": "source/lemo-opuscar/styles/precise-mechanism/STYLE.md",
+      "upstream_path": "styles/precise-mechanism/STYLE.md",
+      "sha256": "476538b1c0d602067bbac28c822eb70f8fad19ce0d29f1dda6354c3687af237d",
+      "git_blob": "d6e357544c1d33cfb2a87cd178fd8e8127a600dd",
+      "bytes": 13742
+    },
+    {
+      "path": "source/lemo-opuscar/styles/precise-mechanism/style.json",
+      "upstream_path": "styles/precise-mechanism/style.json",
+      "sha256": "7afefe01b866af32437d7dff84dbe3acc6279198ae926085bf52cb500d50aea4",
+      "git_blob": "99fca7a41a61b44a6612ecf6e4092cf8e14e506b",
+      "bytes": 722
+    },
+    {
+      "path": "source/lemo-opuscar/styles/instruction-manual/STYLE.md",
+      "upstream_path": "styles/instruction-manual/STYLE.md",
+      "sha256": "57f9e69373bb36bafe5572bf960f9557c484210e0edaf89cfc286cc9be21282e",
+      "git_blob": "6092798d1f1a60ef9d77e472390349dfa866e1c6",
+      "bytes": 15982
+    },
+    {
+      "path": "source/lemo-opuscar/styles/instruction-manual/style.json",
+      "upstream_path": "styles/instruction-manual/style.json",
+      "sha256": "8295846cd4d06dc576cf649830fd3055cd8c11b3cccda050c537170525c2515f",
+      "git_blob": "32cd1efeec4fed243a220a35a9fe1b4a22ebfa31",
+      "bytes": 626
+    },
+    {
+      "path": "source/lemo-opuscar/styles/pen-plotter/STYLE.md",
+      "upstream_path": "styles/pen-plotter/STYLE.md",
+      "sha256": "6b4b45210d953e8ddee6741e7866b5cc7ad0a7fc37926b8cb7554f7209345412",
+      "git_blob": "42c1ae97952dd6592f41152a2f05880f0bb40fe8",
+      "bytes": 12862
+    },
+    {
+      "path": "source/lemo-opuscar/styles/pen-plotter/style.json",
+      "upstream_path": "styles/pen-plotter/style.json",
+      "sha256": "3287f21f2ae7926ad43bf0eb701597aa4a3a1d6b3ea8c8ff348f7116ae6036a3",
+      "git_blob": "76f63d2974734b8ce283c0937fb7bde287975ab7",
+      "bytes": 616
+    },
+    {
+      "path": "source/lemo-opuscar/styles/assembly-line-diagram/STYLE.md",
+      "upstream_path": "styles/assembly-line-diagram/STYLE.md",
+      "sha256": "179a41acc3a10bf45d7a3d91eab316077d44fdd75b0ba067d42d87e5b2e598bf",
+      "git_blob": "a61cb0ccc2bc7475276c1801bc6af7f48946f5d0",
+      "bytes": 16267
+    },
+    {
+      "path": "source/lemo-opuscar/styles/assembly-line-diagram/style.json",
+      "upstream_path": "styles/assembly-line-diagram/style.json",
+      "sha256": "720d2c271ffb182178e13824c658068937e74bb2c1b097d120536109d89929bd",
+      "git_blob": "57533426ab8041a3b79dd1e2295824b3f6824e9e",
+      "bytes": 673
+    },
+    {
+      "path": "source/lemo-opuscar/styles/rubber-hose/STYLE.md",
+      "upstream_path": "styles/rubber-hose/STYLE.md",
+      "sha256": "bf850f9cd22e68b2125fed00d1b9804e91479620b44420ba7ec50e570e472a94",
+      "git_blob": "7e4212fdbdbef1ac35dd27e6589b4ff9b4076a4d",
+      "bytes": 12791
+    },
+    {
+      "path": "source/lemo-opuscar/styles/rubber-hose/style.json",
+      "upstream_path": "styles/rubber-hose/style.json",
+      "sha256": "5909ba6c1614a272d2204f6b4b5074d1cd641097cf6c711e656e80cfd4a54539",
+      "git_blob": "e4f8304edd38bffd2e0ff35133d17f3be56039b1",
+      "bytes": 484
+    },
+    {
+      "path": "source/lemo-opuscar/styles/cel-anime-80s/STYLE.md",
+      "upstream_path": "styles/cel-anime-80s/STYLE.md",
+      "sha256": "1e16f5c6f90ebf09556ec94d37434400d309c978e00ee89e9d38dec476664eaf",
+      "git_blob": "bde19c4d29f1d15dcb6ee1f4b5abcfbfbfa0d35f",
+      "bytes": 12647
+    },
+    {
+      "path": "source/lemo-opuscar/styles/cel-anime-80s/style.json",
+      "upstream_path": "styles/cel-anime-80s/style.json",
+      "sha256": "4020b49f62396a2c922f5bd48dacabb0a8b935ed8435aef7e1648c1cd4cf1247",
+      "git_blob": "1b606818635b7e85b9760dd18bf9e6127f4e0ceb",
+      "bytes": 537
+    },
+    {
+      "path": "source/lemo-opuscar/styles/scifi-toon/STYLE.md",
+      "upstream_path": "styles/scifi-toon/STYLE.md",
+      "sha256": "9a720a57ce50dc554e9237e698a979cdf7311527e6e6a0dad803278dfe8ad2ce",
+      "git_blob": "39b2a410d0c6fc2587ae6c62603e128daf6042c1",
+      "bytes": 12755
+    },
+    {
+      "path": "source/lemo-opuscar/styles/scifi-toon/style.json",
+      "upstream_path": "styles/scifi-toon/style.json",
+      "sha256": "0ae3cfe1c6db945a0faf5c440b6145b0d4b712a10aeeb8fdb62ee06fb9ed4854",
+      "git_blob": "57bcd453649574e0ba1fc95095977389c03ff175",
+      "bytes": 523
+    },
+    {
+      "path": "source/lemo-opuscar/styles/midcentury-toon/STYLE.md",
+      "upstream_path": "styles/midcentury-toon/STYLE.md",
+      "sha256": "e73614b6f9e2f2e8ee279f4909da8429235b96f6d13a12345b6e57d5823c30b8",
+      "git_blob": "22ca95355affd767f0e9c49b0dae5aa0110136c7",
+      "bytes": 12620
+    },
+    {
+      "path": "source/lemo-opuscar/styles/midcentury-toon/style.json",
+      "upstream_path": "styles/midcentury-toon/style.json",
+      "sha256": "a09109c67e360503af378dd16be2de7ceeb1e7ffda1e8d73e889b994cc605bb7",
+      "git_blob": "85d434d6a838000f5d68e0ad3679a1f01e7621e1",
+      "bytes": 481
+    },
+    {
+      "path": "source/lemo-opuscar/styles/comic-history/STYLE.md",
+      "upstream_path": "styles/comic-history/STYLE.md",
+      "sha256": "4aec43d12d02f39438872c9825e6e0d952b2c5762643a4d0b0dffdd8adb38fac",
+      "git_blob": "9e905321313bb42d9e04222e2148d59f37bd0d88",
+      "bytes": 14198
+    },
+    {
+      "path": "source/lemo-opuscar/styles/comic-history/style.json",
+      "upstream_path": "styles/comic-history/style.json",
+      "sha256": "355479c1b1439bfa977f655e2f6ec85da94d12498c6505a637b616bb31ef6e74",
+      "git_blob": "a6782faee94fc235075eaffce8c37511a2e442ab",
+      "bytes": 751
+    },
+    {
+      "path": "source/lemo-opuscar/styles/manga-panels/STYLE.md",
+      "upstream_path": "styles/manga-panels/STYLE.md",
+      "sha256": "5c53e55bce2df67d6c9cea3f12f559e4b92216b325be6581852ddf35dc0c0da8",
+      "git_blob": "dfd0c520a6832c4596f3baacd380d720e6da1ec2",
+      "bytes": 19579
+    },
+    {
+      "path": "source/lemo-opuscar/styles/manga-panels/style.json",
+      "upstream_path": "styles/manga-panels/style.json",
+      "sha256": "01c8c389d656d90c8dca5a9ed13382fa1821f1766a6165006ed666eddb0e4132",
+      "git_blob": "ddecbf6a30175cade01dd114c6bcaec91c092df2",
+      "bytes": 672
+    },
+    {
+      "path": "source/lemo-opuscar/styles/pixel-rpg/STYLE.md",
+      "upstream_path": "styles/pixel-rpg/STYLE.md",
+      "sha256": "6624481152a77960b54bc3c0d2f2f9de6af15d4e95294525ef8e3635fe479fe5",
+      "git_blob": "f99a8294717d2b296a9209f3944cbe26a6d5d299",
+      "bytes": 11293
+    },
+    {
+      "path": "source/lemo-opuscar/styles/pixel-rpg/style.json",
+      "upstream_path": "styles/pixel-rpg/style.json",
+      "sha256": "4075f106bed57ce963e6307ebd59fce9986953bfb3d8c36d82f6e971524d810f",
+      "git_blob": "efba01b244b5016fd3afb3fc454233cb23fbd68f",
+      "bytes": 502
+    },
+    {
+      "path": "source/lemo-opuscar/styles/hd-2d/STYLE.md",
+      "upstream_path": "styles/hd-2d/STYLE.md",
+      "sha256": "f83bb4ee11739d4367bfce5371ba4110d5b6a5033b18aa5cc5fa37f82ceda323",
+      "git_blob": "b610ba086e2da032320560872dfa57f337b42402",
+      "bytes": 12396
+    },
+    {
+      "path": "source/lemo-opuscar/styles/hd-2d/style.json",
+      "upstream_path": "styles/hd-2d/style.json",
+      "sha256": "b6a97c150911dffd0ec1c613f024a12e62dca2586d3dd27713bba171bb054050",
+      "git_blob": "d507d3e603d79c19032d756e1380e27e3d40d024",
+      "bytes": 523
+    },
+    {
+      "path": "source/lemo-opuscar/styles/microgame/STYLE.md",
+      "upstream_path": "styles/microgame/STYLE.md",
+      "sha256": "04e2b7fa9dee5cac346b475e400e577e977b6753afe35ee4e45f66111496ce6a",
+      "git_blob": "1d2c9a4a124c9dfebcb79ee715211e1bb0f06390",
+      "bytes": 12565
+    },
+    {
+      "path": "source/lemo-opuscar/styles/microgame/style.json",
+      "upstream_path": "styles/microgame/style.json",
+      "sha256": "f4dc1d90d11257602f321f8c47c604751b441e2b171c4bc734ceaccc487717fb",
+      "git_blob": "7bfd35698703bf3a0063e6717a185295df67cbe9",
+      "bytes": 526
+    },
+    {
+      "path": "source/lemo-opuscar/styles/game-show/STYLE.md",
+      "upstream_path": "styles/game-show/STYLE.md",
+      "sha256": "5dabcaabee826fb5e454cc05e2d0df62e3d2f165a7d578337ccdc89474b65c12",
+      "git_blob": "de252e45a86c92ae641298bf531cf4cd70e162f6",
+      "bytes": 12487
+    },
+    {
+      "path": "source/lemo-opuscar/styles/game-show/style.json",
+      "upstream_path": "styles/game-show/style.json",
+      "sha256": "df7a1e97af5f57fd7b6a833459f420b6079f65a0e60061466f4a618a9dbd8752",
+      "git_blob": "71f44dcb5fd8ef3bfc359056a03c42a6bd7102df",
+      "bytes": 604
+    },
+    {
+      "path": "source/lemo-opuscar/styles/ascii-crt/STYLE.md",
+      "upstream_path": "styles/ascii-crt/STYLE.md",
+      "sha256": "471f294a40b8ca050daeaaee329b94036174e5eda1e521c8406a579d711bb9b6",
+      "git_blob": "a804f063b921a38e95c50301deaa088b35f37715",
+      "bytes": 12200
+    },
+    {
+      "path": "source/lemo-opuscar/styles/ascii-crt/style.json",
+      "upstream_path": "styles/ascii-crt/style.json",
+      "sha256": "eb5797a6fea92d5d851fa474cbc4ed342aa7e962bb8eefc72212f78ddaa07d81",
+      "git_blob": "6d256ea83947cfb6bf870a599a62fac317365efb",
+      "bytes": 599
+    },
+    {
+      "path": "source/lemo-opuscar/styles/silent-film/STYLE.md",
+      "upstream_path": "styles/silent-film/STYLE.md",
+      "sha256": "44633a4edd4ec6b84be809bd48b38503a75a71531112b3d28a52f27135012b20",
+      "git_blob": "144cf0ed868aad8e9e5435ba9c6a6b3da5a5821a",
+      "bytes": 11585
+    },
+    {
+      "path": "source/lemo-opuscar/styles/silent-film/style.json",
+      "upstream_path": "styles/silent-film/style.json",
+      "sha256": "d9ac8981b2af11724f52674665eb8439f263ddc555482408123d4c39ecb67c4e",
+      "git_blob": "8c7b7dc15bb4e175f18d4a2addf605a598860643",
+      "bytes": 525
+    },
+    {
+      "path": "source/lemo-opuscar/styles/backrooms/STYLE.md",
+      "upstream_path": "styles/backrooms/STYLE.md",
+      "sha256": "2a3697a1ce37d0fbae3281220ae6154eeb9789233f1fae472d55ac169ba26fb4",
+      "git_blob": "a2aab364447994ab9159e773cfb2d09bebfc786f",
+      "bytes": 12620
+    },
+    {
+      "path": "source/lemo-opuscar/styles/backrooms/style.json",
+      "upstream_path": "styles/backrooms/style.json",
+      "sha256": "4a3567a7d4e734f429f939f9f29f5a675ecc806937640d25bc01f8634b4431ee",
+      "git_blob": "fcda2fec57751f981aa8ff7a8183f87d84e094b1",
+      "bytes": 597
+    },
+    {
+      "path": "source/lemo-opuscar/styles/scratch-film/STYLE.md",
+      "upstream_path": "styles/scratch-film/STYLE.md",
+      "sha256": "79be9b3664338fb2f7f1877acaff9ec7a7ec0946fda096bc1c3e96bf9a64ec86",
+      "git_blob": "d70cfafd5df5fb700659a8dd243167005b67a321",
+      "bytes": 11096
+    },
+    {
+      "path": "source/lemo-opuscar/styles/scratch-film/style.json",
+      "upstream_path": "styles/scratch-film/style.json",
+      "sha256": "f7b50fddf171150b1fde0d6def4cfd30e13716acf9839cafcb5d262ba650f416",
+      "git_blob": "32515adc90d4b76939336ac9935ab576e8159b5f",
+      "bytes": 714
+    },
+    {
+      "path": "source/lemo-opuscar/styles/double-exposure/STYLE.md",
+      "upstream_path": "styles/double-exposure/STYLE.md",
+      "sha256": "dd8c7e6167f3323621dfbba2f286286be38c0bde58f3620a4beb91ff0243c52f",
+      "git_blob": "3c8c120a94e48f4c6700212b82ce8e7488dd5151",
+      "bytes": 16706
+    },
+    {
+      "path": "source/lemo-opuscar/styles/double-exposure/style.json",
+      "upstream_path": "styles/double-exposure/style.json",
+      "sha256": "48cfdb877f913638dbf083bfb82dbf245788ec6c0f47b3bb203751cd9cb41c23",
+      "git_blob": "c0fbfd9ce584e50473b35ad6c816b5b095292566",
+      "bytes": 746
+    },
+    {
+      "path": "source/lemo-opuscar/styles/dark-keynote/STYLE.md",
+      "upstream_path": "styles/dark-keynote/STYLE.md",
+      "sha256": "b0791b5e95f56bf46c621e6064d426ebbee810c7515fb87e951b73668a2a0d24",
+      "git_blob": "a2c94fd284715fe1b1da718b7f2404a12171a434",
+      "bytes": 12164
+    },
+    {
+      "path": "source/lemo-opuscar/styles/dark-keynote/style.json",
+      "upstream_path": "styles/dark-keynote/style.json",
+      "sha256": "73d643c2f3fe3ab4bc310179b1c9241bf5040473c1c35a68c68b67cf96e7c0bc",
+      "git_blob": "a14495e20ec2c277209ac507d2c53f58d9b14971",
+      "bytes": 531
+    },
+    {
+      "path": "source/lemo-opuscar/styles/living-screencast/STYLE.md",
+      "upstream_path": "styles/living-screencast/STYLE.md",
+      "sha256": "62389f107308c738854f103e96c2b2e8bc47a14e28bf1081f15976d90e89b5f9",
+      "git_blob": "b36a292f4a7974b33c1ac6144489d030b1279d51",
+      "bytes": 11503
+    },
+    {
+      "path": "source/lemo-opuscar/styles/living-screencast/style.json",
+      "upstream_path": "styles/living-screencast/style.json",
+      "sha256": "bc66a36b3634f9181829d398589e146a82b57d8692eaa71ed1f7d6ba1c453d1b",
+      "git_blob": "68b1e008af75dc617eaef01b37bd96e014e23b0e",
+      "bytes": 621
+    },
+    {
+      "path": "source/lemo-opuscar/styles/hologram-hud/STYLE.md",
+      "upstream_path": "styles/hologram-hud/STYLE.md",
+      "sha256": "81e2c6b0ede2cc211a8dd676417a1ce5efda278514f273c5249165e38ff34573",
+      "git_blob": "d4d505d0eb74474603b326fadc68416f90b31cde",
+      "bytes": 11833
+    },
+    {
+      "path": "source/lemo-opuscar/styles/hologram-hud/style.json",
+      "upstream_path": "styles/hologram-hud/style.json",
+      "sha256": "a5efa1a7dcd4089dde08579a287413872a5a5d7e1f99c4ba763f2e95f3ee3fb8",
+      "git_blob": "4facd4796b453e4f441a2ffbab440b6f93b86b20",
+      "bytes": 550
+    },
+    {
+      "path": "source/lemo-opuscar/styles/desktop-flythrough/STYLE.md",
+      "upstream_path": "styles/desktop-flythrough/STYLE.md",
+      "sha256": "38993ddb69447ba7c44890fbdcff8698b31cbfcd48de82932334b65124f2c390",
+      "git_blob": "5d2fe363fd62f9e07150bd33f36b4594ae7ac16e",
+      "bytes": 22483
+    },
+    {
+      "path": "source/lemo-opuscar/styles/desktop-flythrough/style.json",
+      "upstream_path": "styles/desktop-flythrough/style.json",
+      "sha256": "e4731a9274ce6d73587cb20e7aaab10d57ac99efb935cfd76142c1736deede64",
+      "git_blob": "36057196838cf8cee3b2c2469b724124044a22e7",
+      "bytes": 601
+    },
+    {
+      "path": "source/lemo-opuscar/styles/spreadsheet/STYLE.md",
+      "upstream_path": "styles/spreadsheet/STYLE.md",
+      "sha256": "63b4c656fe1c63e38ac769ace40d7bf4a35313285e5f426003faf64b35f73f77",
+      "git_blob": "7ab076391576575cbce3c03078b83af3fea09123",
+      "bytes": 13748
+    },
+    {
+      "path": "source/lemo-opuscar/styles/spreadsheet/style.json",
+      "upstream_path": "styles/spreadsheet/style.json",
+      "sha256": "19253412ac02ed632d706b1f7c88c00a839665afbd33705d785f5bd1f335191a",
+      "git_blob": "337123161d4b6071fb6eb415233c5bae84d894c2",
+      "bytes": 654
+    },
+    {
+      "path": "source/lemo-opuscar/styles/one-bit-dither/STYLE.md",
+      "upstream_path": "styles/one-bit-dither/STYLE.md",
+      "sha256": "0bc40947535c1b1a3e41903ab3e7e75c372d1392e2145e0d79a6e6fc110eb16b",
+      "git_blob": "76cdb149b4eff983f04f0be25a1cdc971890c804",
+      "bytes": 15093
+    },
+    {
+      "path": "source/lemo-opuscar/styles/one-bit-dither/style.json",
+      "upstream_path": "styles/one-bit-dither/style.json",
+      "sha256": "3ed454b0052394ab264d9c246adcda1a987930081702dc27fe334cf6f655da6b",
+      "git_blob": "3c20108861b8c51cc8108c9cb82fdb9029e3b492",
+      "bytes": 741
+    },
+    {
+      "path": "source/lemo-opuscar/styles/circuit-board/STYLE.md",
+      "upstream_path": "styles/circuit-board/STYLE.md",
+      "sha256": "3f5244726e732a8407355bebdec309942410104af32c956372ff4f1477a0cd9b",
+      "git_blob": "eb932d35d50f650845801aaa61f98a6818d9d55b",
+      "bytes": 22762
+    },
+    {
+      "path": "source/lemo-opuscar/styles/circuit-board/style.json",
+      "upstream_path": "styles/circuit-board/style.json",
+      "sha256": "5ee631bd6509bc8c2faab8baa04c530e4437ae24a62e755210a181501e0f6afe",
+      "git_blob": "213fe5bf391d363e12e3fa3974d4cf7f56da1137",
+      "bytes": 500
+    },
+    {
+      "path": "source/lemo-opuscar/styles/firefly-pointillism/STYLE.md",
+      "upstream_path": "styles/firefly-pointillism/STYLE.md",
+      "sha256": "15ab75f6b7f2eebbf24471edb9d4050c2b4db6c8699727a43a9de2dc8c2c6c59",
+      "git_blob": "a0339844f0e86ecb8e685162ae8053bfbb9df28f",
+      "bytes": 12898
+    },
+    {
+      "path": "source/lemo-opuscar/styles/firefly-pointillism/style.json",
+      "upstream_path": "styles/firefly-pointillism/style.json",
+      "sha256": "6f4318473daf8a35e70ccbe7907c4011ceb0101584271c48e5ae4a6cb53a0756",
+      "git_blob": "57023edc6ac975abfa998270032396603d1808df",
+      "bytes": 664
+    },
+    {
+      "path": "source/lemo-opuscar/styles/flow-field/STYLE.md",
+      "upstream_path": "styles/flow-field/STYLE.md",
+      "sha256": "4605fa6f3093dee6177f483d1ec5c7cea0cb7aa3aff9f7e1857f5dbb277993e9",
+      "git_blob": "329c85d4b78d2458595558371521282c3aae4247",
+      "bytes": 16790
+    },
+    {
+      "path": "source/lemo-opuscar/styles/flow-field/style.json",
+      "upstream_path": "styles/flow-field/style.json",
+      "sha256": "29c7376febb1d38f85fd2c6e404df48cb1aa96fc799343bb191873a4270dd03e",
+      "git_blob": "2e040a8fd0ef61d84f10033ece45b47de69bbf8d",
+      "bytes": 837
+    },
+    {
+      "path": "source/lemo-opuscar/styles/oscilloscope-math/STYLE.md",
+      "upstream_path": "styles/oscilloscope-math/STYLE.md",
+      "sha256": "2b9b1ca78c1bebaf58b2673356170e6dfe84f8e0b322617b16f016f53af8f635",
+      "git_blob": "d113bb7736158d8ff961e83ae195f7a7fe2e23b1",
+      "bytes": 11715
+    },
+    {
+      "path": "source/lemo-opuscar/styles/oscilloscope-math/style.json",
+      "upstream_path": "styles/oscilloscope-math/style.json",
+      "sha256": "33a0de5e5d559db0dc16dcac2e69e1f6a75ed5d5e2a7937dc3c65fba5f997cac",
+      "git_blob": "6dd53e3bbe51059eb598b87c58992fd8c64192d7",
+      "bytes": 692
+    },
+    {
+      "path": "source/lemo-opuscar/styles/neon-tubes/STYLE.md",
+      "upstream_path": "styles/neon-tubes/STYLE.md",
+      "sha256": "86b5d2d9157b4e9e1cbc8e49d0e244f45e02619226a7cf228d14e513c93c8ea3",
+      "git_blob": "75f07ebe1368de3197adc976d7dce1e34bf77bca",
+      "bytes": 14168
+    },
+    {
+      "path": "source/lemo-opuscar/styles/neon-tubes/style.json",
+      "upstream_path": "styles/neon-tubes/style.json",
+      "sha256": "eb97859ac956a9affe00d975ba9e1bd85202c08b66fcbec1215ff7f54d3447b4",
+      "git_blob": "7bf8e589008941f988d808661977bbfc70bfdbe8",
+      "bytes": 716
+    },
+    {
+      "path": "source/lemo-opuscar/styles/brick-toy/STYLE.md",
+      "upstream_path": "styles/brick-toy/STYLE.md",
+      "sha256": "29b23e846951856b722a698a03c9458cfc17b4fc71d044f45d773acf2a742768",
+      "git_blob": "a93656c9c254fe36ff8ed94dfde04d79ccf9e7dd",
+      "bytes": 12556
+    },
+    {
+      "path": "source/lemo-opuscar/styles/brick-toy/style.json",
+      "upstream_path": "styles/brick-toy/style.json",
+      "sha256": "262bdea6a152d45c1bb682ff2632d0e1942a77a07ca2d9ed6dfd103bf660aa2c",
+      "git_blob": "03703a4bb44e0b947c4dac2a776c21094b4c5554",
+      "bytes": 484
+    },
+    {
+      "path": "source/lemo-opuscar/styles/paper-popup/STYLE.md",
+      "upstream_path": "styles/paper-popup/STYLE.md",
+      "sha256": "8e5c0ca430fd96b75c4d9c2af92a87c84d4d1af8cda64280a189c51279e1ee9b",
+      "git_blob": "cf00194c3d7e57f646ef0abc4d4a12e7094eeddd",
+      "bytes": 12095
+    },
+    {
+      "path": "source/lemo-opuscar/styles/paper-popup/style.json",
+      "upstream_path": "styles/paper-popup/style.json",
+      "sha256": "3c60c1ba1c3c7686edae36000393cfb3509ae3d242ddff34e869bc07f2642ec0",
+      "git_blob": "9076eacfedd9673aa42db2d0ad5e8d19433dd7b5",
+      "bytes": 560
+    },
+    {
+      "path": "source/lemo-opuscar/styles/tilt-shift/STYLE.md",
+      "upstream_path": "styles/tilt-shift/STYLE.md",
+      "sha256": "131ae50c6bddd30922638cbd5f2fae5c047223360a3f6924b074b0db525a5c63",
+      "git_blob": "b65726e68f73b051385a4fd4f9071f2c090076bd",
+      "bytes": 12077
+    },
+    {
+      "path": "source/lemo-opuscar/styles/tilt-shift/style.json",
+      "upstream_path": "styles/tilt-shift/style.json",
+      "sha256": "e0ffbee27ce5c600c29eabd359c599a6f22dd0f9420421aad239a9304d8e3eb9",
+      "git_blob": "d164c64e50028dedd1f941c229ba272810e51440",
+      "bytes": 481
+    },
+    {
+      "path": "source/lemo-opuscar/styles/lowpoly-island/STYLE.md",
+      "upstream_path": "styles/lowpoly-island/STYLE.md",
+      "sha256": "1ae7bcd6aa3d521f563d8905f8109842fd7252ff8b70c1bd18265105a8a450f9",
+      "git_blob": "fff411fe84ff3d59f8ddb967fc01d669a1c2f0e6",
+      "bytes": 12310
+    },
+    {
+      "path": "source/lemo-opuscar/styles/lowpoly-island/style.json",
+      "upstream_path": "styles/lowpoly-island/style.json",
+      "sha256": "4b26ddd08f6adb908879a4d6f9bbd2ad0c885d806b14cb92fa236586c1528412",
+      "git_blob": "14ed333adda9cc7321abf4bc2c6f1be29c978c20",
+      "bytes": 561
+    },
+    {
+      "path": "source/lemo-opuscar/styles/glass-product/STYLE.md",
+      "upstream_path": "styles/glass-product/STYLE.md",
+      "sha256": "630fa80cde0930154ba64f15bce5c8ee0c8dcf48d921253f8c7e3194712c8fb5",
+      "git_blob": "01628dbe058a8e63ffb66122d487e1964825fc42",
+      "bytes": 12199
+    },
+    {
+      "path": "source/lemo-opuscar/styles/glass-product/style.json",
+      "upstream_path": "styles/glass-product/style.json",
+      "sha256": "8cd632c6b7ca25c6e2623779541d115f0ad55f545d34af20f3ecae793f27a2be",
+      "git_blob": "adff4831c8adfacc499b7d5a4416ba14137c82a5",
+      "bytes": 504
+    },
+    {
+      "path": "source/lemo-opuscar/styles/memphis-diorama/STYLE.md",
+      "upstream_path": "styles/memphis-diorama/STYLE.md",
+      "sha256": "7f1748f2741d069e074172800d501ec00527db8a018e1e5ab4ecfa630ed6763b",
+      "git_blob": "6f4fa529e8341b0eae48c2e7ec6d09743fbb06db",
+      "bytes": 19589
+    },
+    {
+      "path": "source/lemo-opuscar/styles/memphis-diorama/style.json",
+      "upstream_path": "styles/memphis-diorama/style.json",
+      "sha256": "07fafe8185b1af83f01feca8fe0301fe2fdf9014b15e7e7bd3831830e58d0d1e",
+      "git_blob": "33f21c5a541774c0487c7e20bade036e75ea5d20",
+      "bytes": 595
+    },
+    {
+      "path": "source/lemo-opuscar/styles/isometric-picture-book/STYLE.md",
+      "upstream_path": "styles/isometric-picture-book/STYLE.md",
+      "sha256": "0118a0183745d8bbd29ab06792c2ea887edeee7d3dcd47b5a89889c57687cd59",
+      "git_blob": "676fcd96e74973d9c167794fc5316fe98a7d67c5",
+      "bytes": 20859
+    },
+    {
+      "path": "source/lemo-opuscar/styles/isometric-picture-book/style.json",
+      "upstream_path": "styles/isometric-picture-book/style.json",
+      "sha256": "3590c598a448d014855ce6b3070b1c2ca235b1a4470c636db8396593ebc1b3ba",
+      "git_blob": "b83db3e132de673673401df8dfc4bcc11d083799",
+      "bytes": 615
+    },
+    {
+      "path": "source/lemo-opuscar/styles/crayon-world/STYLE.md",
+      "upstream_path": "styles/crayon-world/STYLE.md",
+      "sha256": "50c5b5319fabd7189cf725524092b3c69af334ae7f92052f10da2581356030b0",
+      "git_blob": "f83457b215ab4fc8dc894790bff2a5682125f136",
+      "bytes": 12504
+    },
+    {
+      "path": "source/lemo-opuscar/styles/crayon-world/style.json",
+      "upstream_path": "styles/crayon-world/style.json",
+      "sha256": "6ed724b585776c4d10da282cebff394c1251fed683728f9003b4d9f0fed05155",
+      "git_blob": "35a336e235a4f450dd2f3e97fd2559a0d0c9228d",
+      "bytes": 648
+    },
+    {
+      "path": "source/lemo-opuscar/styles/satellite-briefing/STYLE.md",
+      "upstream_path": "styles/satellite-briefing/STYLE.md",
+      "sha256": "659e1d33189f252cec629685c60fc9b495d1c6f6679c5c8791b37b1192a3147f",
+      "git_blob": "394c50db2e95aa1c88be6a8856e09faeb517e85b",
+      "bytes": 13232
+    },
+    {
+      "path": "source/lemo-opuscar/styles/satellite-briefing/style.json",
+      "upstream_path": "styles/satellite-briefing/style.json",
+      "sha256": "cc73b2de913b7bbd0a341492414edbb2e455dbd25951fc0c3772053fcace8681",
+      "git_blob": "efc1b4f3f269f4af3314a9bd1ee0e2cda8a71dd8",
+      "bytes": 568
+    },
+    {
+      "path": "source/lemo-opuscar/styles/briefing-board/STYLE.md",
+      "upstream_path": "styles/briefing-board/STYLE.md",
+      "sha256": "44669da808da4ed37e2a4a0f6e5d2b23008775a3c4870add04641d714e9f323d",
+      "git_blob": "912cae2d8cd1db96f9434e2ceb2e73f07b61dfad",
+      "bytes": 13328
+    },
+    {
+      "path": "source/lemo-opuscar/styles/briefing-board/style.json",
+      "upstream_path": "styles/briefing-board/style.json",
+      "sha256": "0f9f17f7e35f1297b3875860cc51e745a33743890586b31a11ef5b4972390995",
+      "git_blob": "e5d9e9a8c58633df61932e7d8f51194dfaa338c2",
+      "bytes": 575
+    },
+    {
+      "path": "source/lemo-opuscar/styles/lidar-survey/STYLE.md",
+      "upstream_path": "styles/lidar-survey/STYLE.md",
+      "sha256": "fe7034a4f7a66af8712562544e8dc33d68c25ee8cfe9975fff5d0ab98b253d28",
+      "git_blob": "ecbcc7130552fde9cfb36dc4febf21e58263c4dd",
+      "bytes": 13152
+    },
+    {
+      "path": "source/lemo-opuscar/styles/lidar-survey/style.json",
+      "upstream_path": "styles/lidar-survey/style.json",
+      "sha256": "b4ca5de194a02f6b388991f62be9f525485ac59e16b4430d8e679e400ebd1e84",
+      "git_blob": "c9d1683a8a98aec800a3469708b6e20e2edb5254",
+      "bytes": 534
+    },
+    {
+      "path": "source/lemo-opuscar/styles/microscope/STYLE.md",
+      "upstream_path": "styles/microscope/STYLE.md",
+      "sha256": "39f9d5ed9287ff42da82be62aac2eb50eacf635e85788c39428762a61f628030",
+      "git_blob": "004e74a1699f2052398da4c7654c129b6d4eb465",
+      "bytes": 13157
+    },
+    {
+      "path": "source/lemo-opuscar/styles/microscope/style.json",
+      "upstream_path": "styles/microscope/style.json",
+      "sha256": "a08d684d7dd78bb7ac8a4c6d2352019feedf719d7cfaf41ea31a3a5b1a5745b2",
+      "git_blob": "161e835510a39f9c7a80a942d898fdbb87f83ec7",
+      "bytes": 627
+    },
+    {
+      "path": "source/lemo-opuscar/styles/archive-lighttable/STYLE.md",
+      "upstream_path": "styles/archive-lighttable/STYLE.md",
+      "sha256": "2f18ac9a42822b7a9941866c42b0642e5417dea5431d61f141f6e11b29c1ec14",
+      "git_blob": "d3f5afde708f94af9347ff05d10f4f9860557492",
+      "bytes": 13338
+    },
+    {
+      "path": "source/lemo-opuscar/styles/archive-lighttable/style.json",
+      "upstream_path": "styles/archive-lighttable/style.json",
+      "sha256": "35b1b589d3ea54cefd1765972196bd8a42a7c2bb80b8bed68677426c752e9a29",
+      "git_blob": "f55d0413d8fcd652d9af91b2c6aa770ba3d22d02",
+      "bytes": 583
+    },
+    {
+      "path": "source/lemo-opuscar/styles/security-xray/STYLE.md",
+      "upstream_path": "styles/security-xray/STYLE.md",
+      "sha256": "fef3d388f119c5e331093b20817b5fa312bb356ae1bacdab5098996fbe3f6321",
+      "git_blob": "b19ffb6c925d5d42165cc8832c2b4bee78063281",
+      "bytes": 16759
+    },
+    {
+      "path": "source/lemo-opuscar/styles/security-xray/style.json",
+      "upstream_path": "styles/security-xray/style.json",
+      "sha256": "a02f16ae1201bf23f2d1e7f771614462023b7d48d68f55f32546e5312c583e88",
+      "git_blob": "fbd7624c3b6bfe162157c8dce3324fdab6f5cb83",
+      "bytes": 637
+    },
+    {
+      "path": "source/lemo-opuscar/styles/dark-documentary/STYLE.md",
+      "upstream_path": "styles/dark-documentary/STYLE.md",
+      "sha256": "1c3183105543c0108ab248839b389234436b524982f4cedc38a8c33fb96290b5",
+      "git_blob": "bf532b91b0d62dfac5705f98caccffb3dbeb96e0",
+      "bytes": 11989
+    },
+    {
+      "path": "source/lemo-opuscar/styles/dark-documentary/style.json",
+      "upstream_path": "styles/dark-documentary/style.json",
+      "sha256": "392220dcfcef0033079668c1c1037ad84ef1505b3da14df2a74abc2a1f44fcc0",
+      "git_blob": "5d94730fc62b89ca3b503e586725c75dd4bb386a",
+      "bytes": 708
+    },
+    {
+      "path": "source/lemo-opuscar/styles/thermal-camera/STYLE.md",
+      "upstream_path": "styles/thermal-camera/STYLE.md",
+      "sha256": "b6af38ba920121ef8b764831514b7c917ed24beadcb86e7d8a63f54fa47f45ae",
+      "git_blob": "17cba91f376134ca179a44bb54094ea006d26ac4",
+      "bytes": 13188
+    },
+    {
+      "path": "source/lemo-opuscar/styles/thermal-camera/style.json",
+      "upstream_path": "styles/thermal-camera/style.json",
+      "sha256": "1c07c21b92b9b85ed1c377318dd72d2eddf56b5cded1bb9125cb8bc875696fa6",
+      "git_blob": "44b26b9fc9ea7ed7ad03d9e58f7cfe143c45857b",
+      "bytes": 756
+    },
+    {
+      "path": "source/lemo-opuscar/styles/dataviz/STYLE.md",
+      "upstream_path": "styles/dataviz/STYLE.md",
+      "sha256": "e94013d5a7c548c8844598a671ff0b49bc78770696cbca0d8d00846336f3c67f",
+      "git_blob": "1d3c361cd488f053388be6d98120a9dcfa8033a1",
+      "bytes": 11415
+    },
+    {
+      "path": "source/lemo-opuscar/styles/dataviz/style.json",
+      "upstream_path": "styles/dataviz/style.json",
+      "sha256": "be49fe91a920a838eff76d4c350770533c6680b8cfd889ccce496198314dc527",
+      "git_blob": "34d8f8c38e7f5ef40971e362939482a00d2cc86d",
+      "bytes": 479
+    },
+    {
+      "path": "source/lemo-opuscar/styles/white-model/STYLE.md",
+      "upstream_path": "styles/white-model/STYLE.md",
+      "sha256": "d285018ffffd5eac5c015550d3f5ffe32bc6b6222c9e37d9a1adfe8a03d929fb",
+      "git_blob": "28f4b3bca2fe5ac2fcb949391048f8f5dd42c43d",
+      "bytes": 13579
+    },
+    {
+      "path": "source/lemo-opuscar/styles/white-model/style.json",
+      "upstream_path": "styles/white-model/style.json",
+      "sha256": "ce27ac2fd995127f210442de2500317fabfc8e8c7eeeb0d336426a17670a5b42",
+      "git_blob": "ee3b115d1b4ac52a847f8c55be6605f9d695b99b",
+      "bytes": 614
+    },
+    {
+      "path": "source/lemo-opuscar/styles/data-physical/STYLE.md",
+      "upstream_path": "styles/data-physical/STYLE.md",
+      "sha256": "18c3c76d1ddb3d8616c7cd571433853885e8bd65146ab0b4ee2222e4475c6116",
+      "git_blob": "673d7b486b92114364f4378db883a0acf960f25f",
+      "bytes": 13473
+    },
+    {
+      "path": "source/lemo-opuscar/styles/data-physical/style.json",
+      "upstream_path": "styles/data-physical/style.json",
+      "sha256": "900b6bf2cd3c2cdff59a47e4facb27b16d625be08a69ec25a015069cc2a7ac3b",
+      "git_blob": "d6666781e0ca4bb285237043137624b662d5cb52",
+      "bytes": 561
+    },
+    {
+      "path": "source/lemo-opuscar/styles/transit-map/STYLE.md",
+      "upstream_path": "styles/transit-map/STYLE.md",
+      "sha256": "e6c62bc75071c86b67c30def595e919910d86245504c8c09882d151a3c719d1c",
+      "git_blob": "efd6d07099090253d1f1e6a0406abb4a50ce53a8",
+      "bytes": 30614
+    },
+    {
+      "path": "source/lemo-opuscar/styles/transit-map/style.json",
+      "upstream_path": "styles/transit-map/style.json",
+      "sha256": "4578c2694ac5bec8d11ede95421a7702f922eb61dedae674eccad5721535ef59",
+      "git_blob": "e8579b9610edfbcf06c5468767f9f46c7faf7d19",
+      "bytes": 488
+    },
+    {
+      "path": "source/lemo-opuscar/styles/map-explainer/STYLE.md",
+      "upstream_path": "styles/map-explainer/STYLE.md",
+      "sha256": "fedb3f7444b78e65bc66c7c456fb5d4d09fc7228ffbd220ed90827ef8f816e6f",
+      "git_blob": "a6412db4ff7bc5dbc447e1f07202b94a907fb809",
+      "bytes": 15771
+    },
+    {
+      "path": "source/lemo-opuscar/styles/map-explainer/style.json",
+      "upstream_path": "styles/map-explainer/style.json",
+      "sha256": "15808a87af70cd63696e95fb21810d7a5ca5287753890975e37eefc452aea66c",
+      "git_blob": "9bb096960b489afb4e133be746803358de047d0b",
+      "bytes": 728
+    },
+    {
+      "path": "source/lemo-opuscar/styles/pip-simulation/STYLE.md",
+      "upstream_path": "styles/pip-simulation/STYLE.md",
+      "sha256": "eac2f8477b540ce02ee6d609643c5be94f99f83e6d70577ea382309a1fe5b8b8",
+      "git_blob": "a2bb7b13c260c7e22010d089d25c95f6d3b94651",
+      "bytes": 13540
+    },
+    {
+      "path": "source/lemo-opuscar/styles/pip-simulation/style.json",
+      "upstream_path": "styles/pip-simulation/style.json",
+      "sha256": "10f93c97ed504e637fe80874f7df26940e8e3cb0b76ddde9bca197aee52be07b",
+      "git_blob": "33e0155dcb63ee8944d28e1c906ae67c8696bbf4",
+      "bytes": 653
+    }
+  ],
+  "not_imported": [
+    "DEMO.md",
+    "demo code",
+    "CREDITS",
+    "footage",
+    "fonts",
+    "audio",
+    "models",
+    "textures",
+    "our earlier studies or modules"
+  ],
+  "source_document_links": "Original STYLE.md may contain links to upstream DEMO.md or engine files. Those files are deliberately absent; open the pinned GitHub source link to inspect that context.",
+  "raw_metadata": "Original style.json may name the upstream demo. These reference metadata fields are not imported into Blender or adopted as project content."
+}

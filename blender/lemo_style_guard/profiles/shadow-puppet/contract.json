@@ -1,0 +1,238 @@
+{
+  "schema_id": "lemo-blender-style/v1",
+  "style_id": "shadow-puppet",
+  "title_zh": "皮影戏",
+  "title_original": "Shadow Puppetry",
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+    "path": "styles/shadow-puppet/STYLE.md",
+    "sha256": "8be075a8262d5a3deea9b05684d8a9abdc1e54c0d90649bf14609ecb4106c3af"
+  },
+  "scope": {
+    "original_engine": "Canvas2D 雕刻图形与 WebGL2 合成：灯场 × 皮革透射 × 布幕；原文未使用 Blender。",
+    "blender_route": "以平面半透明染色皮革、真实镂空、白布幕和背后暖灯组织透射；需要时用合成层保持重叠变暗。",
+    "adaptation_limit": "普通半透明塑料材质不等于原文的染色皮透射模型；灯、皮、布的乘法关系和镂空密度需要在实际渲染中校准。"
+  },
+  "rules": [
+    {
+      "id": "shadow-puppet-01",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "主体是白布幕后的平面染色透光皮片，颜色由背后油灯的光透过染料形成。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "translucent dyed hide",
+      "blender_translation": "在 Blender 中先锁定布幕—皮片—背灯的关系；皮片使用透射或受控合成，不把颜色做成从正面照亮的不透明纸板。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-02",
+      "category": "lighting",
+      "level": "forbidden",
+      "rule_zh": "灯光必须偏暖，不能用白光替代原风格的暖油灯。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "Warm light, never white.",
+      "blender_translation": "灯色选择暖色并在渲染中检查布幕及皮革；这里不虚构固定色温数值。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-03",
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "镂空最亮，皮片重叠自然变暗；透过染料后的部分不能比光源更亮。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Holes are the brightest value.",
+      "blender_translation": "分别检查空洞、单片、重叠片的亮度关系；不要用普通Alpha叠加导致重叠变浅或自发光超亮。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-04",
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "色彩结构为3–5种饱和染料，加原皮中性色和描边／头发／靴子的墨色。",
+      "source_section": "3. Colour logic",
+      "source_quote": "3–5 saturated dyes",
+      "blender_translation": "先为染料、原皮和墨色分配角色；计数针对设计染料，不把透射明暗当作新染料。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-05",
+      "category": "palette",
+      "level": "forbidden",
+      "rule_zh": "夜晚靠减少灯盏表达，不用额外加蓝色调代替。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Night is fewer lamps, never added blue.",
+      "blender_translation": "保留暖色透射系统，调整实际灯或对应合成光场；不要套统一蓝夜色滤镜。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-06",
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "镂刻要有密度：保留细条，镂空大部分面积；每个区域具有深色刻线。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "leave thin strips, cut out most of the area.",
+      "blender_translation": "以真实孔洞或可靠Alpha遮罩表现镂空，并检查薄条不断裂、刻线不消失。不能只贴几条花纹就当成皮影。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-07",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "皮片有斑驳、纤维和细点，布幕有织纹、纤维和低频密度变化；纹理不能堵住镂空。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "so holes survive.",
+      "blender_translation": "皮革纹理与孔洞遮罩分开，布纹属于幕面；检查最终Alpha和透射，不让纹理填平空洞。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-08",
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "关节线铆钉和细操纵杆是可见结构，不能为“干净”全部删掉。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "visible thread rivets",
+      "blender_translation": "把铆钉和杆作为独立细结构保留；前台略离幕面的杆可偏软灰，后台视角的杆应更清楚。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-09",
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "人物由8–12块关节皮片组成，头部约为自然比例的1.2倍并带较大的头饰；袖子与躯干分染料。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "8–12 pieces, head ~1.2× natural with large headwear",
+      "blender_translation": "建模时沿关节拆平片，检查头饰、袖色、下半身形状的辨识；这些是原文的比例指引，不自动替用户生成人物。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-10",
+      "category": "consistency",
+      "level": "required",
+      "rule_zh": "人物的脸部图形不变形，态度通过头角度和身体倾斜表达。",
+      "source_section": "5. Motion quality",
+      "source_quote": "Faces never change; attitude = head angle + body tilt",
+      "blender_translation": "角色风格卡需把脸作为固定雕刻图形；表情可读性从姿态核对，不增加写实表情肌系统。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-11",
+      "category": "composition",
+      "level": "required",
+      "rule_zh": "场景是照亮布幕上的疏朗镂刻布景，保持大面积空布和窄地景条。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "mostly empty lit cloth",
+      "blender_translation": "以负空间作为构图组成部分；不要把幕面填满厚重三维建筑或景深背景。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-12",
+      "category": "shape",
+      "level": "forbidden",
+      "rule_zh": "火、烟和流水用杆上刻片表现，不能改成粒子特效。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "never particles.",
+      "blender_translation": "如内容需要这些元素，造型仍服从刻片语汇；不创建烟火模拟或粒子发射器来替代。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-13",
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "必须读清的细物件、杆、线和文字用深色，浅细片在亮布上会消失。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Thin things that must read (strings, shafts, text) are dark",
+      "blender_translation": "从最终画幅检查细节对比，不只看近距离建模视图。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-14",
+      "category": "lighting",
+      "level": "forbidden",
+      "rule_zh": "暗角向暖棕色收束，不能出现灰色角落。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "toward brown, never grey",
+      "blender_translation": "若使用合成暗角，检查其色相和过曝区域；不套无色灰暗角。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-15",
+      "category": "camera",
+      "level": "required",
+      "rule_zh": "人物以侧面呈现，布幕大部分保持空白。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "Puppets in profile; most of the cloth stays empty.",
+      "blender_translation": "把侧面轮廓与留白设为镜头验收项；不要因三维软件可转镜头就改成体积人物的正面透视。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-16",
+      "category": "camera",
+      "level": "required",
+      "rule_zh": "向布幕推近时，相机画面仍需落在幕面矩形内，避免黑边；一般向框中心推入。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "clamp the camera to the screen rectangle (no black bars)",
+      "blender_translation": "检查实际摄影机画幅和幕面边界；进入灯盏的特殊镜头是原文明示的例外，不是通用路线。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-17",
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "标题是有刻边的深皮牌，文字切空后由背光发亮；不是任意悬浮的屏幕标题。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "Titles are puppets",
+      "blender_translation": "用字形孔洞或对应透射遮罩体现皮牌；不把发光字直接贴在幕前就当作满足材料关系。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-18",
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "字幕属于剧场物件：可用说书牌、杆上标签或刻在皮革里的文字；浅奶油字置于深色承载面。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "Subtitles belong to the theatre",
+      "blender_translation": "三种承载方式任选；具体字体原文只举例，不强制采用某个字体文件。",
+      "review": "manual"
+    },
+    {
+      "id": "shadow-puppet-19",
+      "category": "material",
+      "level": "forbidden",
+      "rule_zh": "不能改成纯黑剪影，也不能加彩窗式铅条；颜色透过皮革、各片可以重叠才是本风格。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "no lead lines; pieces move and overlap",
+      "blender_translation": "检视是否仍可读为染色皮片；不要把彩窗金属骨架或不透明黑纸系统混进同一风格。",
+      "review": "manual"
+    }
+  ],
+  "palette": {
+    "status": "source_example",
+    "editable": true,
+    "colors": [],
+    "notes": "原文按染料名称给出示例组（朱红／赭石／石绿；靛蓝／碧玉色／一处赭石；焰橙／金／一处绿），未给出这些染料的HEX。因此不自动填入自创色值。项目可选3–5种染料，并保留原皮、墨色和暖光关系。"
+  },
+  "material_recipe": {
+    "family": "translucent_cutout",
+    "color_management_suggestion": "AgX",
+    "explanation": "参考材质应承担染色薄片的透光角色，实际仍需背灯与布幕。AgX仅为Blender处理灯光高动态范围的建议起点，不等同上游的指数色调映射，也不能自动保证重叠变暗。",
+    "origin": "blender_adapter_suggestion"
+  },
+  "not_automated": [
+    "单片／重叠片／镂空的实际透射亮度顺序。",
+    "镂刻密度、铆钉、操纵杆是否读得清。",
+    "侧面轮廓、头饰和袖色是否支持人物辨识。",
+    "布幕留白和暖棕暗角是否成立。"
+  ],
+  "attribution": {
+    "original_author": "Lemo-Opuscar by Lemomo (LemoLab)",
+    "original_copyright": "Copyright (c) 2026 Lemomo (LemoLab)",
+    "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/shadow-puppet/STYLE.md",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "upstream_terms_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/LICENSE",
+    "modifications": "中文翻译与美术约束整理；Blender 实施建议为本库新增，原始 STYLE.md 字节未改。",
+    "additional_film_permission": "保留上游允许制作自有／客户影片（包括商业影片）及相应工程交付的额外许可；本库改编部分按根 LICENSE 提供同等许可。",
+    "endorsement": "Independent adaptation; no upstream endorsement implied."
+  }
+}

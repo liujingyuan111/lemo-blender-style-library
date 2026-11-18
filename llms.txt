@@ -1,0 +1,48 @@
+# Lemo Art Constraints for Blender
+
+> Source-backed art constraints from Lemo-Opuscar, with Chinese rule cards and Blender reading tools. Start with one selected style. This repository supplies constraints; each film's story, assets, and shots belong to its own project.
+
+## Read first
+
+- [AI working agreement](AGENTS.md): Required reading order, rule levels, provenance, project separation, and evidence-based art review.
+- [AI quick start](AI_START_HERE.md): Local-folder use, single-style export, and a copyable task prompt.
+- [Repository overview](README.md): Scope and Blender usage.
+- [Style catalog](catalog/styles.json): 99 source styles, including 8 with Blender contracts and 91 reference-only entries.
+- [Source and usage notice](docs/SOURCE_NOTICE.md): Attribution, document licensing, and upstream additional film-making permission.
+
+## Current scope
+
+The eight Blender contracts contain 150 rules. A successful script run is not proof that the artwork follows them. Keep required, forbidden, recommended, optional, and example distinct, including their conditions.
+
+Original STYLE documents, excerpts, and translated contracts retain their applicable document terms. A JSON contract is adapted documentation, not MIT code merely because it uses JSON. Read the root licensing explanation before redistribution.
+
+## Eight Blender rule cards
+
+- [60s Spy Title Sequence](blender/lemo_style_guard/profiles/spy-titles/RULES.md): Four inks, cut-paper edges, silhouette readability, and typographic structure.
+- [Silhouette Rhythm](blender/lemo_style_guard/profiles/silhouette-rhythm/RULES.md): Single dark contours on light grounds; separate optical rim light from graphic outlines.
+- [Shadow Puppetry](blender/lemo_style_guard/profiles/shadow-puppet/RULES.md): Translucent dyed cutouts, perforations, joints, screen, and backlight.
+- [Paper-cut Lightbox](blender/lemo_style_guard/profiles/paper-lantern/RULES.md): Parallel paper scenery inside the box, depth values, soft shadows, and internal light.
+- [Paper Pop-up Book](blender/lemo_style_guard/profiles/paper-popup/RULES.md): Paper geometry, folds, cut edges, ink, and page relationships.
+- [Liminal Found Footage](blender/lemo_style_guard/profiles/backrooms/RULES.md): Repeated interior space and a constrained recording-medium grammar.
+- [Projection-Mapped Model](blender/lemo_style_guard/profiles/white-model/RULES.md): Matte white geometry with colour supplied by projected light.
+- [Low-poly Isometric](blender/lemo_style_guard/profiles/lowpoly-island/RULES.md): Orthographic projection, flat normals, limited colours, and shadow-defined structure.
+
+Each card has a sibling contract.json with source commit, original quote anchors, rule levels, Blender translation suggestions, palette provenance, and manual-review requirements.
+
+## Command-line context
+
+Run from the repository root:
+
+~~~bash
+python tools/ai_context.py list --blender-only
+python tools/ai_context.py search paper --json
+python tools/ai_context.py export spy-titles --format md
+python tools/ai_context.py export spy-titles --format json
+~~~
+
+Export includes only the selected style and its source/usage context. Use the catalog or search results to choose a style before loading its full context. An optional --output PATH writes a new file and refuses to overwrite an existing one; its parent directory must already exist. Reference-only styles export as reference-only; do not invent a completed Blender contract for them.
+
+## Tool access
+
+These entry files do not grant local file or Blender access. The user must make the repository available through their chosen client's file tools or provide an exported context file. Automatic discovery of AGENTS.md, CLAUDE.md, GEMINI.md, or llms.txt depends on the client and its configuration.
+

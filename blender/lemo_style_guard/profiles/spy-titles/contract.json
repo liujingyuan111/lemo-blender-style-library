@@ -1,0 +1,249 @@
+{
+  "schema_id": "lemo-blender-style/v1",
+  "style_id": "spy-titles",
+  "title_zh": "60s 间谍片头",
+  "title_original": "60s Spy Title Sequence",
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+    "path": "styles/spy-titles/STYLE.md",
+    "sha256": "ea6e9e9073af43ef0bb860e368f60b16ec32a91668386115a142907d92cb1f75"
+  },
+  "scope": {
+    "original_engine": "Canvas2D：切纸路径、剪影合成、纸层阴影与纹理；原文未使用 Blender。",
+    "blender_route": "用平面或浅厚度纸片保持平面图形关系；纸边和纸层分开处理，文字保留图形结构身份。",
+    "adaptation_limit": "Blender 中保留的是四墨、手切轮廓和纸层读法；自由的写实立体造型、PBR高光和任意透视不能仅凭配色称为同一原风格。"
+  },
+  "rules": [
+    {
+      "id": "spy-titles-01",
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "限定四种主墨色：墨黑、纸奶油色、一种热色、一种暖次色；只允许这些墨色的深色纸影变体承担深度。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Darker \"shadow paper\" variants of those inks only for depth.",
+      "blender_translation": "为四种颜色分别建材质；纸影另作同色系深色变体。颜色种数按画面中的视觉角色人工核对，不把所有照明明暗算作额外墨色。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-02",
+      "category": "palette",
+      "level": "forbidden",
+      "rule_zh": "禁止用渐变填充替代不透明平色墨块。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "four colours, no gradients.",
+      "blender_translation": "墨面可从恒定颜色的平面材质起步；不要给主体墨块增加连续明暗渐变或写实高光。纸层投影与墨块本身分开。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-03",
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "每个形状有手剪边；同一纸片的切边固定在局部空间，移动时不能在屏幕空间爬动。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "Cut the edge once in the piece's local space and cache it",
+      "blender_translation": "把边缘起伏落实为轮廓网格或对象坐标下的固定遮罩。原文像素幅度需按最终画幅校准，不直接当米使用。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-04",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "独立纸片之间保留底色切缝和小纸影；整个人物只在完整轮廓外形成切缝。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "separated by a ~2.4 px cut gap in the ground colour",
+      "blender_translation": "用浅层间距、遮罩或单独阴影层表现小纸影；参考原文约2.4 px切缝，最终在输出分辨率下验收。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-05",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "纸面保留轻微斑驳、纤维、少量漏墨点和细弱刮墨痕，不能变成光滑数码色块。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "mottling + faint fibres",
+      "blender_translation": "纸纹单独作低强度表面或合成层。纹理不应破坏四墨大块面或变成另一套版画网点。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-06",
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "人物以侧面剪影和完整外轮廓表演；躯体内部部件合成一体，只在肩、肘、髋、膝保留细切缝。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "merge into one outline",
+      "blender_translation": "在 Blender 中把外轮廓可读性作为验收目标；不能给每段肢体各画一圈外边，把人物做成零件示意图。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-07",
+      "category": "shape",
+      "level": "forbidden",
+      "rule_zh": "人物不画面部细节；仅特写允许眼部细缝。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "no faces except an eye slit in close-ups.",
+      "blender_translation": "纸片正面不加入完整眼鼻嘴贴图；用头部侧轮廓和姿态表达身份。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-08",
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "采用相应角色关系时，热色用于主角的一处强调色与危险；次色用于被追逐物件。",
+      "source_section": "3. Colour logic",
+      "source_quote": "The hot colour is reserved for one accent on the hero and for danger",
+      "blender_translation": "在采用相应角色关系的内容中，给颜色分配固定职责；新的主题可重新定义物件，但不要让强调色无差别铺满背景。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-09",
+      "category": "composition",
+      "level": "required",
+      "rule_zh": "每个场景只设一个占主导的底色，人物和文字用其余墨色。",
+      "source_section": "3. Colour logic",
+      "source_quote": "One dominant ground colour per scene",
+      "blender_translation": "先确定底色材质，再检查前景纸片和字形的对比；不同地点可以换底色，而不是在一镜内任意混色。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-10",
+      "category": "palette",
+      "level": "forbidden",
+      "rule_zh": "背景道具不能用黑色冒充文字结构；背景道具使用底色的更深版本。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Background props go in a darker version of the ground, never in black",
+      "blender_translation": "为背景层分配底色阴影变体；墨黑优先保留给人物、字形等需要强识别的轮廓。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-11",
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "文字是画面的结构：字形承担建筑、道具和空间关系；片头字卡在场景中，不挤入字幕条。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "Typography is the picture's structure",
+      "blender_translation": "把字形轮廓当作构图元素布局。仅套一层画外大标题不能满足这条；是否采用文字作为主体取决于选择此完整风格的项目。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-12",
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "字形应有重新切出的边缘、略不齐的基线和不均匀笔重；标题采用自己的几何切字，不能复制既有片名标识。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "never a real title's lettering.",
+      "blender_translation": "把自选且许可适用的字体轮廓转为几何或遮罩后做固定手切处理。原文列举字体是示例，不随包附带其字体资产。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-13",
+      "category": "material",
+      "level": "forbidden",
+      "rule_zh": "不要把这个风格替换成光滑扁平矢量或半色调网点印刷；必须看得到切边与纸层。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "not a halftone print style (no dots)",
+      "blender_translation": "检查成片是否仍读成切纸；禁止用网点贴图作为纸纹替代。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-14",
+      "category": "composition",
+      "level": "required",
+      "rule_zh": "构图以强对角线、大面积平底和相对字形较小的人物建立比例；原文给出约30°的对角线语汇。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "Framing: strong diagonals (~30°), big flat grounds, figures small against type.",
+      "blender_translation": "先在摄影机视图里检查图形比例。约30°属于原风格的构图指向，不是让每个对象统一旋转30°。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-15",
+      "category": "camera",
+      "level": "required",
+      "rule_zh": "如果使用图形匹配切换，同形图形在切点的中心和尺寸必须一致。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "Match cuts keep circle centres and sizes identical across the cut.",
+      "blender_translation": "用摄影机投影后的屏幕位置和大小核对；仅在三维世界里同尺寸并不能保证画面匹配。本库只保留约束，不生成转场。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-16",
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "有字幕时，用左下角窄纸条、剪切端头和轻微倾斜；深底配浅条、浅底配深条。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "Light strip on dark scenes, dark strip on light scenes",
+      "blender_translation": "字幕版式独立于场景里的标题字形；制作时检查纸条的对比和不遮挡主体。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-17",
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "每行片头署名（credit）文字至少有一刻完整可读，不能始终裁掉一部分。",
+      "source_section": "9. Pitfalls of the medium",
+      "source_quote": "always open wide on the full line.",
+      "blender_translation": "检查实际镜头范围，不把部分字形可见误当整行可读。",
+      "review": "manual"
+    },
+    {
+      "id": "spy-titles-18",
+      "category": "camera",
+      "level": "optional",
+      "rule_zh": "原文的横移、对角切分、推入字形等是镜头语汇菜单；不规定每片都按同一路线拍。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "A vocabulary, not a route.",
+      "blender_translation": "选择适合内容的镜头并保持平面、明确的图形读法；不会随载入风格自动生成相机路线。",
+      "review": "manual"
+    }
+  ],
+  "palette": {
+    "status": "source_example",
+    "editable": true,
+    "colors": [
+      {
+        "name": "ink black",
+        "hex": "#1b1714",
+        "role": "墨黑"
+      },
+      {
+        "name": "paper cream",
+        "hex": "#efe4c9",
+        "role": "纸奶油色"
+      },
+      {
+        "name": "red",
+        "hex": "#d23a22",
+        "role": "热色"
+      },
+      {
+        "name": "mustard",
+        "hex": "#e2a52a",
+        "role": "暖次色"
+      }
+    ],
+    "notes": "这里载入的是原文列出的第一组示例墨色，原文另给两组替代。可以更换具体HEX，但需保留四墨结构及颜色职责；不能把这一组色值称为唯一合法配色。"
+  },
+  "material_recipe": {
+    "family": "flat_ink",
+    "color_management_suggestion": "Standard",
+    "explanation": "先建立四墨恒定色参考材质，纸边、切缝、纸纹和小纸影分别落实。Standard仅作为保留平面配色的Blender起点；它本身不会产生手剪边、纸影或合格构图。",
+    "origin": "blender_adapter_suggestion"
+  },
+  "not_automated": [
+    "每个角色轮廓是否一眼可读。",
+    "纸影是否轻而小、切边是否保持对象局部稳定。",
+    "文字是否真正参与结构、并在镜头中完整可读。",
+    "强调色角色和大平底构图是否贯穿全片。"
+  ],
+  "attribution": {
+    "original_author": "Lemo-Opuscar by Lemomo (LemoLab)",
+    "original_copyright": "Copyright (c) 2026 Lemomo (LemoLab)",
+    "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/spy-titles/STYLE.md",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "upstream_terms_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/LICENSE",
+    "modifications": "中文翻译与美术约束整理；Blender 实施建议为本库新增，原始 STYLE.md 字节未改。",
+    "additional_film_permission": "保留上游允许制作自有／客户影片（包括商业影片）及相应工程交付的额外许可；本库改编部分按根 LICENSE 提供同等许可。",
+    "endorsement": "Independent adaptation; no upstream endorsement implied."
+  }
+}

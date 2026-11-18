@@ -1,0 +1,67 @@
+{
+  "schema_id": "lemo-style-extraction-validation/v1",
+  "source_commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+  "status": "passed",
+  "styles": [
+    {
+      "style_id": "silhouette-rhythm",
+      "rules": 17,
+      "exact_source_quotes": "passed",
+      "source_sections": "passed",
+      "palette_values_in_source": "passed",
+      "source_sha256": "66f1a0f7d44ad1067960046514336bb4d19fce9799a16ec1591696343987a291",
+      "all_reviews": "manual",
+      "files": [
+        "blender/lemo_style_guard/profiles/silhouette-rhythm/contract.json",
+        "blender/lemo_style_guard/profiles/silhouette-rhythm/RULES.md"
+      ],
+      "quoted_word_count": 180
+    },
+    {
+      "style_id": "backrooms",
+      "rules": 19,
+      "exact_source_quotes": "passed",
+      "source_sections": "passed",
+      "palette_values_in_source": "passed",
+      "source_sha256": "2a3697a1ce37d0fbae3281220ae6154eeb9789233f1fae472d55ac169ba26fb4",
+      "all_reviews": "manual",
+      "files": [
+        "blender/lemo_style_guard/profiles/backrooms/contract.json",
+        "blender/lemo_style_guard/profiles/backrooms/RULES.md"
+      ],
+      "quoted_word_count": 110
+    },
+    {
+      "style_id": "white-model",
+      "rules": 20,
+      "exact_source_quotes": "passed",
+      "source_sections": "passed",
+      "palette_values_in_source": "passed",
+      "source_sha256": "d285018ffffd5eac5c015550d3f5ffe32bc6b6222c9e37d9a1adfe8a03d929fb",
+      "all_reviews": "manual",
+      "files": [
+        "blender/lemo_style_guard/profiles/white-model/contract.json",
+        "blender/lemo_style_guard/profiles/white-model/RULES.md"
+      ],
+      "quoted_word_count": 171
+    },
+    {
+      "style_id": "lowpoly-island",
+      "rules": 19,
+      "exact_source_quotes": "passed",
+      "source_sections": "passed",
+      "palette_values_in_source": "passed",
+      "source_sha256": "1ae7bcd6aa3d521f563d8905f8109842fd7252ff8b70c1bd18265105a8a450f9",
+      "all_reviews": "manual",
+      "files": [
+        "blender/lemo_style_guard/profiles/lowpoly-island/contract.json",
+        "blender/lemo_style_guard/profiles/lowpoly-island/RULES.md"
+      ],
+      "quoted_word_count": 130
+    }
+  ],
+  "total_rules": 75,
+  "created_scenes": 0,
+  "included_demo_assets": 0,
+  "generated_art_or_motion": false
+}

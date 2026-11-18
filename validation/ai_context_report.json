@@ -1,0 +1,21 @@
+{
+  "schema_id": "lemo-ai-context-validation/v1",
+  "status": "passed",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "catalog_styles": 99,
+  "adapted_exports": 8,
+  "reference_only_exports": 91,
+  "adapted_rules": 150,
+  "checks": [
+    "real CLI list, filtered list and Chinese/original-text search",
+    "all eight Blender contracts preserve source, strength, palette provenance and manual review",
+    "all 91 reference-only styles preserve selected original sections and deny Blender adaptation",
+    "single-style boundary, original attribution and document license",
+    "invalid identifiers and internal path traversal refused",
+    "new-file output, existing-file and symlink refusal, no implicit parent creation",
+    "preserved source directory is never modified"
+  ],
+  "scope": "Offline standard-library CLI and document checks; no Blender rendering or visual art acceptance is claimed."
+}

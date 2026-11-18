@@ -1,0 +1,254 @@
+{
+  "schema_id": "lemo-blender-style/v1",
+  "style_id": "silhouette-rhythm",
+  "title_zh": "剪影律动",
+  "title_original": "Silhouette Rhythm",
+  "scope": {
+    "original_engine": "二维剪影／倒影／水光图层，与片元着色器的天空和水面合成。",
+    "blender_route": "用二维或压平的三维轮廓承载主体，背景与水面独立布置；在构图中保持单黑形的读图逻辑。",
+    "adaptation_limit": "本卡保存轮廓、色彩、光影和摄影机约束；不附天空、水面、体积光、角色或节奏动画的实现。"
+  },
+  "rules": [
+    {
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "主体必须读成一个完整黑色形状，身份与表演由外轮廓承担。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "The figure is one black shape.",
+      "blender_translation": "建议用统一剪影材质或独立剪影图层；从最终摄影机检查剪影的整体外轮廓，不能只检查模型细节。",
+      "review": "manual",
+      "id": "silhouette-rhythm-01"
+    },
+    {
+      "category": "material",
+      "level": "forbidden",
+      "rule_zh": "主体内部不增加明暗渐变、纹理细节、图形描边或用于造型的内部阴影。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "No detail inside it, no gradient, no outline, no shadow.",
+      "blender_translation": "主体参考材质采用不受灯光塑形的单色方案；手工检查表面高光、纹理、法线和投射细节是否破坏单黑形。",
+      "review": "manual",
+      "id": "silhouette-rhythm-02"
+    },
+    {
+      "category": "material",
+      "level": "forbidden",
+      "rule_zh": "不引入可见操纵杆、纸张纹理、灯后幕布、层叠纸片或轮廓内装饰。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "no visible rods, no paper texture, no lamp behind a screen",
+      "blender_translation": "不要沿用皮影或剪纸灯箱的材质与结构；这里的黑形没有纸材身份。",
+      "review": "manual",
+      "id": "silhouette-rhythm-03"
+    },
+    {
+      "category": "composition",
+      "level": "required",
+      "rule_zh": "剪影始终落在明亮背景上，可依靠太阳、亮地平线或水面光带衬托。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "A silhouette sits on light, never on dark.",
+      "blender_translation": "在摄影机画面中分别检查主体各部分；仅有背光灯但主体仍落在暗水面上，不能视为满足规则。",
+      "review": "manual",
+      "id": "silhouette-rhythm-04"
+    },
+    {
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "主体保持带微量紫色倾向的近黑，不随天空或场景改成彩色主体。",
+      "source_section": "3. Colour logic",
+      "source_quote": "The figure colour is fixed: near-black with a trace of violet.",
+      "blender_translation": "把主体颜色单独管理，避免受彩色灯或环境反射改色；示例HEX只作参考，近黑紫的角色保持一致。",
+      "review": "manual",
+      "id": "silhouette-rhythm-05"
+    },
+    {
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "天空色域限于金、橙、珊瑚、绯红、洋红、紫罗兰，不加入绿色、蓝天或灰天空。",
+      "source_section": "3. Colour logic",
+      "source_quote": "No green, no blue sky, no grey.",
+      "blender_translation": "为天空建立受限色带并逐帧审看最终合成；不能直接套入任意HDRI天空。",
+      "review": "manual",
+      "id": "silhouette-rhythm-06"
+    },
+    {
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "最亮区域属于太阳、地平线亮带与水面反光；文字使用太阳系的奶油色。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Brightest values belong to the sun, the horizon band and the light on the water; type uses the sun's cream",
+      "blender_translation": "以最终画面亮度关系审查主次；文字不应比太阳高亮更抢眼。",
+      "review": "manual",
+      "id": "silhouette-rhythm-07"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "允许朝日侧的细薄光学亮缘和柔和晕光，靠近太阳时更明显；不能把它画成全轮廓描边。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "a thin rim on the sun-facing edge and a soft halo",
+      "blender_translation": "将环境光学效果放在独立合成层或受方向限制的遮罩中；单独检查主体黑形与外部亮缘，保留两者区别。",
+      "review": "manual",
+      "id": "silhouette-rhythm-08"
+    },
+    {
+      "category": "material",
+      "level": "required",
+      "rule_zh": "水面承接天空与主体倒影；主体倒影围绕水线翻转，再进行扰动与压暗。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "Reflections of figures are the same shapes flipped about the waterline, wobbled and darkened.",
+      "blender_translation": "若画面使用水面，反射轮廓必须与主体对应；反射变形绑定世界关系，不能无理由另画一种形状。",
+      "review": "manual",
+      "id": "silhouette-rhythm-09"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "水波同时保留亮波峰和暗波谷；水滴是亮珠，不能成为黑色飞点。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "bright beads, never black specks.",
+      "blender_translation": "为水光和暗反射分别处理可读性；检查逆光水滴是否被主体材质错误染黑。",
+      "review": "manual",
+      "id": "silhouette-rhythm-10"
+    },
+    {
+      "category": "camera",
+      "level": "required",
+      "rule_zh": "摄影机以水平水面为基准；单镜头内地平线保持水平，不能用荷兰角倾斜画面。",
+      "source_section": "5. Motion quality",
+      "source_quote": "the horizon line within a shot (no dutch tilt)",
+      "blender_translation": "锁定并检查摄影机滚转与水面基准；机位升降、焦距和构图变化仍需逐镜头判断。",
+      "review": "manual",
+      "id": "silhouette-rhythm-11"
+    },
+    {
+      "category": "camera",
+      "level": "optional",
+      "rule_zh": "长焦压缩、让太阳占据较大画幅，是可选镜头语汇，不是每镜必用。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "Telephoto, sun filling half the frame",
+      "blender_translation": "可用长焦透视摄影机和受控太阳画面尺度实现；不把某个毫米数或固定太阳大小写成全片硬参数。",
+      "review": "manual",
+      "id": "silhouette-rhythm-12"
+    },
+    {
+      "category": "composition",
+      "level": "required",
+      "rule_zh": "关键时刻主体至少占画面高度三分之一；远景仍须把主体放在亮区。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "at the key moments the subject fills ≥ 1/3 of the frame height",
+      "blender_translation": "按渲染画面测量关键镜头主体包围框；比例规则针对关键时刻，孤独等有意小主体构图需另行人工说明。",
+      "review": "manual",
+      "id": "silhouette-rhythm-13"
+    },
+    {
+      "category": "shape",
+      "level": "recommended",
+      "rule_zh": "优先侧面可辨的姿态，关键轮廓之间留空气，避免多个主体或肢体重叠为黑团。",
+      "source_section": "9. Pitfalls of the medium",
+      "source_quote": "at key moments leave air between contours and keep limbs in profile.",
+      "blender_translation": "用摄影机视角或剪影预览检查负形，必要时调姿态和相对位置；不依靠内部描线解读重叠。",
+      "review": "manual",
+      "id": "silhouette-rhythm-14"
+    },
+    {
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "文字置于下方暗水面，左对齐；不放在太阳内部，不居中，不加阴影或描边。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "never inside the sun, never centred, no shadow or stroke.",
+      "blender_translation": "将文字单独排版并检查背景亮度与轮廓避让；字幕沿同一奶油色体系。",
+      "review": "manual",
+      "id": "silhouette-rhythm-15"
+    },
+    {
+      "category": "consistency",
+      "level": "required",
+      "rule_zh": "天空、太阳、水面和光学关系共用同一空间与色彩逻辑；天空渐变不能污染主体单黑形。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Two values carry the frame: black figure and bright ground. Everything else is the sky's gradient.",
+      "blender_translation": "分别控制主体与背景的色彩通道，最后在合成结果中检查明暗二分；不能靠材质节点名称判断完成。",
+      "review": "manual",
+      "id": "silhouette-rhythm-16"
+    },
+    {
+      "id": "silhouette-rhythm-17",
+      "category": "consistency",
+      "level": "optional",
+      "rule_zh": "主体种类与光源所在场合可改变，仍保持暖色色域、单黑轮廓与明亮背景。",
+      "source_section": "11. Variation space",
+      "source_quote": "the cast (animals, dancers, athletes, vehicles), the place of the light",
+      "blender_translation": "可替换自己的主体与场合；不要为了换题材把轮廓内部加上表情、纸纹或彩色明暗。",
+      "review": "manual"
+    }
+  ],
+  "palette": {
+    "status": "source_example",
+    "editable": true,
+    "colors": [
+      {
+        "name": "figure",
+        "hex": "#090307",
+        "role": "近黑紫主体示例"
+      },
+      {
+        "name": "sun",
+        "hex": "#FFF6DC",
+        "role": "太阳与文字奶油色示例"
+      },
+      {
+        "name": "gold",
+        "hex": "#FFB347",
+        "role": "天空金色示例"
+      },
+      {
+        "name": "coral",
+        "hex": "#FC4D2B",
+        "role": "天空珊瑚色示例"
+      },
+      {
+        "name": "magenta",
+        "hex": "#E0245C",
+        "role": "天空洋红示例"
+      },
+      {
+        "name": "violet",
+        "hex": "#380A52",
+        "role": "天空紫罗兰示例"
+      },
+      {
+        "name": "deep_violet",
+        "hex": "#1A083D",
+        "role": "深紫收束示例"
+      }
+    ],
+    "notes": "这些HEX全部来自原文明确标注的演示示例；可在原文暖色色域内调整。主体近黑紫、亮背景与暖色天空的关系是规则，示例HEX不是唯一合法色值。"
+  },
+  "material_recipe": {
+    "family": "flat_ink",
+    "color_management_suggestion": "Standard",
+    "explanation": "用于剪影主体的单色参考；Standard是Blender适配建议，需对照最终显示结果。天空渐变、水面反射、朝日细缘及晕光仍需独立制作，不通过纸纹或外描边补齐。",
+    "origin": "blender_adapter_suggestion"
+  },
+  "not_automated": [
+    "轮廓是否可辨、肢体是否重叠为黑团。",
+    "主体是否始终落在亮背景以及关键构图的占比。",
+    "朝日光学细缘与禁止的全轮廓描边的区别。",
+    "天空、水面、倒影的空间与色彩一致性。"
+  ],
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+    "path": "styles/silhouette-rhythm/STYLE.md",
+    "sha256": "66f1a0f7d44ad1067960046514336bb4d19fce9799a16ec1591696343987a291"
+  },
+  "attribution": {
+    "original_author": "Lemo-Opuscar by Lemomo (LemoLab)",
+    "original_copyright": "Copyright (c) 2026 Lemomo (LemoLab)",
+    "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/silhouette-rhythm/STYLE.md",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "upstream_terms_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/LICENSE",
+    "modifications": "中文翻译与美术约束整理；Blender 实施建议为本库新增，原始 STYLE.md 字节未改。",
+    "additional_film_permission": "保留上游允许制作自有／客户影片（包括商业影片）及相应工程交付的额外许可；本库改编部分按根 LICENSE 提供同等许可。",
+    "endorsement": "Independent adaptation; no upstream endorsement implied."
+  }
+}

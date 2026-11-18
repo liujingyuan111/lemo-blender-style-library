@@ -1,0 +1,33 @@
+{
+  "version": "0.4.0",
+  "scope": "Original Lemo art constraints and Blender rule loader only",
+  "upstream_commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+  "original_styles": 99,
+  "blender_contracts": 8,
+  "art_rules": 150,
+  "source_files": 213,
+  "source_identity": "verified",
+  "exact_quotes_and_palette_hex": "verified",
+  "semantic_review": "passed_after_six_scope_corrections",
+  "blender_version": "4.3.2",
+  "actual_zip_install": "passed",
+  "load_preserves_existing_scene": "passed",
+  "save_reopen": "passed",
+  "offline_reader_logic": "passed",
+  "generated_movie_or_scene_assets": 0,
+  "automatic_art_approval": false,
+  "release_kind": "public-ready source library",
+  "ai_entrypoints": [
+    "AGENTS.md",
+    "AI_START_HERE.md",
+    "llms.txt",
+    "CLAUDE.md",
+    "GEMINI.md"
+  ],
+  "ai_cli": "tools/ai_context.py",
+  "ai_context_tests": "passed: 10 test groups, all 99 exports",
+  "contract_attribution": "embedded in all eight contracts",
+  "tested_on": "2026-11-18",
+  "code_license": "MIT",
+  "document_license": "CC-BY-NC-4.0 with additional film permission"
+}

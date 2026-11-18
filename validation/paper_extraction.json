@@ -1,0 +1,44 @@
+{
+  "schema_id": "lemo-style-extraction-validation/v1",
+  "commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+  "styles": [
+    {
+      "style_id": "spy-titles",
+      "rules": 18,
+      "all_quotes_exact_substrings": true,
+      "source_sha256_matches": true,
+      "palette_status": "source_example",
+      "palette_colors": 4,
+      "all_rules_manual_review": true
+    },
+    {
+      "style_id": "shadow-puppet",
+      "rules": 19,
+      "all_quotes_exact_substrings": true,
+      "source_sha256_matches": true,
+      "palette_status": "source_example",
+      "palette_colors": 0,
+      "all_rules_manual_review": true
+    },
+    {
+      "style_id": "paper-lantern",
+      "rules": 19,
+      "all_quotes_exact_substrings": true,
+      "source_sha256_matches": true,
+      "palette_status": "source_example",
+      "palette_colors": 5,
+      "all_rules_manual_review": true
+    },
+    {
+      "style_id": "paper-popup",
+      "rules": 19,
+      "all_quotes_exact_substrings": true,
+      "source_sha256_matches": true,
+      "palette_status": "source_example",
+      "palette_colors": 0,
+      "all_rules_manual_review": true
+    }
+  ],
+  "scope": "Original art constraints only; source-quote and source-hash checks. No scenes, demo assets, animation modules or new story content.",
+  "status": "passed"
+}

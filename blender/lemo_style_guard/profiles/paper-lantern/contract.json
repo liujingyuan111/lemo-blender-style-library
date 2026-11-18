@@ -1,0 +1,264 @@
+{
+  "schema_id": "lemo-blender-style/v1",
+  "style_id": "paper-lantern",
+  "title_zh": "纸雕灯影",
+  "title_original": "Paper-cut Lightbox",
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+    "path": "styles/paper-lantern/STYLE.md",
+    "sha256": "e8be26d64f33229859e284a33d77969f9a4468b7bf1b478ca8fa924c7dd9f27d"
+  },
+  "scope": {
+    "original_engine": "Canvas2D 纸层图形映射到三维平面，配专用背光、层间阴影及景深后处理；原文未使用 Blender。",
+    "blender_route": "用浅盒内平行纸层、受控暖背光、层间软投影和微距景深对应原文物理读法。",
+    "adaptation_limit": "所有景物仍是平行于盒前面的平纸层；不能因转入Blender就把山、树、人物改成圆润三维模型。材质预设不会自动产生层次、盒体或灯光系统。"
+  },
+  "rules": [
+    {
+      "id": "paper-lantern-01",
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "每镜以一个浅盒中的平行切纸层为视觉基础；盒内纸景保持平纸片，平行于盒子的正面。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "every element is a flat sheet parallel to the box front",
+      "blender_translation": "用分层平面或极薄平片承载轮廓。厚度只服务纸感，不能把图形扩成真正的山体、建筑或体积人物。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-02",
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "后层明亮、透光，前层深暗、近乎不透明；从后到前的明度阶梯形成深度。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Back layers bright and translucent, front layers dark and opaque.",
+      "blender_translation": "按视觉深度安排每层的底色和透光程度，逐层验收明度；不能在最前面放浅亮大块面把盒子压平。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-03",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "每张纸有纤维颗粒、暖色顶边光和深色底边带。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "thin warm **rim of light on its top edge**",
+      "blender_translation": "顶边与底边的分工保持一致；可用实际受光或受控材质／合成处理，但不把任意发光描边冒充原文纸边。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-04",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "透光是暖而带云状纸浆斑驳的，在光源附近最强。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "a warm, cloudy translucency (pulp mottling)",
+      "blender_translation": "透射遮罩使用稳定的纸浆斑驳；光源位置与亮区相对应，不做无方向的均匀自发光纸板。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-05",
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "纸层必须向后层投下柔软阴影，不能关闭这套层间投影；前方标题、灯光和帘子另有豁免。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "soft shadows",
+      "blender_translation": "为主体纸层保留投影和接影关系；不要为了提亮直接全部关闭阴影。标题／灯／前帘按原文例外单独处理。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-06",
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "每层使用一种平底色，依靠层间明度和透光差异表现空间。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Each layer is one flat colour",
+      "blender_translation": "把纸片底色与灯光变化分开，避免在一张纸上画出写实立体阴影，导致材料身份变成三维插画。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-07",
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "同一纸层堆叠使用同一色温方向；换一套明度色阶可以表示另一个地点。",
+      "source_section": "3. Colour logic",
+      "source_quote": "One temperature per stack",
+      "blender_translation": "在单镜或连续场景中共用同一组色阶，不给每层任意换冷暖。原文允许冷夜、暖室内、紫色或绿色等不同选择。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-08",
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "照明相对纸层为暖琥珀到金色，除一个强调色外，暖光是唯一饱和的部分。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Light is warm",
+      "blender_translation": "把灯色、纸层色与强调色的饱和度层级一起检查；不额外堆多色霓虹。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-09",
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "通常只有一个强调色；只有内容明确有两方时才允许各有一个强调色。",
+      "source_section": "3. Colour logic",
+      "source_quote": "A second accent only when the story has two sides (one each).",
+      "blender_translation": "建立强调色角色表，按内容条件决定一个或两个；不会无条件扩大为任意多色。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-10",
+      "category": "material",
+      "level": "required",
+      "rule_zh": "窗、灯和光路是洞口或发光窗，能透亮并泛光，不能仅以一块亮色油漆代替。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "holes / emissive windows",
+      "blender_translation": "保留真实开孔或清晰的发光窗口遮罩；检查边缘与纸层的关系。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-11",
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "位于前方的标题、灯光和帘子既不投影也不接影。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "Titles, lights and curtains in front neither cast nor receive shadows.",
+      "blender_translation": "仅对这类前方元素按需要使用独立图层或受控阴影设置；不要把例外推广到所有纸层。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-12",
+      "category": "composition",
+      "level": "required",
+      "rule_zh": "两种构图均有效：能清楚看见盒框，或盒框完全在画外；不能只尴尬露出半截边框。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "box edges fully out of frame inside, clearly in frame outside, never half.",
+      "blender_translation": "选择盒外或满幅的摄影机画幅，并检查完整画幅边缘。无需每部片同时用两种构图。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-13",
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "盒外构图里，纸张不得超出盒腔；满幅移动镜头可以使用长纸条，但不能露出天空面边缘。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "never larger than the cavity",
+      "blender_translation": "按当前构图模式检查实际纸层边界和相机视野，不把满幅长纸条的例外用于盒外镜头。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-14",
+      "category": "camera",
+      "level": "required",
+      "rule_zh": "使用浅景深：当前内容所在的纸层清晰，前景和远层柔软；保持微距浅盒的读法。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "the story layer in focus, foreground and far layers soft",
+      "blender_translation": "用摄影机焦点指定目标纸层，按成片大小检查近远虚化和切边可读性；不预设没有依据的固定光圈值。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-15",
+      "category": "camera",
+      "level": "forbidden",
+      "rule_zh": "禁止甩镜和数码变焦；浅盒中的镜头移动应短而克制。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "No whip pans, no digital zooms.",
+      "blender_translation": "先在浅盒空间内规划实际摄影机位移；不使用后期裁切放大替代镜头推进。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-16",
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "画面内的标题、信件、诗句和说明是盒内的纸条；已经作为纸出现的文字不再重复打字幕。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "Words that appear as paper are not subtitled",
+      "blender_translation": "字形保留纸片身份。文字不应因拉长纸片而被压扁，亦不应在场景与底部字幕中重复出现。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-17",
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "字幕放在暗处：盒外构图在盒下的暗房间，满幅构图在底部最暗的前纸层；不得压住人物、亮窗或光源。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "never over a figure, a lit window or a light.",
+      "blender_translation": "按实际构图选择字幕承载区；必要时可使用原文允许的浅淡暗底带，不固定套一种与构图无关的位置。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-18",
+      "category": "lighting",
+      "level": "forbidden",
+      "rule_zh": "光点或灯光辉晕不能盖住文字，把牌面或纸条上的字洗掉。",
+      "source_section": "9. Pitfalls of the medium",
+      "source_quote": "Keep every lit point clear of text.",
+      "blender_translation": "检查泛光后的最终图像，不能只在未加后期的视口里看文字对比。",
+      "review": "manual"
+    },
+    {
+      "id": "paper-lantern-19",
+      "category": "consistency",
+      "level": "forbidden",
+      "rule_zh": "纸层保持刚性平片，禁止挤压拉伸、形状变形和弯曲；若有人物，依然由关节纸层组成。",
+      "source_section": "5. Motion quality",
+      "source_quote": "No squash and stretch, no morphing, no bending.",
+      "blender_translation": "把这条作为资产和后续动画的材料边界。本库只记录限制，不生成动作。",
+      "review": "manual"
+    }
+  ],
+  "palette": {
+    "status": "source_example",
+    "editable": true,
+    "colors": [
+      {
+        "name": "night sky",
+        "hex": "#0a1330",
+        "role": "示例夜空"
+      },
+      {
+        "name": "far",
+        "hex": "#6a86c2",
+        "role": "远层"
+      },
+      {
+        "name": "mid",
+        "hex": "#3f5a92",
+        "role": "中层"
+      },
+      {
+        "name": "front",
+        "hex": "#0e1532",
+        "role": "前层"
+      },
+      {
+        "name": "windows",
+        "hex": "#ffb862",
+        "role": "暖窗光"
+      }
+    ],
+    "notes": "这是原文“night village”示例色阶。夜空是背景光环境，不能机械地把整张色表当作所有纸层依次变暗的数值列表。原文另允许沙漠、冬林及不同色温的色阶；必须保留的是纸层暗前亮后、暖光与有限强调色。"
+  },
+  "material_recipe": {
+    "family": "matte_paper",
+    "color_management_suggestion": "AgX",
+    "explanation": "参考材质只建立纸层底色起点。暖背光、云状纸浆透光、顶边光、底边带与层间软投影仍需按规则布置；AgX仅是Blender高动态范围照明的建议起点。",
+    "origin": "blender_adapter_suggestion"
+  },
+  "not_automated": [
+    "纸层是否保持平行、扁平、暗前亮后的序列。",
+    "背光、软投影和纸边是否共同形成真实纸盒读法。",
+    "字幕、亮窗、辉晕之间是否互不遮挡。",
+    "微距焦点和盒框取景是否清楚。"
+  ],
+  "attribution": {
+    "original_author": "Lemo-Opuscar by Lemomo (LemoLab)",
+    "original_copyright": "Copyright (c) 2026 Lemomo (LemoLab)",
+    "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/paper-lantern/STYLE.md",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "upstream_terms_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/LICENSE",
+    "modifications": "中文翻译与美术约束整理；Blender 实施建议为本库新增，原始 STYLE.md 字节未改。",
+    "additional_film_permission": "保留上游允许制作自有／客户影片（包括商业影片）及相应工程交付的额外许可；本库改编部分按根 LICENSE 提供同等许可。",
+    "endorsement": "Independent adaptation; no upstream endorsement implied."
+  }
+}

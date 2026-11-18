@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "profiles": 8,
+  "reference_entries": 99,
+  "checks": [
+    "initial profile",
+    "profile switching",
+    "single active selector",
+    "slug search",
+    "empty search results"
+  ],
+  "scope": "Offline reader JavaScript behavior in a minimal DOM; not a browser screenshot or visual-quality test."
+}

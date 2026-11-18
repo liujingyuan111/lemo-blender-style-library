@@ -1,0 +1,239 @@
+{
+  "schema_id": "lemo-blender-style/v1",
+  "style_id": "lowpoly-island",
+  "title_zh": "低多边形等距",
+  "title_original": "Low-poly Isometric Island",
+  "scope": {
+    "original_engine": "Three.js平面着色低多边形世界、正交摄影机与深度相关天空／AO后期。",
+    "blender_route": "用低分面网格、平面法线、无纹理材质和正交摄影机建立微缩形态，布光与合成保持柔和低对比。",
+    "adaptation_limit": "这里只提供造型、材质、配色、投影与构图限制，不生成岛屿、六角地块、建筑、海面、天空、粒子或生长动画。原文没有HEX色板，本包不添加猜测色值。"
+  },
+  "rules": [
+    {
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "世界以平面着色低多边形几何构成，棱面必须可辨。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "flat-shaded low-poly geometry",
+      "blender_translation": "网格使用平面法线与有意义的分面；审查轮廓和受光面，不把高模仅调低采样当低多边形风格。",
+      "review": "manual",
+      "id": "lowpoly-island-01"
+    },
+    {
+      "category": "camera",
+      "level": "required",
+      "rule_zh": "摄影机采用正交投影与等距视角，不能出现透视缩小或视场角透视变化。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "orthographic camera",
+      "blender_translation": "将Blender摄影机设为ORTHO，以ortho_scale控制取景尺度；高度与方位可在原文镜头语汇中变化，不锁成唯一角度。",
+      "review": "manual",
+      "id": "lowpoly-island-02"
+    },
+    {
+      "category": "composition",
+      "level": "required",
+      "rule_zh": "背景不出现写实地平线，远处世界融入屏幕空间天空渐变，呈悬浮于颜色中的模型感。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "No perspective and no horizon",
+      "blender_translation": "自行制作深度与渐变的衔接；只把World设为单色不足以满足该视觉关系。",
+      "review": "manual",
+      "id": "lowpoly-island-03"
+    },
+    {
+      "category": "material",
+      "level": "forbidden",
+      "rule_zh": "不使用纹理贴图、像素纹理或写实照片细节。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "no textures",
+      "blender_translation": "为适用对象检查图像纹理与材质输入；颜色主要来自材质和光照。此规则不等于禁止天空后期渐变。",
+      "review": "manual",
+      "id": "lowpoly-island-04"
+    },
+    {
+      "category": "material",
+      "level": "forbidden",
+      "rule_zh": "不使用圆滑法线、次表面散射或平滑三维卡通式的柔软表面。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote": "no rounded normals, no subsurface",
+      "blender_translation": "保留平面着色，检查Subdivision、Auto Smooth等是否改变预期分面；不把软光误解为需要圆滑模型。",
+      "review": "manual",
+      "id": "lowpoly-island-05"
+    },
+    {
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "道具由盒、棱柱、低段圆柱圆锥和低细分二十面体等简单几何组合。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "boxes, prisms, low-segment cylinders and cones",
+      "blender_translation": "按用途控制几何层级，避免添加写实密集的小零件；原文列出的是造型词汇，不要求每个道具全用一遍。",
+      "review": "manual",
+      "id": "lowpoly-island-06"
+    },
+    {
+      "category": "material",
+      "level": "recommended",
+      "rule_zh": "材质偏哑光，原文参考粗糙度约0.9；地块明度可作少量差异。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "roughness ≈ .9",
+      "blender_translation": "可将Blender粗糙度约0.9作为起点，再对照受光结果；不统一锁死所有水面或发光物体的参数。",
+      "review": "manual",
+      "id": "lowpoly-island-07"
+    },
+    {
+      "category": "shape",
+      "level": "required",
+      "rule_zh": "若使用地块，浅色上盖与较暗侧柱分离，侧柱顶部须低于盖面，地块间留小缝。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "sink the side column's top below the cap",
+      "blender_translation": "检查共面几何与接缝，避免z-fighting；规则针对有地块结构的项目，不要求所有内容都做成岛屿。",
+      "review": "manual",
+      "id": "lowpoly-island-08"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "环境遮蔽必须帮助读出地块缝隙与屋檐下方的结构。",
+      "source_section": "2. Materials & rendering",
+      "source_quote": "it draws the seams between tiles and under roofs",
+      "blender_translation": "Blender可选合适的AO或等效接触明暗方案；原引擎GTAO名称不直接转成Blender某个保证等价的开关。",
+      "review": "manual",
+      "id": "lowpoly-island-09"
+    },
+    {
+      "category": "palette",
+      "level": "required",
+      "rule_zh": "整体采用粉彩、低对比和少量重复色相：一个地面色族、中性岩石、少量墙与屋顶颜色。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Pastel, low contrast, a handful of hues",
+      "blender_translation": "每个项目自行确定有限色板，控制饱和度与对比；原文没有数值色板，本包不把任意HEX冒充源色。",
+      "review": "manual",
+      "id": "lowpoly-island-10"
+    },
+    {
+      "category": "palette",
+      "level": "forbidden",
+      "rule_zh": "不用黑色材质与轮廓描线；暗部由阴影和AO形成。",
+      "source_section": "3. Colour logic",
+      "source_quote": "No outlines, no black; shadows and AO are the only darks.",
+      "blender_translation": "检查材质、Freestyle和合成描边；通过结构受光分开面，不用外框线补可读性。",
+      "review": "manual",
+      "id": "lowpoly-island-11"
+    },
+    {
+      "category": "consistency",
+      "level": "required",
+      "rule_zh": "若表现日夜或时间变化，光照与整个环境色彩应联动；地面分面随太阳重着色，夜晚环境向蓝紫去饱和。",
+      "source_section": "3. Colour logic",
+      "source_quote": "night desaturates everything toward blue-violet.",
+      "blender_translation": "项目使用日夜变化时，应共同管理天空、水色、太阳与表面受光；本包不创建日夜动画。",
+      "review": "manual",
+      "id": "lowpoly-island-12"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "夜景中，暖色发光体是唯一明亮物体；其余环境保持低亮度。",
+      "source_section": "3. Colour logic",
+      "source_quote": "At night, warm emissives are the only bright things",
+      "blender_translation": "按最终画面曝光与高亮分布检查；不要让环境HDRI或水面尖锐反光压过窗灯等暖色发光点。",
+      "review": "manual",
+      "id": "lowpoly-island-13"
+    },
+    {
+      "category": "lighting",
+      "level": "required",
+      "rule_zh": "水面若存在，应保持分面和受控高光；水面不接收阴影。",
+      "source_section": "3. Colour logic",
+      "source_quote": "water receives no shadows.",
+      "blender_translation": "为项目水面单独设置受光逻辑，并检查反射亮斑是否破坏柔和粉彩。原文水面实现需专门转译。",
+      "review": "manual",
+      "id": "lowpoly-island-14"
+    },
+    {
+      "category": "lighting",
+      "level": "recommended",
+      "rule_zh": "关键镜头中太阳相对摄影机保持侧向，避免低位逆光把分面水面变成眩光。",
+      "source_section": "3. Colour logic",
+      "source_quote": "Keep the sun sideways to the camera in key shots",
+      "blender_translation": "以摄影机、太阳和水面的实际关系构图，不固定某个世界坐标方向。",
+      "review": "manual",
+      "id": "lowpoly-island-15"
+    },
+    {
+      "category": "camera",
+      "level": "required",
+      "rule_zh": "通过正交视锥高度调整画面尺度，摄影机距离至少为视锥高度的三倍，防止画面底部看进海面下方。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "place the camera ≥ 3 × frustum height away",
+      "blender_translation": "根据实际画幅宽高比求出正交视锥的垂直高度，再核对摄影机与目标的距离；不能不顾宽高比直接把所有场景的ortho_scale当垂直高度。摄影机裁剪、目标高度与水面仍需人工核对。",
+      "review": "manual",
+      "id": "lowpoly-island-16"
+    },
+    {
+      "category": "camera",
+      "level": "optional",
+      "rule_zh": "俯仰角可变：低角度约20–25度会展开天空，高角度约50度更像地图；这些是镜头选项。",
+      "source_section": "6. Camera grammar",
+      "source_quote": "low (≈20–25°) widens the sky band; high (≈50°) reads as a map",
+      "blender_translation": "按项目镜头目的选择角度，保持正交投影；不把单一角度设为所有镜头硬要求。",
+      "review": "manual",
+      "id": "lowpoly-island-17"
+    },
+    {
+      "category": "typography",
+      "level": "required",
+      "rule_zh": "字幕无底框，暖白字带柔和深蓝投影，居中靠下；画面文字卡保留能看到世界的空隙。",
+      "source_section": "4. Type & subtitles",
+      "source_quote": "A text card over the world leaves a gap where the world stays visible.",
+      "blender_translation": "在实际输出画面检查字幕层与世界的留白关系；不导入示例字幕或标题内容。",
+      "review": "manual",
+      "id": "lowpoly-island-18"
+    },
+    {
+      "id": "lowpoly-island-19",
+      "category": "consistency",
+      "level": "optional",
+      "rule_zh": "具体世界、色板和摄影机路径可由项目决定，仍满足原文的造型、投影与配色逻辑。",
+      "source_section": "11. Variation space",
+      "source_quote": "the palette within the colour logic",
+      "blender_translation": "为不同内容选择自己的少量粉彩色值和几何词汇；不强制沿用演示岛屿、某座建筑或相机路线。",
+      "review": "manual"
+    }
+  ],
+  "palette": {
+    "status": "source_example",
+    "editable": true,
+    "colors": [],
+    "notes": "原文只有沙地／草地／珊瑚屋顶、雪地／松绿／红木屋等文字配色例子，没有HEX。保留少色、粉彩、低对比、不用黑色的约束，具体色值由项目填写，不附猜测样板。"
+  },
+  "material_recipe": {
+    "family": "lowpoly_matte",
+    "color_management_suggestion": "Standard",
+    "explanation": "提供平面造型与哑光材质的适配方向，不自动创建色板。Standard只是Blender起点建议，不声称等同原文Three.js Neutral tone mapping；需对照最终粉彩层次手动调整。",
+    "origin": "blender_adapter_suggestion"
+  },
+  "not_automated": [
+    "正交构图、无地平线与远处天空渐变是否成立。",
+    "几何分面是否清晰，是否误用平滑法线或写实细节。",
+    "粉彩少色、暖夜灯、无黑材质与AO暗部的关系。",
+    "水面高光、接触暗部与昼夜配色联动。",
+    "具体字体、字幕占比和留白的最终可读性。"
+  ],
+  "source": {
+    "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+    "commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+    "path": "styles/lowpoly-island/STYLE.md",
+    "sha256": "1ae7bcd6aa3d521f563d8905f8109842fd7252ff8b70c1bd18265105a8a450f9"
+  },
+  "attribution": {
+    "original_author": "Lemo-Opuscar by Lemomo (LemoLab)",
+    "original_copyright": "Copyright (c) 2026 Lemomo (LemoLab)",
+    "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/lowpoly-island/STYLE.md",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "upstream_terms_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/LICENSE",
+    "modifications": "中文翻译与美术约束整理；Blender 实施建议为本库新增，原始 STYLE.md 字节未改。",
+    "additional_film_permission": "保留上游允许制作自有／客户影片（包括商业影片）及相应工程交付的额外许可；本库改编部分按根 LICENSE 提供同等许可。",
+    "endorsement": "Independent adaptation; no upstream endorsement implied."
+  }
+}

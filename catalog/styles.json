@@ -1,0 +1,4665 @@
+{
+  "schema_id": "lemo-style-reference-catalog/v1",
+  "source_repository": "https://github.com/lemomo-ai/lemo-opuscar",
+  "source_commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+  "style_count": 99,
+  "first_blender_contract_count": 8,
+  "source_only_count": 91,
+  "extraction_policy": {
+    "selected": "Whole numbered source sections whose headings name visual identity, rendering/material, colour, type, framing/camera, visual pitfalls or consistency.",
+    "excluded": "Sound palette, native-move/story menus, variation plots, engine/code instructions, character/image-generation workflows, footage/source procurement, and editing/motion sections are not independently selected.",
+    "preservation": "Selected section text is copied verbatim. Mixed reminders inside a selected source section remain source text, not Blender rules.",
+    "blender": "Art excerpts are source references only. Only separately reviewed contract.json files enter the Blender adapter."
+  },
+  "styles": [
+    {
+      "style_id": "caption-news",
+      "slug": "caption-news",
+      "title_zh": "字幕新闻",
+      "title_original": "Caption News",
+      "category_zh": "剪辑纪实",
+      "category_original": "Edit & Documentary",
+      "source_path": "source/lemo-opuscar/styles/caption-news/STYLE.md",
+      "source_sha256": "e884f887245ac40e070c1ac91664ff84c4a004cf03fbbc04c00cda34432071a2",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/caption-news/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/caption-news/style.json",
+      "metadata_sha256": "fbf8e259effb0d702ec6e1c1510cc10bcbeb0b93df7e0a25fb61785065b821a0",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/caption-news.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Frame and layout (1920×1080)"
+        },
+        {
+          "number": 4,
+          "title": "Caption card (the subtitle *is* the graphic)"
+        },
+        {
+          "number": 5,
+          "title": "Graphics"
+        },
+        {
+          "number": 6,
+          "title": "Grade and image quality"
+        },
+        {
+          "number": 11,
+          "title": "Pitfalls"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "newsreel",
+      "slug": "newsreel",
+      "title_zh": "1920s 新闻影片",
+      "title_original": "1920s Newsreel",
+      "category_zh": "剪辑纪实",
+      "category_original": "Edit & Documentary",
+      "source_path": "source/lemo-opuscar/styles/newsreel/STYLE.md",
+      "source_sha256": "ec7cf8cef4efdc557c70f7743c5eb431d20e219e43a0a3dc2cbea1cfeea41e8d",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/newsreel/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/newsreel/style.json",
+      "metadata_sha256": "64765d133262b7ab3df44789d11604e57432caebef4ac7b93dbfdec65fb78b59",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/newsreel.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera on stills and archive"
+        },
+        {
+          "number": 10,
+          "title": "Pitfalls"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "countdown",
+      "slug": "countdown",
+      "title_zh": "实时倒计时分屏",
+      "title_original": "Live Countdown Split-screen",
+      "category_zh": "剪辑纪实",
+      "category_original": "Edit & Documentary",
+      "source_path": "source/lemo-opuscar/styles/countdown/STYLE.md",
+      "source_sha256": "867cca6e0c9bb0d6fb914cc4e9a2e295623ecd345fda9bd00bc362ff233f220f",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/countdown/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/countdown/style.json",
+      "metadata_sha256": "9f16a503587038b1b8333b21d10ec2904c6d78a515a059247eb0b0cc4e95d5de",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/countdown.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "city-symphony",
+      "slug": "city-symphony",
+      "title_zh": "城市交响曲",
+      "title_original": "City Symphony",
+      "category_zh": "剪辑纪实",
+      "category_original": "Edit & Documentary",
+      "source_path": "source/lemo-opuscar/styles/city-symphony/STYLE.md",
+      "source_sha256": "e197b2e5327571c63f905280e46be6863555e5a2ded93bb4431ee0e03a1b848a",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/city-symphony/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/city-symphony/style.json",
+      "metadata_sha256": "2b18850a064161a71b9c6ccdb55e1ce94226d55c5c3e2ec6e5c30aadc09e7d62",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/city-symphony.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar — editing"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "visual-investigation",
+      "slug": "visual-investigation",
+      "title_zh": "视觉调查",
+      "title_original": "Visual Investigation",
+      "category_zh": "剪辑纪实",
+      "category_original": "Edit & Documentary",
+      "source_path": "source/lemo-opuscar/styles/visual-investigation/STYLE.md",
+      "source_sha256": "8f4bab46692ba0a24e0c416b96ef3045aa107dc63e171e5164a43d7bb0324337",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/visual-investigation/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/visual-investigation/style.json",
+      "metadata_sha256": "cbe381561481823673c91f5cde3dc3849b4dac4a196bb32f659cb899f94dcecd",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/visual-investigation.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Shot & layout grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "kino-montage",
+      "slug": "kino-montage",
+      "title_zh": "构成主义蒙太奇",
+      "title_original": "Constructivist Montage",
+      "category_zh": "剪辑纪实",
+      "category_original": "Edit & Documentary",
+      "source_path": "source/lemo-opuscar/styles/kino-montage/STYLE.md",
+      "source_sha256": "8c63deefda22d4677d286ddfffb243ce6385dfa7ab56fbc493705fe13908f204",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/kino-montage/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/kino-montage/style.json",
+      "metadata_sha256": "31fbde505e475156be537b90fdcd293115b02c6bbf23dbfd685aa94e2c7286f4",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/kino-montage.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 12,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "telestrator",
+      "slug": "telestrator",
+      "title_zh": "体育战术板",
+      "title_original": "Sports Telestrator",
+      "category_zh": "剪辑纪实",
+      "category_original": "Edit & Documentary",
+      "source_path": "source/lemo-opuscar/styles/telestrator/STYLE.md",
+      "source_sha256": "7289027728dc5e1b6d095b7c7bc7806790bb579934c81682265c0c1b4897a3d0",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/telestrator/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/telestrator/style.json",
+      "metadata_sha256": "acbb4c62cbabcbb743e8ec17750e0108aeee47b8da9615b32a5c9fde66318901",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/telestrator.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Frame and layout (1920×1080)"
+        },
+        {
+          "number": 4,
+          "title": "Colour identity (the one rule that matters)"
+        },
+        {
+          "number": 5,
+          "title": "Type"
+        },
+        {
+          "number": 7,
+          "title": "Grade and image quality"
+        },
+        {
+          "number": 12,
+          "title": "Pitfalls"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "news-package",
+      "slug": "news-package",
+      "title_zh": "电视新闻包装",
+      "title_original": "Broadcast News Package",
+      "category_zh": "剪辑纪实",
+      "category_original": "Edit & Documentary",
+      "source_path": "source/lemo-opuscar/styles/news-package/STYLE.md",
+      "source_sha256": "d763b356442dd0d7373fe409fa9108ec6a3c2901ec5534522af6b08b0915b72f",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/news-package/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/news-package/style.json",
+      "metadata_sha256": "83a7b2f9472afa9441bca1aafce28f69a4623d883de3fe3051afad7bdd88f1af",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/news-package.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Frame and layout (1920×1080)"
+        },
+        {
+          "number": 4,
+          "title": "Colour"
+        },
+        {
+          "number": 5,
+          "title": "Type"
+        },
+        {
+          "number": 6,
+          "title": "Picture layer and grade"
+        },
+        {
+          "number": 11,
+          "title": "Pitfalls"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "crayon-book",
+      "slug": "crayon-book",
+      "title_zh": "蜡笔儿童绘本",
+      "title_original": "Crayon Picture Book",
+      "category_zh": "绘画插画",
+      "category_original": "Painting & Illustration",
+      "source_path": "source/lemo-opuscar/styles/crayon-book/STYLE.md",
+      "source_sha256": "ba558478fe519fa6777fe28fa7d1980117297c7beb6fe2e366ef6f00688aa175",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/crayon-book/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/crayon-book/style.json",
+      "metadata_sha256": "1c3c8c23752a2da808e6b61a849718eeb7cf2411950a4833fa26ecf0e7cf882b",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/crayon-book.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "watercolor",
+      "slug": "watercolor",
+      "title_zh": "水彩笔刷",
+      "title_original": "Watercolor Brush",
+      "category_zh": "绘画插画",
+      "category_original": "Painting & Illustration",
+      "source_path": "source/lemo-opuscar/styles/watercolor/STYLE.md",
+      "source_sha256": "662d57568408a7c82ef8f64980ca85798b8bb239df3dc3a6715283d7f4555ef0",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/watercolor/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/watercolor/style.json",
+      "metadata_sha256": "bbca48bbfddf3e43cdbaf84f059a3e97d9dc1a457c02703e021cf457b3159e63",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/watercolor.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "impasto",
+      "slug": "impasto",
+      "title_zh": "油画厚涂",
+      "title_original": "Impasto Oil Painting",
+      "category_zh": "绘画插画",
+      "category_original": "Painting & Illustration",
+      "source_path": "source/lemo-opuscar/styles/impasto/STYLE.md",
+      "source_sha256": "38a0dcb2808c2ff03ef721c1319b9145438b4074ed37ab7a09dcf20b7268e062",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/impasto/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/impasto/style.json",
+      "metadata_sha256": "b74d52e05b9f3185b94de7e9ee8e9c12820767ff30a615d7dab4ecde3270ff05",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/impasto.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "urban-sketch",
+      "slug": "urban-sketch",
+      "title_zh": "钢笔淡彩",
+      "title_original": "Urban Sketch · Pen & Wash",
+      "category_zh": "绘画插画",
+      "category_original": "Painting & Illustration",
+      "source_path": "source/lemo-opuscar/styles/urban-sketch/STYLE.md",
+      "source_sha256": "2baf1a19f31b06e55d66d62e4c3449c7a2686c689190976f3e3d0cbdce2faa9a",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/urban-sketch/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/urban-sketch/style.json",
+      "metadata_sha256": "e10711fd673d0d95371138439a999dcae91c8a1bf8d155f2958c514dc877a6ca",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/urban-sketch.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "colored-pencil",
+      "slug": "colored-pencil",
+      "title_zh": "彩铅科普插画",
+      "title_original": "Colored-Pencil Science Illustration",
+      "category_zh": "绘画插画",
+      "category_original": "Painting & Illustration",
+      "source_path": "source/lemo-opuscar/styles/colored-pencil/STYLE.md",
+      "source_sha256": "71d1970d26da38a4d6b0cbf4ce1f8ddd6462bece4f62107d7a2aa5ddb678c31d",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/colored-pencil/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/colored-pencil/style.json",
+      "metadata_sha256": "7b8d94491f59041bc98eff8457b0cfb8509008e6f72fc5ffa6ccc8c9d47885f4",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/colored-pencil.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "one-line",
+      "slug": "one-line",
+      "title_zh": "一笔画",
+      "title_original": "One-line Drawing",
+      "category_zh": "速写板书",
+      "category_original": "Sketch & Board",
+      "source_path": "source/lemo-opuscar/styles/one-line/STYLE.md",
+      "source_sha256": "69d26cb06f48ab6b03c12a76c2390d0945cdaddc38bc109b7d5e292b9af1399b",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/one-line/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/one-line/style.json",
+      "metadata_sha256": "1e5d6b9e1afd182b799304db5b96e160455298f5172d757c3f525777923676ad",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/one-line.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "whiteboard",
+      "slug": "whiteboard",
+      "title_zh": "白板讲解",
+      "title_original": "Whiteboard Explainer",
+      "category_zh": "速写板书",
+      "category_original": "Sketch & Board",
+      "source_path": "source/lemo-opuscar/styles/whiteboard/STYLE.md",
+      "source_sha256": "19f66326257bcafb8aca18af3e209d1fee31d9e23902ce1708bbb606cbf4b718",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/whiteboard/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/whiteboard/style.json",
+      "metadata_sha256": "63d63af2f3a88af1f1ada8e0545539617cf4e142ace15f94358709d7efda2c4f",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/whiteboard.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "chalkboard",
+      "slug": "chalkboard",
+      "title_zh": "黑板粉笔",
+      "title_original": "Chalkboard",
+      "category_zh": "速写板书",
+      "category_original": "Sketch & Board",
+      "source_path": "source/lemo-opuscar/styles/chalkboard/STYLE.md",
+      "source_sha256": "7f89f1a4694805e6bc767050007a6b44f2b7ab2474b0e3244032d3a0269b3e1c",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/chalkboard/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/chalkboard/style.json",
+      "metadata_sha256": "cfc89929f0fcba320b12619aff4fb8bdb71a814841f95b90f06b8b41140fe84f",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/chalkboard.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "sketchnote",
+      "slug": "sketchnote",
+      "title_zh": "视觉笔记",
+      "title_original": "Sketchnote",
+      "category_zh": "速写板书",
+      "category_original": "Sketch & Board",
+      "source_path": "source/lemo-opuscar/styles/sketchnote/STYLE.md",
+      "source_sha256": "c1d8538cf0c8f2124fe3aa8597924f3f1fc4b63a5a90c2e436fdea633f400906",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/sketchnote/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/sketchnote/style.json",
+      "metadata_sha256": "e93f6aa552ec15dd1034ff8c2f96f11e9cbc71d97dd43fc2780a8151d2eec9a2",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/sketchnote.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "stick-explainer",
+      "slug": "stick-explainer",
+      "title_zh": "火柴人讲解",
+      "title_original": "Stick-figure Explainer",
+      "category_zh": "速写板书",
+      "category_original": "Sketch & Board",
+      "source_path": "source/lemo-opuscar/styles/stick-explainer/STYLE.md",
+      "source_sha256": "da45e2773336892fb75b77e5cdd805d0376a532e509418df0c33780b7e477490",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/stick-explainer/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/stick-explainer/style.json",
+      "metadata_sha256": "db48ecd19a825c6398214b63098d7ab29611e6c24a93efb865f7a82f04cb3972",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/stick-explainer.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "ipad-sketch",
+      "slug": "ipad-sketch",
+      "title_zh": "平板速写讲解",
+      "title_original": "Tablet Sketch Explainer",
+      "category_zh": "速写板书",
+      "category_original": "Sketch & Board",
+      "source_path": "source/lemo-opuscar/styles/ipad-sketch/STYLE.md",
+      "source_sha256": "4a0e371e38f3660227e48886f3479ae060a310186a9ae2a35b8263da028c5d0f",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/ipad-sketch/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/ipad-sketch/style.json",
+      "metadata_sha256": "9bf5b9c446afdc64b55181a1f217e1fd32beadeea33429edeebd5cfffac44177",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/ipad-sketch.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "marker-paper",
+      "slug": "marker-paper",
+      "title_zh": "马克笔白纸速写",
+      "title_original": "Marker on Paper",
+      "category_zh": "速写板书",
+      "category_original": "Sketch & Board",
+      "source_path": "source/lemo-opuscar/styles/marker-paper/STYLE.md",
+      "source_sha256": "26b384c99eeef6a9f119afeea237dc0916782f6b959f525d099c6891ebfe0458",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/marker-paper/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/marker-paper/style.json",
+      "metadata_sha256": "f87d424b2f11b51eb24f1253d16190d0a557438fe666d7ea1821522ffc986c88",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/marker-paper.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "ink-wash",
+      "slug": "ink-wash",
+      "title_zh": "中国水墨",
+      "title_original": "Chinese Ink Wash",
+      "category_zh": "传统工艺",
+      "category_original": "Traditional Crafts",
+      "source_path": "source/lemo-opuscar/styles/ink-wash/STYLE.md",
+      "source_sha256": "5d71598f0b9cf4034c6461956b0d8bd63bd33750b4045376044f0d956b01d645",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/ink-wash/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/ink-wash/style.json",
+      "metadata_sha256": "d2103d48c7ac0620f3b378a5d109662458295770807cfd9dcdcd9c385d680c44",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/ink-wash.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "shadow-puppet",
+      "slug": "shadow-puppet",
+      "title_zh": "皮影戏",
+      "title_original": "Shadow Puppetry",
+      "category_zh": "传统工艺",
+      "category_original": "Traditional Crafts",
+      "source_path": "source/lemo-opuscar/styles/shadow-puppet/STYLE.md",
+      "source_sha256": "8be075a8262d5a3deea9b05684d8a9abdc1e54c0d90649bf14609ecb4106c3af",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/shadow-puppet/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/shadow-puppet/style.json",
+      "metadata_sha256": "89ff9e16858067e53c7bdca6e99dabeaaa34792deba93580a853f3881d9216e4",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/shadow-puppet.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "contract_available",
+      "blender_contract_path": "blender/lemo_style_guard/profiles/shadow-puppet/contract.json",
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "ukiyoe",
+      "slug": "ukiyoe",
+      "title_zh": "浮世绘",
+      "title_original": "Ukiyo-e",
+      "category_zh": "传统工艺",
+      "category_original": "Traditional Crafts",
+      "source_path": "source/lemo-opuscar/styles/ukiyoe/STYLE.md",
+      "source_sha256": "218c48a204f9034d1c2fb7f11698b4834f1faee1ca68c9e336f3d6ab992ff2e4",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/ukiyoe/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/ukiyoe/style.json",
+      "metadata_sha256": "41b755cd671b390a6b82fc6c3e2988b5f7afe6c23a8b16aa07b0025eeba534d5",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/ukiyoe.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "papercut-red",
+      "slug": "papercut-red",
+      "title_zh": "红色窗花剪纸",
+      "title_original": "Red Paper-cut",
+      "category_zh": "传统工艺",
+      "category_original": "Traditional Crafts",
+      "source_path": "source/lemo-opuscar/styles/papercut-red/STYLE.md",
+      "source_sha256": "65e317d83335e0cb34696b643e31ad9e46fb0bb93fd748c2e21d74358aea61ec",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/papercut-red/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/papercut-red/style.json",
+      "metadata_sha256": "8304b23c47c97d61435ee4dafd004dec02517a42fc2785168e293fdff5fe8492",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/papercut-red.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "paper-lantern",
+      "slug": "paper-lantern",
+      "title_zh": "纸雕灯影",
+      "title_original": "Paper-cut Lightbox",
+      "category_zh": "传统工艺",
+      "category_original": "Traditional Crafts",
+      "source_path": "source/lemo-opuscar/styles/paper-lantern/STYLE.md",
+      "source_sha256": "e8be26d64f33229859e284a33d77969f9a4468b7bf1b478ca8fa924c7dd9f27d",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/paper-lantern/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/paper-lantern/style.json",
+      "metadata_sha256": "c681c6258a295ecd1a680067cbbb25d66112e23e21547009339c03bd314ed45d",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/paper-lantern.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "contract_available",
+      "blender_contract_path": "blender/lemo_style_guard/profiles/paper-lantern/contract.json",
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "stained-glass",
+      "slug": "stained-glass",
+      "title_zh": "彩色玻璃窗",
+      "title_original": "Stained Glass",
+      "category_zh": "传统工艺",
+      "category_original": "Traditional Crafts",
+      "source_path": "source/lemo-opuscar/styles/stained-glass/STYLE.md",
+      "source_sha256": "0f6551bd109a4127404068aa1e75f18f16b58c80b486c23480b3d193e597b060",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/stained-glass/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/stained-glass/style.json",
+      "metadata_sha256": "e8fa8ccba5b6918dcc81bfd835e6b154ffd0a9f8f9bd0953a0dcc7080a1d64b6",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/stained-glass.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "gilded-illumination",
+      "slug": "gilded-illumination",
+      "title_zh": "金箔彩绘",
+      "title_original": "Gilded Illumination",
+      "category_zh": "传统工艺",
+      "category_original": "Traditional Crafts",
+      "source_path": "source/lemo-opuscar/styles/gilded-illumination/STYLE.md",
+      "source_sha256": "515c5d01d9892fc629abf521aef4796862320fb072422bc72da27f5cf6b17252",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/gilded-illumination/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/gilded-illumination/style.json",
+      "metadata_sha256": "5f9dc1f60ed692aeca486d42b29dc53abbe2c9a3feff2fd38db872ddeed2caa4",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/gilded-illumination.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "risograph",
+      "slug": "risograph",
+      "title_zh": "孔版印刷",
+      "title_original": "Risograph Print",
+      "category_zh": "印刷版画",
+      "category_original": "Print & Printmaking",
+      "source_path": "source/lemo-opuscar/styles/risograph/STYLE.md",
+      "source_sha256": "c3d85c91a81b0afde091d964482749482adc66c12730afe124708f7b18b331a6",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/risograph/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/risograph/style.json",
+      "metadata_sha256": "56940108d2acee6957896e305d0ae15cb85070bf13adeb2609fb74ac385ea545",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/risograph.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "halftone-dossier",
+      "slug": "halftone-dossier",
+      "title_zh": "网点档案",
+      "title_original": "Halftone Dossier",
+      "category_zh": "印刷版画",
+      "category_original": "Print & Printmaking",
+      "source_path": "source/lemo-opuscar/styles/halftone-dossier/STYLE.md",
+      "source_sha256": "6a3eb7919f286515674f7d544ee4124881491723615ba15ac13abc304f57f85d",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/halftone-dossier/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/halftone-dossier/style.json",
+      "metadata_sha256": "2f370795970d7da2c03b01528aaecbeb52ecb577392cfb3c1d22795430957276",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/halftone-dossier.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "woodcut",
+      "slug": "woodcut",
+      "title_zh": "木刻版画",
+      "title_original": "Woodcut Print",
+      "category_zh": "印刷版画",
+      "category_original": "Print & Printmaking",
+      "source_path": "source/lemo-opuscar/styles/woodcut/STYLE.md",
+      "source_sha256": "b96fda6eeac038137310cc0766d979c8d8a5f3ff6acd87bada5aa50d5136a6a0",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/woodcut/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/woodcut/style.json",
+      "metadata_sha256": "bb4012ce8b5c3b5ca7c0390fa2a1e3087e1375b62ddf410b080e72741d2c75dc",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/woodcut.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "engraving",
+      "slug": "engraving",
+      "title_zh": "铜版画",
+      "title_original": "Copperplate Engraving",
+      "category_zh": "印刷版画",
+      "category_original": "Print & Printmaking",
+      "source_path": "source/lemo-opuscar/styles/engraving/STYLE.md",
+      "source_sha256": "0c6816b8b47163d158ae0ea668feecf53dcbef9d1310e27b9e797d9b9e7aac0d",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/engraving/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/engraving/style.json",
+      "metadata_sha256": "d6b267bf1c7cd95b16af48aed36e2a46b7f6908c39f001b4fe0dac548daaf49f",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/engraving.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "silkscreen-poster",
+      "slug": "silkscreen-poster",
+      "title_zh": "丝印旅行海报",
+      "title_original": "Silkscreen Travel Poster",
+      "category_zh": "印刷版画",
+      "category_original": "Print & Printmaking",
+      "source_path": "source/lemo-opuscar/styles/silkscreen-poster/STYLE.md",
+      "source_sha256": "f1c86a9f0cbe735de9fb1421d33ab44465122158e6c45a4786c98852ea9952b1",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/silkscreen-poster/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/silkscreen-poster/style.json",
+      "metadata_sha256": "57571bc4b2118a13332d086a4a50b77a6c3b14ffcaeac5e29dcceadc6086a41f",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/silkscreen-poster.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "printed-long-take",
+      "slug": "printed-long-take",
+      "title_zh": "刮版画长镜头",
+      "title_original": "Scratchboard Long Take",
+      "category_zh": "印刷版画",
+      "category_original": "Print & Printmaking",
+      "source_path": "source/lemo-opuscar/styles/printed-long-take/STYLE.md",
+      "source_sha256": "ab296ec585615e3c0100ea22b879e88cd9790a493d0c995a24a25fe4ad25b97c",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/printed-long-take/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/printed-long-take/style.json",
+      "metadata_sha256": "3c5b8e742969c6eb74e8ef14f7a8fcd63a90fb337045ab2d759341e25b12bbf5",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/printed-long-take.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "pop-art",
+      "slug": "pop-art",
+      "title_zh": "波普艺术",
+      "title_original": "Pop Art",
+      "category_zh": "印刷版画",
+      "category_original": "Print & Printmaking",
+      "source_path": "source/lemo-opuscar/styles/pop-art/STYLE.md",
+      "source_sha256": "b072389250134a9cd7968a6123c384dff5fae07f8fc30a2e4c59852afe5f1926",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/pop-art/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/pop-art/style.json",
+      "metadata_sha256": "41ba3d85c5d6f3a4414b2e2815c622a1df284bb93243faeea7d9c55328d420e3",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/pop-art.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "vintage-collage",
+      "slug": "vintage-collage",
+      "title_zh": "复古版画拼贴",
+      "title_original": "Vintage Engraving Collage",
+      "category_zh": "印刷版画",
+      "category_original": "Print & Printmaking",
+      "source_path": "source/lemo-opuscar/styles/vintage-collage/STYLE.md",
+      "source_sha256": "9ae3f52c26a6d5e21315a9a73b82694bd29ea04f47c1c60482583eb5bebe0a6f",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/vintage-collage/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/vintage-collage/style.json",
+      "metadata_sha256": "cdd1a36cebeab293e8dfe0aec5dd0b9a25da9977441f1e7d88868e8857798af4",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/vintage-collage.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "swiss-motion",
+      "slug": "swiss-motion",
+      "title_zh": "瑞士动态排版",
+      "title_original": "Swiss Motion Graphics",
+      "category_zh": "平面排版",
+      "category_original": "Graphic & Type",
+      "source_path": "source/lemo-opuscar/styles/swiss-motion/STYLE.md",
+      "source_sha256": "14ddeb6dc495e691a220497069a2ee4827d820f9ee7a3173de5846489ef41f57",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/swiss-motion/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/swiss-motion/style.json",
+      "metadata_sha256": "05e99867600f38c0b443870c2e7e883893608da55ea3b8d9dfb6d65b7692b8f7",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/swiss-motion.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "spy-titles",
+      "slug": "spy-titles",
+      "title_zh": "60s 间谍片头",
+      "title_original": "60s Spy Title Sequence",
+      "category_zh": "平面排版",
+      "category_original": "Graphic & Type",
+      "source_path": "source/lemo-opuscar/styles/spy-titles/STYLE.md",
+      "source_sha256": "ea6e9e9073af43ef0bb860e368f60b16ec32a91668386115a142907d92cb1f75",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/spy-titles/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/spy-titles/style.json",
+      "metadata_sha256": "06fac661b3b892e61df25b4f25fec16012e25415a74d1ee9cae9617ae980227f",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/spy-titles.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "contract_available",
+      "blender_contract_path": "blender/lemo_style_guard/profiles/spy-titles/contract.json",
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "art-deco",
+      "slug": "art-deco",
+      "title_zh": "装饰艺术",
+      "title_original": "Art Deco",
+      "category_zh": "平面排版",
+      "category_original": "Graphic & Type",
+      "source_path": "source/lemo-opuscar/styles/art-deco/STYLE.md",
+      "source_sha256": "d73b30c0fa6d153487549d32d8c6c599733cf5e7576badec862a12da6d284761",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/art-deco/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/art-deco/style.json",
+      "metadata_sha256": "cebba14f36583aa1bd432324b5bc032daa84e5742ae43c162331d1e4dba92fa9",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/art-deco.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "pictogram-motion",
+      "slug": "pictogram-motion",
+      "title_zh": "象形运动图形",
+      "title_original": "Pictogram Motion",
+      "category_zh": "平面排版",
+      "category_original": "Graphic & Type",
+      "source_path": "source/lemo-opuscar/styles/pictogram-motion/STYLE.md",
+      "source_sha256": "52f0119e13e2d98ee9d2dbf5ea8b9dc84ffb309746fd93afc01eb07d1e2c2689",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/pictogram-motion/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/pictogram-motion/style.json",
+      "metadata_sha256": "be7b5665a9e28a981378671eb2988cf16fcbc4f0777c193e5d67b9db509e976f",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/pictogram-motion.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "bauhaus-shapes",
+      "slug": "bauhaus-shapes",
+      "title_zh": "包豪斯几何",
+      "title_original": "Bauhaus Shapes",
+      "category_zh": "平面排版",
+      "category_original": "Graphic & Type",
+      "source_path": "source/lemo-opuscar/styles/bauhaus-shapes/STYLE.md",
+      "source_sha256": "f501d8728bbcd8506cd77fc1109c6949432b36e89a6f3bf82b6ad2036d9e9a6e",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/bauhaus-shapes/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/bauhaus-shapes/style.json",
+      "metadata_sha256": "ee11aa33fd9e2b8a0005f79bde8741a23b2b8fa44ee2a4fc6fd424c6c2d44da4",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/bauhaus-shapes.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 8,
+          "title": "Pitfalls"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "flat-space-explainer",
+      "slug": "flat-space-explainer",
+      "title_zh": "扁平尺度漫游",
+      "title_original": "Scale Zoom Explainer",
+      "category_zh": "平面排版",
+      "category_original": "Graphic & Type",
+      "source_path": "source/lemo-opuscar/styles/flat-space-explainer/STYLE.md",
+      "source_sha256": "a56b7e17f818efd1fe9ab3edcbd2f6b7a5c1bce8dcedd896e817089ac12c2b58",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/flat-space-explainer/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/flat-space-explainer/style.json",
+      "metadata_sha256": "1ee3e47c8f05dbde3facb51991d102fd351779688b0628f38b9fb6cc502d059c",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/flat-space-explainer.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "text-flash-cuts",
+      "slug": "text-flash-cuts",
+      "title_zh": "文字闪切",
+      "title_original": "Text Flash Cuts",
+      "category_zh": "平面排版",
+      "category_original": "Graphic & Type",
+      "source_path": "source/lemo-opuscar/styles/text-flash-cuts/STYLE.md",
+      "source_sha256": "f69fa08818c5d41099abe29c8afdd0a9f3ef89746d379346dc9bf384adbd1299",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/text-flash-cuts/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/text-flash-cuts/style.json",
+      "metadata_sha256": "3a9c847bf7fe6196afc8ee06f2c67f05afe7b4749e5949d4717294562055541f",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/text-flash-cuts.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 10,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "silhouette-rhythm",
+      "slug": "silhouette-rhythm",
+      "title_zh": "剪影律动",
+      "title_original": "Silhouette Rhythm",
+      "category_zh": "平面排版",
+      "category_original": "Graphic & Type",
+      "source_path": "source/lemo-opuscar/styles/silhouette-rhythm/STYLE.md",
+      "source_sha256": "66f1a0f7d44ad1067960046514336bb4d19fce9799a16ec1591696343987a291",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/silhouette-rhythm/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/silhouette-rhythm/style.json",
+      "metadata_sha256": "6f37a52fa272e8e0fbb378ce520da47d9bcaf5f1a99edafa48f199a430368f66",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/silhouette-rhythm.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "contract_available",
+      "blender_contract_path": "blender/lemo_style_guard/profiles/silhouette-rhythm/contract.json",
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "blueprint",
+      "slug": "blueprint",
+      "title_zh": "工程蓝图",
+      "title_original": "Blueprint",
+      "category_zh": "线稿图解",
+      "category_original": "Line Diagrams",
+      "source_path": "source/lemo-opuscar/styles/blueprint/STYLE.md",
+      "source_sha256": "de01fc7fcb38b17b58eb017c9cdbcb36b9242b029435a33587614c93088e1717",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/blueprint/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/blueprint/style.json",
+      "metadata_sha256": "45b623d588615ffe6f6d629f1374d081815afbeb6622b40602fc73dd3a7c5129",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/blueprint.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "iso-infographic",
+      "slug": "iso-infographic",
+      "title_zh": "等距信息图",
+      "title_original": "Isometric Infographic",
+      "category_zh": "线稿图解",
+      "category_original": "Line Diagrams",
+      "source_path": "source/lemo-opuscar/styles/iso-infographic/STYLE.md",
+      "source_sha256": "a3bf89913255043ff2c8616bff9be9f9536efe1eb7a3b98c755cb4189bd7dff1",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/iso-infographic/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/iso-infographic/style.json",
+      "metadata_sha256": "d97a992c4294c2d277ae28686fb24069f8b6626b2e08caba8f7f6e3d86ef84d6",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/iso-infographic.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "teardown",
+      "slug": "teardown",
+      "title_zh": "产品拆解",
+      "title_original": "Exploded Teardown",
+      "category_zh": "线稿图解",
+      "category_original": "Line Diagrams",
+      "source_path": "source/lemo-opuscar/styles/teardown/STYLE.md",
+      "source_sha256": "90df05a02a3d33add58e0dd99bef19ca20ea16b10390b3c2350d8483106922ee",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/teardown/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/teardown/style.json",
+      "metadata_sha256": "d2b80fc4e800f10a77a2c4ffe41507c0e6980676bfa287bc6d55bcfd29db67f6",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/teardown.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "hardcore-info",
+      "slug": "hardcore-info",
+      "title_zh": "线稿剖面图解",
+      "title_original": "Line-Art Cutaway",
+      "category_zh": "线稿图解",
+      "category_original": "Line Diagrams",
+      "source_path": "source/lemo-opuscar/styles/hardcore-info/STYLE.md",
+      "source_sha256": "ddcd47faa4ca8a450baa159d73767f62f66d1efe91008aa9f0e7b6c6db48f283",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/hardcore-info/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/hardcore-info/style.json",
+      "metadata_sha256": "0c5b2abd69b8a7e737476551e4d7e93fc2c27220812da05d9067b591e4b3c3fb",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/hardcore-info.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "precise-mechanism",
+      "slug": "precise-mechanism",
+      "title_zh": "分色机械图解",
+      "title_original": "Color-Coded Mechanism",
+      "category_zh": "线稿图解",
+      "category_original": "Line Diagrams",
+      "source_path": "source/lemo-opuscar/styles/precise-mechanism/STYLE.md",
+      "source_sha256": "476538b1c0d602067bbac28c822eb70f8fad19ce0d29f1dda6354c3687af237d",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/precise-mechanism/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/precise-mechanism/style.json",
+      "metadata_sha256": "7afefe01b866af32437d7dff84dbe3acc6279198ae926085bf52cb500d50aea4",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/precise-mechanism.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "instruction-manual",
+      "slug": "instruction-manual",
+      "title_zh": "说明书插画",
+      "title_original": "Instruction Manual Art",
+      "category_zh": "线稿图解",
+      "category_original": "Line Diagrams",
+      "source_path": "source/lemo-opuscar/styles/instruction-manual/STYLE.md",
+      "source_sha256": "57f9e69373bb36bafe5572bf960f9557c484210e0edaf89cfc286cc9be21282e",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/instruction-manual/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/instruction-manual/style.json",
+      "metadata_sha256": "8295846cd4d06dc576cf649830fd3055cd8c11b3cccda050c537170525c2515f",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/instruction-manual.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "pen-plotter",
+      "slug": "pen-plotter",
+      "title_zh": "笔式绘图仪",
+      "title_original": "Pen Plotter",
+      "category_zh": "线稿图解",
+      "category_original": "Line Diagrams",
+      "source_path": "source/lemo-opuscar/styles/pen-plotter/STYLE.md",
+      "source_sha256": "6b4b45210d953e8ddee6741e7866b5cc7ad0a7fc37926b8cb7554f7209345412",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/pen-plotter/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/pen-plotter/style.json",
+      "metadata_sha256": "3287f21f2ae7926ad43bf0eb701597aa4a3a1d6b3ea8c8ff348f7116ae6036a3",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/pen-plotter.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "assembly-line-diagram",
+      "slug": "assembly-line-diagram",
+      "title_zh": "流水线图解",
+      "title_original": "Assembly-Line Diagram",
+      "category_zh": "线稿图解",
+      "category_original": "Line Diagrams",
+      "source_path": "source/lemo-opuscar/styles/assembly-line-diagram/STYLE.md",
+      "source_sha256": "179a41acc3a10bf45d7a3d91eab316077d44fdd75b0ba067d42d87e5b2e598bf",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/assembly-line-diagram/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/assembly-line-diagram/style.json",
+      "metadata_sha256": "720d2c271ffb182178e13824c658068937e74bb2c1b097d120536109d89929bd",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/assembly-line-diagram.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "rubber-hose",
+      "slug": "rubber-hose",
+      "title_zh": "1930s 橡皮管卡通",
+      "title_original": "1930s Rubber Hose Cartoon",
+      "category_zh": "卡通动画",
+      "category_original": "Cartoons",
+      "source_path": "source/lemo-opuscar/styles/rubber-hose/STYLE.md",
+      "source_sha256": "bf850f9cd22e68b2125fed00d1b9804e91479620b44420ba7ec50e570e472a94",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/rubber-hose/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/rubber-hose/style.json",
+      "metadata_sha256": "5909ba6c1614a272d2204f6b4b5074d1cd641097cf6c711e656e80cfd4a54539",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/rubber-hose.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "cel-anime-80s",
+      "slug": "cel-anime-80s",
+      "title_zh": "80 年代赛璐璐动画",
+      "title_original": "80s Cel Anime",
+      "category_zh": "卡通动画",
+      "category_original": "Cartoons",
+      "source_path": "source/lemo-opuscar/styles/cel-anime-80s/STYLE.md",
+      "source_sha256": "1e16f5c6f90ebf09556ec94d37434400d309c978e00ee89e9d38dec476664eaf",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/cel-anime-80s/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/cel-anime-80s/style.json",
+      "metadata_sha256": "4020b49f62396a2c922f5bd48dacabb0a8b935ed8435aef7e1648c1cd4cf1247",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/cel-anime-80s.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "scifi-toon",
+      "slug": "scifi-toon",
+      "title_zh": "科幻情景喜剧卡通",
+      "title_original": "Sci-Fi Sitcom Toon",
+      "category_zh": "卡通动画",
+      "category_original": "Cartoons",
+      "source_path": "source/lemo-opuscar/styles/scifi-toon/STYLE.md",
+      "source_sha256": "9a720a57ce50dc554e9237e698a979cdf7311527e6e6a0dad803278dfe8ad2ce",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/scifi-toon/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/scifi-toon/style.json",
+      "metadata_sha256": "0ae3cfe1c6db945a0faf5c440b6145b0d4b712a10aeeb8fdb62ee06fb9ed4854",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/scifi-toon.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "midcentury-toon",
+      "slug": "midcentury-toon",
+      "title_zh": "50s 扁平卡通",
+      "title_original": "Mid-century Cartoon",
+      "category_zh": "卡通动画",
+      "category_original": "Cartoons",
+      "source_path": "source/lemo-opuscar/styles/midcentury-toon/STYLE.md",
+      "source_sha256": "e73614b6f9e2f2e8ee279f4909da8429235b96f6d13a12345b6e57d5823c30b8",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/midcentury-toon/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/midcentury-toon/style.json",
+      "metadata_sha256": "a09109c67e360503af378dd16be2de7ceeb1e7ffda1e8d73e889b994cc605bb7",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/midcentury-toon.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "comic-history",
+      "slug": "comic-history",
+      "title_zh": "搞笑历史卡通",
+      "title_original": "Comic History Cartoon",
+      "category_zh": "卡通动画",
+      "category_original": "Cartoons",
+      "source_path": "source/lemo-opuscar/styles/comic-history/STYLE.md",
+      "source_sha256": "4aec43d12d02f39438872c9825e6e0d952b2c5762643a4d0b0dffdd8adb38fac",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/comic-history/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/comic-history/style.json",
+      "metadata_sha256": "355479c1b1439bfa977f655e2f6ec85da94d12498c6505a637b616bb31ef6e74",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/comic-history.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "manga-panels",
+      "slug": "manga-panels",
+      "title_zh": "黑白漫画分格",
+      "title_original": "Manga Panels",
+      "category_zh": "卡通动画",
+      "category_original": "Cartoons",
+      "source_path": "source/lemo-opuscar/styles/manga-panels/STYLE.md",
+      "source_sha256": "5c53e55bce2df67d6c9cea3f12f559e4b92216b325be6581852ddf35dc0c0da8",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/manga-panels/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/manga-panels/style.json",
+      "metadata_sha256": "01c8c389d656d90c8dca5a9ed13382fa1821f1766a6165006ed666eddb0e4132",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/manga-panels.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & lettering"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 10,
+          "title": "Consistency checks"
+        },
+        {
+          "number": 11,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "pixel-rpg",
+      "slug": "pixel-rpg",
+      "title_zh": "16-bit 像素 RPG",
+      "title_original": "16-bit Pixel RPG",
+      "category_zh": "电子游戏",
+      "category_original": "Games",
+      "source_path": "source/lemo-opuscar/styles/pixel-rpg/STYLE.md",
+      "source_sha256": "6624481152a77960b54bc3c0d2f2f9de6af15d4e95294525ef8e3635fe479fe5",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/pixel-rpg/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/pixel-rpg/style.json",
+      "metadata_sha256": "4075f106bed57ce963e6307ebd59fce9986953bfb3d8c36d82f6e971524d810f",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/pixel-rpg.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "hd-2d",
+      "slug": "hd-2d",
+      "title_zh": "2.5D 像素",
+      "title_original": "2.5D Pixel Art",
+      "category_zh": "电子游戏",
+      "category_original": "Games",
+      "source_path": "source/lemo-opuscar/styles/hd-2d/STYLE.md",
+      "source_sha256": "f83bb4ee11739d4367bfce5371ba4110d5b6a5033b18aa5cc5fa37f82ceda323",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/hd-2d/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/hd-2d/style.json",
+      "metadata_sha256": "b6a97c150911dffd0ec1c613f024a12e62dca2586d3dd27713bba171bb054050",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/hd-2d.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "microgame",
+      "slug": "microgame",
+      "title_zh": "微游戏快闪",
+      "title_original": "Microgame Frenzy",
+      "category_zh": "电子游戏",
+      "category_original": "Games",
+      "source_path": "source/lemo-opuscar/styles/microgame/STYLE.md",
+      "source_sha256": "04e2b7fa9dee5cac346b475e400e577e977b6753afe35ee4e45f66111496ce6a",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/microgame/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/microgame/style.json",
+      "metadata_sha256": "f4dc1d90d11257602f321f8c47c604751b441e2b171c4bc734ceaccc487717fb",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/microgame.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "game-show",
+      "slug": "game-show",
+      "title_zh": "节奏综艺",
+      "title_original": "Rhythm Game Show",
+      "category_zh": "电子游戏",
+      "category_original": "Games",
+      "source_path": "source/lemo-opuscar/styles/game-show/STYLE.md",
+      "source_sha256": "5dabcaabee826fb5e454cc05e2d0df62e3d2f165a7d578337ccdc89474b65c12",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/game-show/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/game-show/style.json",
+      "metadata_sha256": "df7a1e97af5f57fd7b6a833459f420b6079f65a0e60061466f4a618a9dbd8752",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/game-show.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "ascii-crt",
+      "slug": "ascii-crt",
+      "title_zh": "CRT 字符终端",
+      "title_original": "CRT ASCII Terminal",
+      "category_zh": "胶片录像",
+      "category_original": "Film & Tape",
+      "source_path": "source/lemo-opuscar/styles/ascii-crt/STYLE.md",
+      "source_sha256": "471f294a40b8ca050daeaaee329b94036174e5eda1e521c8406a579d711bb9b6",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/ascii-crt/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/ascii-crt/style.json",
+      "metadata_sha256": "eb5797a6fea92d5d851fa474cbc4ed342aa7e962bb8eefc72212f78ddaa07d81",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/ascii-crt.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "silent-film",
+      "slug": "silent-film",
+      "title_zh": "1920s 默片",
+      "title_original": "1920s Silent Film",
+      "category_zh": "胶片录像",
+      "category_original": "Film & Tape",
+      "source_path": "source/lemo-opuscar/styles/silent-film/STYLE.md",
+      "source_sha256": "44633a4edd4ec6b84be809bd48b38503a75a71531112b3d28a52f27135012b20",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/silent-film/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/silent-film/style.json",
+      "metadata_sha256": "d9ac8981b2af11724f52674665eb8439f263ddc555482408123d4c39ecb67c4e",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/silent-film.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "backrooms",
+      "slug": "backrooms",
+      "title_zh": "后室录像带",
+      "title_original": "Liminal Found Footage",
+      "category_zh": "胶片录像",
+      "category_original": "Film & Tape",
+      "source_path": "source/lemo-opuscar/styles/backrooms/STYLE.md",
+      "source_sha256": "2a3697a1ce37d0fbae3281220ae6154eeb9789233f1fae472d55ac169ba26fb4",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/backrooms/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/backrooms/style.json",
+      "metadata_sha256": "4a3567a7d4e734f429f939f9f29f5a675ecc806937640d25bc01f8634b4431ee",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/backrooms.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "contract_available",
+      "blender_contract_path": "blender/lemo_style_guard/profiles/backrooms/contract.json",
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "scratch-film",
+      "slug": "scratch-film",
+      "title_zh": "胶片直刻",
+      "title_original": "Scratch Film",
+      "category_zh": "胶片录像",
+      "category_original": "Film & Tape",
+      "source_path": "source/lemo-opuscar/styles/scratch-film/STYLE.md",
+      "source_sha256": "79be9b3664338fb2f7f1877acaff9ec7a7ec0946fda096bc1c3e96bf9a64ec86",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/scratch-film/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/scratch-film/style.json",
+      "metadata_sha256": "f7b50fddf171150b1fde0d6def4cfd30e13716acf9839cafcb5d262ba650f416",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/scratch-film.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "double-exposure",
+      "slug": "double-exposure",
+      "title_zh": "双重曝光",
+      "title_original": "Double Exposure",
+      "category_zh": "胶片录像",
+      "category_original": "Film & Tape",
+      "source_path": "source/lemo-opuscar/styles/double-exposure/STYLE.md",
+      "source_sha256": "dd8c7e6167f3323621dfbba2f286286be38c0bde58f3620a4beb91ff0243c52f",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/double-exposure/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/double-exposure/style.json",
+      "metadata_sha256": "48cfdb877f913638dbf083bfb82dbf245788ec6c0f47b3bb203751cd9cb41c23",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/double-exposure.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "dark-keynote",
+      "slug": "dark-keynote",
+      "title_zh": "暗色科技发布",
+      "title_original": "Dark Tech Keynote",
+      "category_zh": "屏幕界面",
+      "category_original": "Screens & Interfaces",
+      "source_path": "source/lemo-opuscar/styles/dark-keynote/STYLE.md",
+      "source_sha256": "b0791b5e95f56bf46c621e6064d426ebbee810c7515fb87e951b73668a2a0d24",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/dark-keynote/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/dark-keynote/style.json",
+      "metadata_sha256": "73d643c2f3fe3ab4bc310179b1c9241bf5040473c1c35a68c68b67cf96e7c0bc",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/dark-keynote.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "living-screencast",
+      "slug": "living-screencast",
+      "title_zh": "像素小人录屏",
+      "title_original": "Mascot Screencast",
+      "category_zh": "屏幕界面",
+      "category_original": "Screens & Interfaces",
+      "source_path": "source/lemo-opuscar/styles/living-screencast/STYLE.md",
+      "source_sha256": "62389f107308c738854f103e96c2b2e8bc47a14e28bf1081f15976d90e89b5f9",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/living-screencast/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/living-screencast/style.json",
+      "metadata_sha256": "bc66a36b3634f9181829d398589e146a82b57d8692eaa71ed1f7d6ba1c453d1b",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/living-screencast.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "hologram-hud",
+      "slug": "hologram-hud",
+      "title_zh": "科幻全息界面",
+      "title_original": "Sci-fi Hologram HUD",
+      "category_zh": "屏幕界面",
+      "category_original": "Screens & Interfaces",
+      "source_path": "source/lemo-opuscar/styles/hologram-hud/STYLE.md",
+      "source_sha256": "81e2c6b0ede2cc211a8dd676417a1ce5efda278514f273c5249165e38ff34573",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/hologram-hud/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/hologram-hud/style.json",
+      "metadata_sha256": "a5efa1a7dcd4089dde08579a287413872a5a5d7e1f99c4ba763f2e95f3ee3fb8",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/hologram-hud.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "desktop-flythrough",
+      "slug": "desktop-flythrough",
+      "title_zh": "桌面卡片穿梭",
+      "title_original": "Tabletop App Flythrough",
+      "category_zh": "屏幕界面",
+      "category_original": "Screens & Interfaces",
+      "source_path": "source/lemo-opuscar/styles/desktop-flythrough/STYLE.md",
+      "source_sha256": "38993ddb69447ba7c44890fbdcff8698b31cbfcd48de82932334b65124f2c390",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/desktop-flythrough/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/desktop-flythrough/style.json",
+      "metadata_sha256": "e4731a9274ce6d73587cb20e7aaab10d57ac99efb935cfd76142c1736deede64",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/desktop-flythrough.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "spreadsheet",
+      "slug": "spreadsheet",
+      "title_zh": "表格动画",
+      "title_original": "Spreadsheet Film",
+      "category_zh": "屏幕界面",
+      "category_original": "Screens & Interfaces",
+      "source_path": "source/lemo-opuscar/styles/spreadsheet/STYLE.md",
+      "source_sha256": "63b4c656fe1c63e38ac769ace40d7bf4a35313285e5f426003faf64b35f73f77",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/spreadsheet/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/spreadsheet/style.json",
+      "metadata_sha256": "19253412ac02ed632d706b1f7c88c00a839665afbd33705d785f5bd1f335191a",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/spreadsheet.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "one-bit-dither",
+      "slug": "one-bit-dither",
+      "title_zh": "1-bit 点阵",
+      "title_original": "1-bit Dither",
+      "category_zh": "屏幕界面",
+      "category_original": "Screens & Interfaces",
+      "source_path": "source/lemo-opuscar/styles/one-bit-dither/STYLE.md",
+      "source_sha256": "0bc40947535c1b1a3e41903ab3e7e75c372d1392e2145e0d79a6e6fc110eb16b",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/one-bit-dither/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/one-bit-dither/style.json",
+      "metadata_sha256": "3ed454b0052394ab264d9c246adcda1a987930081702dc27fe334cf6f655da6b",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/one-bit-dither.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "circuit-board",
+      "slug": "circuit-board",
+      "title_zh": "电路板",
+      "title_original": "Circuit Board",
+      "category_zh": "发光线条",
+      "category_original": "Light & Lines",
+      "source_path": "source/lemo-opuscar/styles/circuit-board/STYLE.md",
+      "source_sha256": "3f5244726e732a8407355bebdec309942410104af32c956372ff4f1477a0cd9b",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/circuit-board/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/circuit-board/style.json",
+      "metadata_sha256": "5ee631bd6509bc8c2faab8baa04c530e4437ae24a62e755210a181501e0f6afe",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/circuit-board.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "firefly-pointillism",
+      "slug": "firefly-pointillism",
+      "title_zh": "萤火光点",
+      "title_original": "Firefly Pointillism",
+      "category_zh": "发光线条",
+      "category_original": "Light & Lines",
+      "source_path": "source/lemo-opuscar/styles/firefly-pointillism/STYLE.md",
+      "source_sha256": "15ab75f6b7f2eebbf24471edb9d4050c2b4db6c8699727a43a9de2dc8c2c6c59",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/firefly-pointillism/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/firefly-pointillism/style.json",
+      "metadata_sha256": "6f4318473daf8a35e70ccbe7907c4011ceb0101584271c48e5ae4a6cb53a0756",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/firefly-pointillism.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "flow-field",
+      "slug": "flow-field",
+      "title_zh": "流场风线",
+      "title_original": "Flow-field Wind Lines",
+      "category_zh": "发光线条",
+      "category_original": "Light & Lines",
+      "source_path": "source/lemo-opuscar/styles/flow-field/STYLE.md",
+      "source_sha256": "4605fa6f3093dee6177f483d1ec5c7cea0cb7aa3aff9f7e1857f5dbb277993e9",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/flow-field/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/flow-field/style.json",
+      "metadata_sha256": "29c7376febb1d38f85fd2c6e404df48cb1aa96fc799343bb191873a4270dd03e",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/flow-field.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "oscilloscope-math",
+      "slug": "oscilloscope-math",
+      "title_zh": "示波器数学",
+      "title_original": "Oscilloscope Math",
+      "category_zh": "发光线条",
+      "category_original": "Light & Lines",
+      "source_path": "source/lemo-opuscar/styles/oscilloscope-math/STYLE.md",
+      "source_sha256": "2b9b1ca78c1bebaf58b2673356170e6dfe84f8e0b322617b16f016f53af8f635",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/oscilloscope-math/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/oscilloscope-math/style.json",
+      "metadata_sha256": "33a0de5e5d559db0dc16dcac2e69e1f6a75ed5d5e2a7937dc3c65fba5f997cac",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/oscilloscope-math.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "neon-tubes",
+      "slug": "neon-tubes",
+      "title_zh": "霓虹灯管",
+      "title_original": "Neon Tubes",
+      "category_zh": "发光线条",
+      "category_original": "Light & Lines",
+      "source_path": "source/lemo-opuscar/styles/neon-tubes/STYLE.md",
+      "source_sha256": "86b5d2d9157b4e9e1cbc8e49d0e244f45e02619226a7cf228d14e513c93c8ea3",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/neon-tubes/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/neon-tubes/style.json",
+      "metadata_sha256": "eb97859ac956a9affe00d975ba9e1bd85202c08b66fcbec1215ff7f54d3447b4",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/neon-tubes.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "brick-toy",
+      "slug": "brick-toy",
+      "title_zh": "积木玩具",
+      "title_original": "Brick Toy",
+      "category_zh": "立体微缩",
+      "category_original": "3D & Miniature",
+      "source_path": "source/lemo-opuscar/styles/brick-toy/STYLE.md",
+      "source_sha256": "29b23e846951856b722a698a03c9458cfc17b4fc71d044f45d773acf2a742768",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/brick-toy/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/brick-toy/style.json",
+      "metadata_sha256": "262bdea6a152d45c1bb682ff2632d0e1942a77a07ca2d9ed6dfd103bf660aa2c",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/brick-toy.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "paper-popup",
+      "slug": "paper-popup",
+      "title_zh": "纸片立体书",
+      "title_original": "Paper Pop-up Book",
+      "category_zh": "立体微缩",
+      "category_original": "3D & Miniature",
+      "source_path": "source/lemo-opuscar/styles/paper-popup/STYLE.md",
+      "source_sha256": "8e5c0ca430fd96b75c4d9c2af92a87c84d4d1af8cda64280a189c51279e1ee9b",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/paper-popup/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/paper-popup/style.json",
+      "metadata_sha256": "3c60c1ba1c3c7686edae36000393cfb3509ae3d242ddff34e869bc07f2642ec0",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/paper-popup.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "contract_available",
+      "blender_contract_path": "blender/lemo_style_guard/profiles/paper-popup/contract.json",
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "tilt-shift",
+      "slug": "tilt-shift",
+      "title_zh": "移轴微缩",
+      "title_original": "Tilt-Shift Miniature",
+      "category_zh": "立体微缩",
+      "category_original": "3D & Miniature",
+      "source_path": "source/lemo-opuscar/styles/tilt-shift/STYLE.md",
+      "source_sha256": "131ae50c6bddd30922638cbd5f2fae5c047223360a3f6924b074b0db525a5c63",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/tilt-shift/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/tilt-shift/style.json",
+      "metadata_sha256": "e0ffbee27ce5c600c29eabd359c599a6f22dd0f9420421aad239a9304d8e3eb9",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/tilt-shift.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "lowpoly-island",
+      "slug": "lowpoly-island",
+      "title_zh": "低多边形等距",
+      "title_original": "Low-poly Isometric Island",
+      "category_zh": "立体微缩",
+      "category_original": "3D & Miniature",
+      "source_path": "source/lemo-opuscar/styles/lowpoly-island/STYLE.md",
+      "source_sha256": "1ae7bcd6aa3d521f563d8905f8109842fd7252ff8b70c1bd18265105a8a450f9",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/lowpoly-island/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/lowpoly-island/style.json",
+      "metadata_sha256": "4b26ddd08f6adb908879a4d6f9bbd2ad0c885d806b14cb92fa236586c1528412",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/lowpoly-island.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "contract_available",
+      "blender_contract_path": "blender/lemo_style_guard/profiles/lowpoly-island/contract.json",
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "glass-product",
+      "slug": "glass-product",
+      "title_zh": "玻璃质感产品",
+      "title_original": "Glass Product Render",
+      "category_zh": "立体微缩",
+      "category_original": "3D & Miniature",
+      "source_path": "source/lemo-opuscar/styles/glass-product/STYLE.md",
+      "source_sha256": "630fa80cde0930154ba64f15bce5c8ee0c8dcf48d921253f8c7e3194712c8fb5",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/glass-product/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/glass-product/style.json",
+      "metadata_sha256": "8cd632c6b7ca25c6e2623779541d115f0ad55f545d34af20f3ecae793f27a2be",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/glass-product.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "memphis-diorama",
+      "slug": "memphis-diorama",
+      "title_zh": "孟菲斯微缩景观",
+      "title_original": "Memphis Diorama",
+      "category_zh": "立体微缩",
+      "category_original": "3D & Miniature",
+      "source_path": "source/lemo-opuscar/styles/memphis-diorama/STYLE.md",
+      "source_sha256": "7f1748f2741d069e074172800d501ec00527db8a018e1e5ab4ecfa630ed6763b",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/memphis-diorama/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/memphis-diorama/style.json",
+      "metadata_sha256": "07fafe8185b1af83f01feca8fe0301fe2fdf9014b15e7e7bd3831830e58d0d1e",
+      "source_attribution": "Memphis Diorama by EianLu, in Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/memphis-diorama.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "isometric-picture-book",
+      "slug": "isometric-picture-book",
+      "title_zh": "等距小人场景",
+      "title_original": "Isometric People Scene",
+      "category_zh": "立体微缩",
+      "category_original": "3D & Miniature",
+      "source_path": "source/lemo-opuscar/styles/isometric-picture-book/STYLE.md",
+      "source_sha256": "0118a0183745d8bbd29ab06792c2ea887edeee7d3dcd47b5a89889c57687cd59",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/isometric-picture-book/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/isometric-picture-book/style.json",
+      "metadata_sha256": "3590c598a448d014855ce6b3070b1c2ca235b1a4470c636db8396593ebc1b3ba",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/isometric-picture-book.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "crayon-world",
+      "slug": "crayon-world",
+      "title_zh": "蜡笔立体世界",
+      "title_original": "Crayon World 3D",
+      "category_zh": "立体微缩",
+      "category_original": "3D & Miniature",
+      "source_path": "source/lemo-opuscar/styles/crayon-world/STYLE.md",
+      "source_sha256": "50c5b5319fabd7189cf725524092b3c69af334ae7f92052f10da2581356030b0",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/crayon-world/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/crayon-world/style.json",
+      "metadata_sha256": "6ed724b585776c4d10da282cebff394c1251fed683728f9003b4d9f0fed05155",
+      "source_attribution": "Crayon World 3D by 2nd1st, in Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/crayon-world.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "satellite-briefing",
+      "slug": "satellite-briefing",
+      "title_zh": "卫星简报",
+      "title_original": "Satellite Briefing",
+      "category_zh": "仪器实证",
+      "category_original": "Instruments & Evidence",
+      "source_path": "source/lemo-opuscar/styles/satellite-briefing/STYLE.md",
+      "source_sha256": "659e1d33189f252cec629685c60fc9b495d1c6f6679c5c8791b37b1192a3147f",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/satellite-briefing/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/satellite-briefing/style.json",
+      "metadata_sha256": "cc73b2de913b7bbd0a341492414edbb2e455dbd25951fc0c3772053fcace8681",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/satellite-briefing.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "briefing-board",
+      "slug": "briefing-board",
+      "title_zh": "工程简报板",
+      "title_original": "Engineering Briefing Board",
+      "category_zh": "仪器实证",
+      "category_original": "Instruments & Evidence",
+      "source_path": "source/lemo-opuscar/styles/briefing-board/STYLE.md",
+      "source_sha256": "44669da808da4ed37e2a4a0f6e5d2b23008775a3c4870add04641d714e9f323d",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/briefing-board/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/briefing-board/style.json",
+      "metadata_sha256": "0f9f17f7e35f1297b3875860cc51e745a33743890586b31a11ef5b4972390995",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/briefing-board.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "lidar-survey",
+      "slug": "lidar-survey",
+      "title_zh": "点云测绘",
+      "title_original": "LiDAR Survey",
+      "category_zh": "仪器实证",
+      "category_original": "Instruments & Evidence",
+      "source_path": "source/lemo-opuscar/styles/lidar-survey/STYLE.md",
+      "source_sha256": "fe7034a4f7a66af8712562544e8dc33d68c25ee8cfe9975fff5d0ab98b253d28",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/lidar-survey/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/lidar-survey/style.json",
+      "metadata_sha256": "b4ca5de194a02f6b388991f62be9f525485ac59e16b4430d8e679e400ebd1e84",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/lidar-survey.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "microscope",
+      "slug": "microscope",
+      "title_zh": "显微镜下",
+      "title_original": "Under the Microscope",
+      "category_zh": "仪器实证",
+      "category_original": "Instruments & Evidence",
+      "source_path": "source/lemo-opuscar/styles/microscope/STYLE.md",
+      "source_sha256": "39f9d5ed9287ff42da82be62aac2eb50eacf635e85788c39428762a61f628030",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/microscope/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/microscope/style.json",
+      "metadata_sha256": "a08d684d7dd78bb7ac8a4c6d2352019feedf719d7cfaf41ea31a3a5b1a5745b2",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/microscope.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "archive-lighttable",
+      "slug": "archive-lighttable",
+      "title_zh": "档案看片台",
+      "title_original": "Archive Light Table",
+      "category_zh": "仪器实证",
+      "category_original": "Instruments & Evidence",
+      "source_path": "source/lemo-opuscar/styles/archive-lighttable/STYLE.md",
+      "source_sha256": "2f18ac9a42822b7a9941866c42b0642e5417dea5431d61f141f6e11b29c1ec14",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/archive-lighttable/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/archive-lighttable/style.json",
+      "metadata_sha256": "35b1b589d3ea54cefd1765972196bd8a42a7c2bb80b8bed68677426c752e9a29",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/archive-lighttable.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "security-xray",
+      "slug": "security-xray",
+      "title_zh": "安检 X 光",
+      "title_original": "Security X-ray",
+      "category_zh": "仪器实证",
+      "category_original": "Instruments & Evidence",
+      "source_path": "source/lemo-opuscar/styles/security-xray/STYLE.md",
+      "source_sha256": "fef3d388f119c5e331093b20817b5fa312bb356ae1bacdab5098996fbe3f6321",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/security-xray/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/security-xray/style.json",
+      "metadata_sha256": "a02f16ae1201bf23f2d1e7f771614462023b7d48d68f55f32546e5312c583e88",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/security-xray.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "dark-documentary",
+      "slug": "dark-documentary",
+      "title_zh": "雷达扫描纪录片",
+      "title_original": "Radar Sweep Documentary",
+      "category_zh": "仪器实证",
+      "category_original": "Instruments & Evidence",
+      "source_path": "source/lemo-opuscar/styles/dark-documentary/STYLE.md",
+      "source_sha256": "1c3183105543c0108ab248839b389234436b524982f4cedc38a8c33fb96290b5",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/dark-documentary/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/dark-documentary/style.json",
+      "metadata_sha256": "392220dcfcef0033079668c1c1037ad84ef1505b3da14df2a74abc2a1f44fcc0",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/dark-documentary.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "thermal-camera",
+      "slug": "thermal-camera",
+      "title_zh": "热成像",
+      "title_original": "Thermal Camera",
+      "category_zh": "仪器实证",
+      "category_original": "Instruments & Evidence",
+      "source_path": "source/lemo-opuscar/styles/thermal-camera/STYLE.md",
+      "source_sha256": "b6af38ba920121ef8b764831514b7c917ed24beadcb86e7d8a63f54fa47f45ae",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/thermal-camera/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/thermal-camera/style.json",
+      "metadata_sha256": "1c07c21b92b9b85ed1c377318dd72d2eddf56b5cded1bb9125cb8bc875696fa6",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/thermal-camera.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "dataviz",
+      "slug": "dataviz",
+      "title_zh": "数据叙事",
+      "title_original": "Data Storytelling",
+      "category_zh": "数据地图",
+      "category_original": "Data & Maps",
+      "source_path": "source/lemo-opuscar/styles/dataviz/STYLE.md",
+      "source_sha256": "e94013d5a7c548c8844598a671ff0b49bc78770696cbca0d8d00846336f3c67f",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/dataviz/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/dataviz/style.json",
+      "metadata_sha256": "be49fe91a920a838eff76d4c350770533c6680b8cfd889ccce496198314dc527",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/dataviz.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "white-model",
+      "slug": "white-model",
+      "title_zh": "白模投影",
+      "title_original": "Projection-Mapped Model",
+      "category_zh": "数据地图",
+      "category_original": "Data & Maps",
+      "source_path": "source/lemo-opuscar/styles/white-model/STYLE.md",
+      "source_sha256": "d285018ffffd5eac5c015550d3f5ffe32bc6b6222c9e37d9a1adfe8a03d929fb",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/white-model/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/white-model/style.json",
+      "metadata_sha256": "ce27ac2fd995127f210442de2500317fabfc8e8c7eeeb0d336426a17670a5b42",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/white-model.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "contract_available",
+      "blender_contract_path": "blender/lemo_style_guard/profiles/white-model/contract.json",
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "data-physical",
+      "slug": "data-physical",
+      "title_zh": "数据实物化",
+      "title_original": "Data Physicalization",
+      "category_zh": "数据地图",
+      "category_original": "Data & Maps",
+      "source_path": "source/lemo-opuscar/styles/data-physical/STYLE.md",
+      "source_sha256": "18c3c76d1ddb3d8616c7cd571433853885e8bd65146ab0b4ee2222e4475c6116",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/data-physical/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/data-physical/style.json",
+      "metadata_sha256": "900b6bf2cd3c2cdff59a47e4facb27b16d625be08a69ec25a015069cc2a7ac3b",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/data-physical.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "transit-map",
+      "slug": "transit-map",
+      "title_zh": "地铁线路图",
+      "title_original": "Transit Map",
+      "category_zh": "数据地图",
+      "category_original": "Data & Maps",
+      "source_path": "source/lemo-opuscar/styles/transit-map/STYLE.md",
+      "source_sha256": "e6c62bc75071c86b67c30def595e919910d86245504c8c09882d151a3c719d1c",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/transit-map/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/transit-map/style.json",
+      "metadata_sha256": "4578c2694ac5bec8d11ede95421a7702f922eb61dedae674eccad5721535ef59",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/transit-map.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "map-explainer",
+      "slug": "map-explainer",
+      "title_zh": "立体地图解说",
+      "title_original": "3D Map Explainer",
+      "category_zh": "数据地图",
+      "category_original": "Data & Maps",
+      "source_path": "source/lemo-opuscar/styles/map-explainer/STYLE.md",
+      "source_sha256": "fedb3f7444b78e65bc66c7c456fb5d4d09fc7228ffbd220ed90827ef8f816e6f",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/map-explainer/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/map-explainer/style.json",
+      "metadata_sha256": "15808a87af70cd63696e95fb21810d7a5ca5287753890975e37eefc452aea66c",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/map-explainer.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    },
+    {
+      "style_id": "pip-simulation",
+      "slug": "pip-simulation",
+      "title_zh": "小人模拟实验",
+      "title_original": "Blob Simulation",
+      "category_zh": "数据地图",
+      "category_original": "Data & Maps",
+      "source_path": "source/lemo-opuscar/styles/pip-simulation/STYLE.md",
+      "source_sha256": "eac2f8477b540ce02ee6d609643c5be94f99f83e6d70577ea382309a1fe5b8b8",
+      "source_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4/styles/pip-simulation/STYLE.md",
+      "metadata_path": "source/lemo-opuscar/styles/pip-simulation/style.json",
+      "metadata_sha256": "10f93c97ed504e637fe80874f7df26940e8e3cb0b76ddde9bca197aee52be07b",
+      "source_attribution": "Lemo-Opuscar by Lemomo (LemoLab)",
+      "document_license": "CC-BY-NC-4.0",
+      "metadata_license": "MIT",
+      "art_rules_path": "art_rules/pip-simulation.md",
+      "art_extraction_status": "extracted",
+      "selected_sections": [
+        {
+          "number": 1,
+          "title": "Essence, and what it is not"
+        },
+        {
+          "number": 2,
+          "title": "Materials & rendering"
+        },
+        {
+          "number": 3,
+          "title": "Colour logic"
+        },
+        {
+          "number": 4,
+          "title": "Type & subtitles"
+        },
+        {
+          "number": 6,
+          "title": "Camera grammar"
+        },
+        {
+          "number": 9,
+          "title": "Pitfalls of the medium"
+        }
+      ],
+      "blender_status": "reference_only",
+      "blender_contract_path": null,
+      "original_style_automatically_reproduced": false
+    }
+  ]
+}

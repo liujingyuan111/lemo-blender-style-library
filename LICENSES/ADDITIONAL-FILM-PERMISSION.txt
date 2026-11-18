@@ -1,0 +1,61 @@
+Additional film-production permission for this project's own documentation
+
+Copyright (c) 2026 lemo-blender-style-library contributors
+
+Scope
+
+This permission applies only to copyright and similar rights held by the
+lemo-blender-style-library contributors in new documentation and their own
+contributions to translated, selected, organized or adapted style rules in
+this repository. These contributions are also licensed under CC BY-NC 4.0.
+
+Grant
+
+In addition to CC BY-NC 4.0, the contributors grant a worldwide, royalty-free,
+non-exclusive, irrevocable permission to you and the people working with you
+on a film (staff, contractors, the client) to read, follow, copy and adapt
+those contributions to make your own films (commercial and client films
+included), and to include them, or versions you adapted, in the project files
+you deliver for that film. A style you change and keep as your own to make
+your films is covered.
+
+Films you make using those contributions are yours, commercial films included.
+This permission does not require a credit to this project's contributors in
+the finished film solely for using those contributions. Third-party material
+you use in a film keeps its own terms.
+
+Relationship to public sharing and upstream rights
+
+This additional permission does not itself cover sharing the documentation
+or adapted versions with others beyond those people and those project files,
+or selling them. CC BY-NC 4.0 remains available for public, noncommercial
+sharing of original and adapted documentation on its terms. This paragraph
+does not withdraw or narrow any permission granted by CC BY-NC 4.0.
+
+Upstream Lemo-Opuscar content remains subject to the licenses and the separate
+additional permission granted by its rights holders in:
+  source/lemo-opuscar/LICENSE
+  source/lemo-opuscar/REUSE.toml
+
+This project's contributors do not grant, sublicense or expand rights owned
+by Lemomo (LemoLab), EianLu, 2nd1st or any other third party. When a document
+combines upstream material with this project's contributions, each rights
+holder's applicable license or additional permission governs their material.
+Neither this permission nor the MIT tool-code license grants a license to
+third-party assets, characters, product interfaces, names, logos or trademarks.
+
+Warranty and liability
+
+The contributions are provided AS IS, without warranties of any kind, to the
+extent permitted by law. The disclaimer of warranties and limitation of
+liability in Section 5 of CC BY-NC 4.0 apply to this additional permission to
+the fullest extent permitted by law. Nothing in this permission limits any
+rights or remedies that cannot be limited under applicable law.
+
+Chinese reading note (the grant above is the operative permission)
+
+本库贡献者对自己享有权利的新增文档和改编贡献，除 CC BY-NC 4.0 外，
+另允许本人及共同制作相应影片的员工、承包方和客户，为自有、商业及
+客户影片阅读、遵循、复制、改编，并随对应影片工程交付这些内容。
+此项授权只涉及本库贡献者拥有的权利；原作内容继续适用上游原始许可。
+文档的公开非商业分享仍可依据 CC BY-NC 4.0 进行。

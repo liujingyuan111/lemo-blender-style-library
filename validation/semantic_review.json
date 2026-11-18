@@ -1,0 +1,85 @@
+{
+  "schema_id": "lemo-style-semantic-review/v1",
+  "status": "passed",
+  "source_commit": "00a7f9ec99c8686265a8ca4ed9a3fdaaf27ea6f4",
+  "profiles_reviewed": 8,
+  "rules_reviewed": 150,
+  "review_scope": [
+    "Original modality and condition scope",
+    "Source examples versus fixed requirements",
+    "Camera vocabulary versus mandatory routes",
+    "Original engine specifics versus Blender implementation advice",
+    "Source quotes in their stated sections",
+    "No inclusion of earlier original demos or scenes"
+  ],
+  "checks": {
+    "all_source_hashes_match": true,
+    "all_source_quotes_in_stated_sections": true,
+    "all_populated_hex_values_in_original_text": true,
+    "all_rule_cards_synchronized": true,
+    "source_and_quote_fields_unchanged": true,
+    "only_authorized_rule_zh_fields_modified": true
+  },
+  "corrections": [
+    {
+      "style_id": "spy-titles",
+      "rule_id": "spy-titles-17",
+      "before": "每行场景文字至少有一刻完整可读，不能始终裁掉一部分。",
+      "after": "每行片头署名（credit）文字至少有一刻完整可读，不能始终裁掉一部分。",
+      "reason": "原文范围是credit署名行，不能扩大到所有场景文字。",
+      "source_section": "9. Pitfalls of the medium",
+      "source_quote_unchanged": true
+    },
+    {
+      "style_id": "spy-titles",
+      "rule_id": "spy-titles-08",
+      "before": "热色用于主角的一处强调色与危险；次色用于被追逐物件。",
+      "after": "采用相应角色关系时，热色用于主角的一处强调色与危险；次色用于被追逐物件。",
+      "reason": "把已有角色关系条件放入规则正文，避免强制所有新项目采用追逐结构。",
+      "source_section": "3. Colour logic",
+      "source_quote_unchanged": true
+    },
+    {
+      "style_id": "white-model",
+      "rule_id": "white-model-12",
+      "before": "太阳层使用暖太阳与投影深蓝阴影；出现太阳层时收起数据层颜色。",
+      "after": "若采用太阳与阴影层，使用暖太阳与投影深蓝阴影；该层出现时收起数据层颜色。",
+      "reason": "太阳与阴影是按项目选择的数据层，颜色职责应在选用该层时触发。",
+      "source_section": "3. Colour logic",
+      "source_quote_unchanged": true
+    },
+    {
+      "style_id": "lowpoly-island",
+      "rule_id": "lowpoly-island-12",
+      "before": "时间由光照与整个环境色彩联动表达；地面分面随太阳重着色，夜晚环境向蓝紫去饱和。",
+      "after": "若表现日夜或时间变化，光照与整个环境色彩应联动；地面分面随太阳重着色，夜晚环境向蓝紫去饱和。",
+      "reason": "保留日夜变化中的色彩联动规则，但不要求所有项目制作日夜过程。",
+      "source_section": "3. Colour logic",
+      "source_quote_unchanged": true
+    },
+    {
+      "style_id": "paper-lantern",
+      "rule_id": "paper-lantern-01",
+      "before": "每镜以一个浅盒中的平行切纸层为视觉基础；景物保持平纸片，平行于盒子的正面。",
+      "after": "每镜以一个浅盒中的平行切纸层为视觉基础；盒内纸景保持平纸片，平行于盒子的正面。",
+      "reason": "平面规则针对盒内纸景，不扩展到原文允许的盒外真实桌面、木框和物件。",
+      "source_section": "1. Essence, and what it is not",
+      "source_quote_unchanged": true
+    },
+    {
+      "style_id": "white-model",
+      "rule_id": "white-model-13",
+      "before": "景深来自物理摄影机，近景更明显；泛光只针对投影高光，AO只在近景使用。",
+      "after": "景深来自物理摄影机，近景更明显；泛光只针对投影高光。原引擎GTAO只用于近景；Blender中应检查并避免掠射远景的暗楔或条带，不将这一项扩大为对所有远景AO的统一禁令。",
+      "reason": "将原引擎GTAO的远景条带限制与Blender检查目标分开，保留既有物理景深和投影高光泛光要求。",
+      "source_section": "2. Materials & rendering",
+      "source_quote_unchanged": true
+    }
+  ],
+  "correction_count": 6,
+  "errors": [],
+  "limitations": [
+    "This is a source-fidelity review, not a rendered aesthetic assessment.",
+    "The 99 reference styles are not all Blender-native implementations."
+  ]
+}
